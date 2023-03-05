@@ -656,7 +656,7 @@ header nav .header__wording--visit--full {
 
 @media screen and  (min-width: 1280px) {
     .header__primary-nav__item {
-        margin-left: 3rem;
+        margin-left: 1.3rem;
     }
 }
 
