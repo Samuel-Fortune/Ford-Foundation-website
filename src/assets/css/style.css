@@ -58807,6 +58807,10 @@ video {
   margin: 0px;
 }
 
+.mb-10{
+  margin-bottom: 2.5rem;
+}
+
 .ml-5{
   margin-left: 1.25rem;
 }
@@ -58817,10 +58821,6 @@ video {
 
 .mt-\[150px\]{
   margin-top: 150px;
-}
-
-.mb-10{
-  margin-bottom: 2.5rem;
 }
 
 .block{
