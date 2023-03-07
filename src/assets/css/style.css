@@ -58787,8 +58787,32 @@ video {
   position: sticky;
 }
 
+.-z-10{
+  z-index: -10;
+}
+
+.col-span-2{
+  grid-column: span 2 / span 2;
+}
+
+.col-span-4{
+  grid-column: span 4 / span 4;
+}
+
+.float-right{
+  float: right;
+}
+
 .m-0{
   margin: 0px;
+}
+
+.ml-5{
+  margin-left: 1.25rem;
+}
+
+.mr-5{
+  margin-right: 1.25rem;
 }
 
 .mt-\[150px\]{
@@ -58839,6 +58863,27 @@ video {
   display: none;
 }
 
+.h-\[25px\]{
+  height: 25px;
+}
+
+.h-screen{
+  height: 100vh;
+}
+
+.w-\[25px\]{
+  width: 25px;
+}
+
+.w-full{
+  width: 100%;
+}
+
+.w-max{
+  width: -moz-max-content;
+  width: max-content;
+}
+
 .flex-shrink{
   flex-shrink: 1;
 }
@@ -58883,16 +58928,48 @@ video {
   grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 
+.flex-col{
+  flex-direction: column;
+}
+
 .flex-wrap{
   flex-wrap: wrap;
+}
+
+.items-center{
+  align-items: center;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.justify-between{
+  justify-content: space-between;
+}
+
+.gap-10{
+  gap: 2.5rem;
 }
 
 .gap-2{
   gap: 0.5rem;
 }
 
+.gap-3{
+  gap: 0.75rem;
+}
+
 .gap-4{
   gap: 1rem;
+}
+
+.gap-5{
+  gap: 1.25rem;
+}
+
+.gap-8{
+  gap: 2rem;
 }
 
 .gap-9{
@@ -58901,6 +58978,14 @@ video {
 
 .overflow-hidden{
   overflow: hidden;
+}
+
+.overflow-y-auto{
+  overflow-y: auto;
+}
+
+.overflow-y-scroll{
+  overflow-y: scroll;
 }
 
 .border{
@@ -58912,12 +58997,63 @@ video {
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
 }
 
+.bg-blue-900{
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 58 138 / var(--tw-bg-opacity));
+}
+
+.bg-gray-200{
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.fill-black{
+  fill: #000;
+}
+
+.stroke-black{
+  stroke: #000;
+}
+
 .p-0{
   padding: 0px;
 }
 
 .p-20{
   padding: 5rem;
+}
+
+.px-\[120px\]{
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.py-7{
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+}
+
+.py-\[50px\]{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.pl-4{
+  padding-left: 1rem;
+}
+
+.pt-5{
+  padding-top: 1.25rem;
 }
 
 .text-left{
@@ -58936,8 +59072,34 @@ video {
   text-align: justify;
 }
 
+.align-middle{
+  vertical-align: middle;
+}
+
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .text-\[18px\]{
   font-size: 18px;
+}
+
+.text-\[40px\]{
+  font-size: 40px;
+}
+
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.font-\[900\]{
+  font-weight: 900;
+}
+
+.font-bold{
+  font-weight: 700;
 }
 
 .uppercase{
@@ -58954,6 +59116,19 @@ video {
 
 .italic{
   font-style: italic;
+}
+
+.leading-\[22px\]{
+  line-height: 22px;
+}
+
+.leading-\[44px\]{
+  line-height: 44px;
+}
+
+.text-\[\#555555\]{
+  --tw-text-opacity: 1;
+  color: rgb(85 85 85 / var(--tw-text-opacity));
 }
 
 .text-\[\#e82046\]{
@@ -59627,9 +59802,6 @@ input::-webkit-input-placeholder {
 .header__nav__upper, .header__nav__lower {
   padding: 0;
   margin: 0;
-  width: 1280px;
-  max-width: 1280px;
-  padding: 32px 48px 0px 48px;
   display: flex;
   flex-direction: row;
   transition-duration: 200ms;
@@ -59638,11 +59810,9 @@ input::-webkit-input-placeholder {
   align-items: flex-start;
   justify-content: space-between;
   height: 9.6rem;
-  margin: 0px 120px 0px 120px;
 }
 
 .header__nav__lower {
-  padding: 0px 48px 0px 48px;
   display: flex;
   flex-direction: column;
   transition-duration: 200ms;
@@ -59709,9 +59879,6 @@ input::-webkit-input-placeholder {
 .header__nav__upper, .header__nav__lower {
   padding: 0;
   margin: 0;
-  width: 1280px;
-  max-width: 1280px;
-  padding: 32px 48px 0px 48px;
   display: flex;
   flex-direction: row;
   transition-duration: 200ms;
@@ -59720,11 +59887,9 @@ input::-webkit-input-placeholder {
   align-items: flex-start;
   justify-content: space-between;
   height: 9.6rem;
-  margin: 0px 120px 0px 120px;
 }
 
 .header__nav__lower {
-  padding: 0px 48px 0px 48px;
   display: flex;
   flex-direction: column;
   transition-duration: 200ms;
@@ -59819,26 +59984,6 @@ header nav .header__wording--visit {
   padding: 0;
   vertical-align: top;
   -webkit-text-size-adjust: none;
-  display: none;
-}
-
-header nav .header__wording--visit--full {
-  -webkit-font-smoothing: antialiased;
-  font-kerning: normal;
-  text-rendering: optimizeLegibility;
-  list-style: none;
-  color: inherit;
-  -webkit-tap-highlight-color: rgba(0,0,0,0.07);
-  cursor: pointer;
-  letter-spacing: -0.02em;
-  box-sizing: border-box;
-  border: 0;
-  font: inherit;
-  margin: 0;
-  padding: 0;
-  vertical-align: top;
-  -webkit-text-size-adjust: none;
-  display: block;
 }
 
 .header__primary-nav__item:first-of-type {
@@ -59847,8 +59992,19 @@ header nav .header__wording--visit--full {
 
 @media screen and  (min-width: 1280px) {
   .header__primary-nav__item {
-    margin-left: 1.3rem;
+    /*        margin-left: 1.3rem;*/
   }
+}
+
+.active-nav-border {
+  margin-bottom: -1rem;
+  padding-bottom: 1rem;
+  background-size: calc(100% - 0.2rem) 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-clip: padding-box;
+  background-image: linear-gradient(to top, transparent, transparent 0, #000 0, #000 0.3rem, transparent 0.3rem);
+  background-repeat: repeat-x;
 }
 
 .header__nav__upper__n, a {
@@ -59857,6 +60013,26 @@ header nav .header__wording--visit--full {
   stroke: var(--color--session);
   font-size: 18px;
   font-weight: bolder;
+}
+
+.overlay {
+  min-height: calc(1 * var(--visible-height) - 16rem);
+  transition-duration: 200ms;
+  transition-property: min-height,opacity,visibility;
+  transition-timing-function: linear;
+  height: calc(100% + 9.6rem);
+  opacity: 1;
+  visibility: visible;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+.header_inner_overlay_contents {
+  position: relative;
+  top: 80px;
+  height: 100vh;
 }
 
 header nav {
@@ -59878,9 +60054,32 @@ header nav {
   }
 }
 
+.header__overlay__upper {
+  position: relative;
+  display: block;
+  height: 100%;
+  padding-top: 80px;
+  padding-bottom: 150px;
+}
+
+.header__overlay__upper .section_inner {
+  display: block;
+  height: 100%;
+  overflow: hidden;
+}
+
+.fixed_overlay_header_section {
+  height: 90vh;
+  overflow-y: auto;
+  position: fixed;
+  width: 30%;
+  right: 50px;
+  padding-bottom: 50px;
+}
+
 @media screen and (min-width: 768px) and (orientation: landscape) {
   .header__nav__upper {
-    height: 6.6rem;
+    height: 6rem;
   }
 }
 

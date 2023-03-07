@@ -13,7 +13,7 @@
 <body>
 
     <header class="relative p-0 m-0 ">
-        <nav class="header__nav" style="z-index: 4;" data-scrollbar-offset="" role="navigation" style="padding-right: 17px;">
+        <nav class="header__nav container-fluid pt-5" style="z-index: 4;" data-scrollbar-offset="" role="navigation" style="padding-right: 17px;">
             <div class="header__nav__upper" data-header-close="" style="">
                 <h1 class="header__logo" data-header-logo="true" aria-hidden="true">
                     <a class="header__logo__link" data-skip-tab-focus="true" aria-label="MoMA" href="/" data-gtm="nav / Logo" style="">
@@ -26,37 +26,40 @@
                     </a>
                 </h1>
 
-                <div class="flex gap-2 header__nav__upper__n gap-9 relative" style="top: -10px;">
+                <div class="flex gap-2 header__nav__upper__n gap-9 relative">
                     <a href="" class="text-[18px] text-[#e82046]">Membership</a>
                     <a href="" class="text-[18px] text-[#e82046]">Reserve timed ticket</a>
                 </div>
             </div>
             <div class="header__nav__lower" style="">
-                <ul class="header__primary-nav">
-                    <li class="header__primary-nav__item" data-header-primary-nav-item="visit">
-                        <a class="header__primary-nav__item__link" aria-controls="visit-nav" aria-expanded="false" data-gtm="nav / Plan your visit" href="#" data-skip-tab-focus="false">
-                            <span class="header__primary-nav__item__link__text">
-                                <span class="header__wording--visit">Visit</span>
-                                <span class="header__wording--visit--full">Plan your visit</span>
+                <ul class="header__primary-nav gap-10">
+                    <li class="header__primary-nav__item" data-header-primary-nav-item="story">
+                        <a class="header__primary-nav__item__link" aria-controls="story-nav" aria-expanded="false" data-gtm="story" href="#" data-skip-tab-focus="false">
+                            <span class="header__primary-nav__item__link__text nav-toggle">
+                                <span class="header__wording--visit ">Story</span>
                             </span>
                         </a>
                     </li>
-                    <li class="header__primary-nav__item" data-header-primary-nav-item="exhibitions">
-                        <a class="header__primary-nav__item__link" aria-controls="exhibitions-nav" aria-expanded="false" href="#" data-gtm="nav / Exhibitions and events" data-skip-tab-focus="false">
-                            <span class="header__primary-nav__item__link__text">What’s on</span>
+                    <li class="header__primary-nav__item" data-header-primary-nav-item="journey">
+                        <a class="header__primary-nav__item__link" aria-controls="journey-nav" aria-expanded="false" href="#" data-gtm="journey" data-skip-tab-focus="false">
+                            <span class="header__primary-nav__item__link__text">Journey</span>
                         </a>
                     </li>
-                    <li class="header__primary-nav__item header__primary-nav__item--selected" data-header-primary-nav-item="art">
-                        <a class="header__primary-nav__item__link" aria-controls="art-nav" aria-expanded="true" href="#" data-gtm="nav / Art and artists" data-skip-tab-focus="false">
-                            <span class="header__primary-nav__item__link__text">
-                                <span class="header__wording--art block md:hidden">Art</span>
-                                <span class="header__wording--art--full hidden md:block">Art and artists</span>
+                    <li class="header__primary-nav__item header__primary-nav__item--selected" data-header-primary-nav-item="mission">
+                        <a class="header__primary-nav__item__link" aria-controls="mission-nav" aria-expanded="true" href="#" data-gtm="mission" data-skip-tab-focus="false">
+                            <span class="header__primary-nav__item__link__text nav-toggle">
+                                <span class="header__wording--art">Mission </span>
                             </span>
                         </a>
                     </li>
-                    <li class="header__primary-nav__item" data-header-primary-nav-item="store" data-nav-override="true">
-                        <a class="header__primary-nav__item__link" aria-controls="store-nav" aria-expanded="false" href="https://store.moma.org/?utm_source=moma.org" data-gtm="nav / Store" data-skip-tab-focus="false">
-                            <span class="header__primary-nav__item__link__text">Store</span>
+                    <li class="header__primary-nav__item" data-header-primary-nav-item="socials" data-nav-override="true">
+                        <a class="header__primary-nav__item__link" aria-controls="socials-nav" aria-expanded="false" href="https://store.moma.org/?utm_source=moma.org" data-gtm="socials" data-skip-tab-focus="false">
+                            <span class="header__primary-nav__item__link__text">Socials </span>
+                        </a>
+                    </li>
+                    <li class="header__primary-nav__item" data-header-primary-nav-item="lets-connect" data-nav-override="true">
+                        <a class="header__primary-nav__item__link" aria-controls="lets-connect-nav" aria-expanded="false" href="https://store.moma.org/?utm_source=moma.org" data-gtm="lets-connect" data-skip-tab-focus="false">
+                            <span class="header__primary-nav__item__link__text">Lets Connect </span>
                         </a>
                     </li>
                     <li class="header__primary-nav__item" data-header-primary-nav-item="search">
@@ -75,16 +78,132 @@
         <div class="header__nav-spacer"></div>
         <div class="header__optional" data-scrollbar-offset="" style="padding-right: 17px;">
         </div>
+
+        <div class="overlay h-screen bg-white w-full fixed hidden overflow-y-auto -z-10">
+            <div class="header_inner_overlay_contents  grid grid-cols-6 ">
+                <div class="header__overlay__upper px-[120px] col-span-4 py-[50px]">
+                    
+                    <div class="hidden story-nav ">
+                        <ul id="visit-nav" class="flex flex-col gap-8" data-header-secondary-nav="visit" aria-hidden="false">
+                          <li class="" data-header-secondary-nav-item="tickets">
+                            <a class="" href="/tickets/select" aria-label="MoMA timed tickets" data-gtm="nav / Plan your visit / Buy tickets / MoMA">
+                              <span class=" leading-[44px] text-[40px] font-[900]">Onitiri </span>
+                            </a>
+                          </li>
+                          <li class="" data-header-secondary-nav-item="tickets">
+                            <a class="" href="/tickets/select" aria-label="MoMA timed tickets" data-gtm="nav / Plan your visit / Buy tickets / MoMA">
+                              <span class=" leading-[44px] text-[40px] font-[900]">Coker family of Lagos</span>
+                            </a>
+                          </li>
+                          <li >
+                            <a class="close__overlay__popup" href="#" aria-label="close navigation" data-header-close-link="true" data-gtm="nav / overlay / close" style="fill: black; color: black;visibility: visible; height: 60px; display: block; width: 30px;">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="header__secondary-nav__item__link__svg--close" viewBox="0 0 24 24"> <path d="M1.5 22.5l21-21m-21 0l21 21" fill="none" vector-effect="non-scaling-stroke" style="    fill: black; stroke: black; color: black; display: block; opacity: 1; stroke-width: 5px; visibility: visible;"></path></svg>
+                            </a>
+                          </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="hidden mission-nav ">
+                        <ul id="visit-nav" class="flex flex-col gap-8" data-header-secondary-nav="visit" aria-hidden="false">
+                          <li class="" data-header-secondary-nav-item="tickets">
+                            <a class="" href="/tickets/select" aria-label="MoMA timed tickets" data-gtm="nav / Plan your visit / Buy tickets / MoMA">
+                              <span class=" leading-[44px] text-[40px] font-[900]">Sickle Cell </span>
+                            </a>
+                          </li>
+                          <li class="" data-header-secondary-nav-item="tickets">
+                            <a class="" href="/tickets/select" aria-label="MoMA timed tickets" data-gtm="nav / Plan your visit / Buy tickets / MoMA">
+                              <span class=" leading-[44px] text-[40px] font-[900]">The Elderly, Trees</span>
+                            </a>
+                          </li>
+                          <li >
+                            <a class="close__overlay__popup" href="#" aria-label="close navigation" data-header-close-link="true" data-gtm="nav / overlay / close" style="fill: black; color: black;visibility: visible; height: 60px; display: block; width: 30px;">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="header__secondary-nav__item__link__svg--close" viewBox="0 0 24 24"> <path d="M1.5 22.5l21-21m-21 0l21 21" fill="none" vector-effect="non-scaling-stroke" style="    fill: black; stroke: black; color: black; display: block; opacity: 1; stroke-width: 5px; visibility: visible;"></path></svg>
+                            </a>
+                          </li>
+
+                        </ul>
+                    </div>
+
+                     <div class="hidden socials-nav ">
+                        <ul id="visit-nav" class="flex flex-col gap-8" data-header-secondary-nav="visit" aria-hidden="false">
+                           <li class="" data-header-secondary-nav-item="instagram">
+                            <a class="" href="/socials/instagram" aria-label="Visit Our Instagram Page" data-gtm="Visit Our Instagram Page">
+                              <span class=" leading-[44px] text-[40px] font-[900]">Instagram</span>
+                            </a>
+                          </li>
+                          <li class="" data-header-secondary-nav-item="twitter">
+                            <a class="" href="/socials/twitter" aria-label="Visit Our Twitter Page" data-gtm="Visit Our Twitter Page">
+                              <span class=" leading-[44px] text-[40px] font-[900]">Twitter</span>
+                            </a>
+                          </li>
+
+                           <li class="" data-header-secondary-nav-item="linkedIn">
+                            <a class="" href="/socials/linkedIn" aria-label="isit Our LinkedIn Page" data-gtm="Visit Our LinkedIn Page">
+                              <span class=" leading-[44px] text-[40px] font-[900]">LinkedIn</span>
+                            </a>
+                          </li>
+
+                           <li class="" data-header-secondary-nav-item="youtube">
+                            <a class="" href="/socials/youtube" aria-label="Visit Our YouTube Channel" data-gtm="Visit Our YouTube Channel">
+                              <span class=" leading-[44px] text-[40px] font-[900]">YouTube</span>
+                            </a>
+                          </li>
+                          <li >
+                            <a class="close__overlay__popup" href="#" aria-label="close navigation" data-header-close-link="true" data-gtm="nav / overlay / close" style="fill: black; color: black;visibility: visible; height: 60px; display: block; width: 30px;">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="header__secondary-nav__item__link__svg--close" viewBox="0 0 24 24"> <path d="M1.5 22.5l21-21m-21 0l21 21" fill="none" vector-effect="non-scaling-stroke" style="    fill: black; stroke: black; color: black; display: block; opacity: 1; stroke-width: 5px; visibility: visible;"></path></svg>
+                            </a>
+                          </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-span-2 fixed_overlay_header_section">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </div>
+
+            </div>
+        </div>
         
     </header>
 
-    <main class="bg-blue-700 mt-[150px] p-20 block relative overflow-hidden "> Lorem ipsum dolor sit amet,
-    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-    dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+    <main class=" mt-[150px] py-10  block relative overflow-hidden "> 
+        <section class="bg-gray-200 py-7 gap-3 font-[900] leading-[22px] w-full text-[#555555]">
+
+            <div class="flex container-fluid align-middle">
+                
+                <div class="w-max">
+                    <a href="" class="font-[900] text-2xl">Masks are strongly recommended, but not required, for all visitors.</a>
+                </div>
+
+                <div class="w-max float-right ml-5 pl-4">
+                    <a href="" class="flex items-center">
+                        <span class="font-[900] text-xl">See Our Tips for visiting</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="typography/icon:after fill-black stroke-black w-[25px] h-[25px]" viewBox="0 0 16 16"> <path d="M2.5 8H13" fill="none" vector-effect="non-scaling-stroke"></path> <path d="M8 3l5 5-5 5" fill="none" vector-effect="non-scaling-stroke"></path></svg>   
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid">
+            
+            <div class="bg-blue-900">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+        </section>
+
     </main>
 
     <footer class="footer-wrapper">
@@ -302,5 +421,7 @@
             </div>
         </div>
     </footer>
+
+    <script type="text/javascript" src="./assets/js/main.js"></script>
 </body>
 </html>
