@@ -632,13 +632,14 @@ header nav .header__wording--visit {
 
 .active-nav-border {
     margin-bottom: -1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
     background-size: calc(100% - 0.2rem) 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-clip: padding-box;
-    background-image: linear-gradient(to top, transparent, transparent 0, #000 0, #000 0.3rem, transparent 0.3rem);
+    background-image: linear-gradient(to top, transparent, transparent 0, #000 0, #000 0.07rem, transparent 0.3rem);
     background-repeat: repeat-x;
+    box-shadow: none;
 }
 
 

@@ -63,13 +63,17 @@
                         </a>
                     </li>
                     <li class="header__primary-nav__item" data-header-primary-nav-item="search">
-                        <a class="header__primary-nav__item__link" aria-controls="search-nav" aria-label="Search" aria-expanded="false" href="#" data-gtm="nav / Search" data-skip-tab-focus="false">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="header__primary-nav__item__link__svg block md:hidden" width="16" height="16">
-                                <path d="M9.738 12.036a6.412 6.412 0 1 1 2.298-2.298l4.113 4.113-2.298 2.298-4.113-4.113zM6.5 10.088a3.588 3.588 0 1 0 0-7.176 3.588 3.588 0 0 0 0 7.176z" stroke="none"></path>
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="header__primary-nav__item__link__svg--nonmobile hidden md:block" width="20" height="20">
-                                <path d="M11.514 14.343a7.25 7.25 0 1 1 2.828-2.828l4.822 4.82-2.828 2.83-4.822-4.822zM8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8z" stroke="none"></path>
-                            </svg>
+                        <a class="header__primary-nav__item__link " aria-controls="search-nav" aria-label="Search" aria-expanded="false" href="#" data-gtm="nav / Search" data-skip-tab-focus="false">
+
+                            <span class="nav-toggle">
+                                
+                                <svg xmlns="http://www.w3.org/2000/svg" class="header__primary-nav__item__link__svg block md:hidden" width="16" height="16">
+                                    <path d="M9.738 12.036a6.412 6.412 0 1 1 2.298-2.298l4.113 4.113-2.298 2.298-4.113-4.113zM6.5 10.088a3.588 3.588 0 1 0 0-7.176 3.588 3.588 0 0 0 0 7.176z" stroke="none"></path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="header__primary-nav__item__link__svg--nonmobile hidden md:block" width="20" height="20">
+                                    <path d="M11.514 14.343a7.25 7.25 0 1 1 2.828-2.828l4.822 4.82-2.828 2.83-4.822-4.822zM8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8z" stroke="none"></path>
+                                </svg>
+                            </span>
                         </a>
                     </li>
                 </ul>
@@ -83,7 +87,7 @@
             <div class="header_inner_overlay_contents  grid grid-cols-6 ">
                 <div class="header__overlay__upper px-[120px] col-span-4 py-[50px]">
                     
-                    <div class="hidden story-nav ">
+                    <div data-nav-popup class="hidden story-nav ">
                         <ul id="visit-nav" class="flex flex-col gap-8" data-header-secondary-nav="visit" aria-hidden="false">
                           <li class="" data-header-secondary-nav-item="tickets">
                             <a class="" href="/tickets/select" aria-label="MoMA timed tickets" data-gtm="nav / Plan your visit / Buy tickets / MoMA">
@@ -104,7 +108,7 @@
                         </ul>
                     </div>
 
-                    <div class="hidden mission-nav ">
+                    <div data-nav-popup class="hidden mission-nav ">
                         <ul id="visit-nav" class="flex flex-col gap-8" data-header-secondary-nav="visit" aria-hidden="false">
                           <li class="" data-header-secondary-nav-item="tickets">
                             <a class="" href="/tickets/select" aria-label="MoMA timed tickets" data-gtm="nav / Plan your visit / Buy tickets / MoMA">
@@ -125,7 +129,7 @@
                         </ul>
                     </div>
 
-                     <div class="hidden socials-nav ">
+                     <div data-nav-popup class="hidden socials-nav ">
                         <ul id="visit-nav" class="flex flex-col gap-8" data-header-secondary-nav="visit" aria-hidden="false">
                            <li class="" data-header-secondary-nav-item="instagram">
                             <a class="" href="/socials/instagram" aria-label="Visit Our Instagram Page" data-gtm="Visit Our Instagram Page">
@@ -157,15 +161,52 @@
 
                         </ul>
                     </div>
+
+                    <div  data-nav-popup class="hidden search-nav">
+                        <form action="./" method="GET">
+                            <input type="search" name="search" class="text-[#e82046] text-[40px] font-[900] placeholder:text-gray-400 outline-none leading-[52px] mb-10 tracking-[1.1px] focus:outline-none border-none w-full" placeholder="Search moma.org">
+                        </form>
+
+                        <ul class="flex flex-col gap-">
+                            <li >
+                                <a class="close__overlay__popup" href="#" aria-label="close navigation" data-header-close-link="true" data-gtm="nav / overlay / close" style="fill: black; color: black;visibility: visible; height: 60px; display: block; width: 30px;">
+                                  <svg xmlns="http://www.w3.org/2000/svg" class="header__secondary-nav__item__link__svg--close" viewBox="0 0 24 24"> <path d="M1.5 22.5l21-21m-21 0l21 21" fill="none" vector-effect="non-scaling-stroke" style="    fill: black; stroke: black; color: black; display: block; opacity: 1; stroke-width: 5px; visibility: visible;"></path></svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div class="col-span-2 fixed_overlay_header_section">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <ul class=" flex flex-col gap-3">
+                        <li>
+                          <a  href="/about" data-gtm="nav / overlay / About us" data-skip-tab-focus="false">
+                            <span class=" leading-[44px] text-[25px] font-[900]" style="">About us</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a  href="/support" data-gtm="nav / overlay / Support" data-skip-tab-focus="false">
+                            <span class=" leading-[44px] text-[25px] font-[900]">Support</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a  href="/research-and-learning" data-gtm="nav / overlay / Research and learning" data-skip-tab-focus="false">
+                            <span class=" leading-[44px] text-[25px] font-[900]">Research and learning</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a  href="/magazine/" data-gtm="nav / overlay / Magazine" data-skip-tab-focus="false">
+                            <span class=" leading-[44px] text-[25px] font-[900]">Magazine</span>
+                          </a>
+                        </li>
+
+                        <li>    
+                            <a href="" class="text-[25px] font-[900] text-[#e82046]">MoMa Timed Tickets</a>
+                        </li>
+                        <li>
+                            <a href="" class="text-[25px] font-[900] text-[#e82046]">Become a member</a>
+                        </li>
+                      </ul>
                 </div>
 
             </div>

@@ -1,5 +1,9 @@
 $(document).ready(function () {
     $(".nav-toggle").click(function () {
+
+        $('.nav-toggle').removeClass('active-nav-border');
+
+        $("[data-nav-popup]").fadeOut();
         $(".overlay").fadeIn('fast');
         $('.header_inner_overlay_contents').show();
 
@@ -32,6 +36,9 @@ $(document).ready(function () {
         $(".header__nav__upper").slideDown(function () {
             $(this).fadeIn();
         });
+
+        $('.nav-toggle').removeClass('active-nav-border');
+
     }
 
    
