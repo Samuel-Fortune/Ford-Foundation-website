@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Social Page</title>
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+
+    <header class="relative p-0 m-0 ">
+        <nav class="header__nav container-fluid pt-5" style="z-index: 4;" data-scrollbar-offset="" role="navigation" style="padding-right: 17px;">
+            <div class="header__nav__upper" data-header-close="" style="">
+                <h1 class="header__logo" data-header-logo="true" aria-hidden="true">
+                    <a class="header__logo__link" data-skip-tab-focus="true" aria-label="MoMA" href="/" data-gtm="nav / Logo" style="">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="header__logo__link__svg block md:hidden" width="113" height="29">
+                            <path d="M22.003 28.004H29V0H18.647l-4.202 18.31L10.298 0H0v28.004h6V6.567l5.116 21.437h5.704L22.003 6.63v21.374zm55 0H84V0H73.647l-4.202 18.31L65.298 0H55v28.004h6V6.567l5.116 21.437h5.704L77.003 6.63v21.374zM38.49 17.656v.956c0 3.634 1.5 5.12 3.47 5.12 2.034 0 3.535-1.486 3.535-5.12v-.956c0-3.698-1.5-5.117-3.535-5.117-1.97 0-3.47 1.41-3.47 5.11zm-6.814.252c0-6.457 4.99-10.003 10.284-10.003 5.363 0 10.35 3.546 10.35 10.003v.42c0 6.597-4.987 10.072-10.35 10.072-5.294 0-10.284-3.475-10.284-10.072v-.42zM94.49 23l-1.586 5.004H86.35L95.427 0h8.71l8.567 28.004h-6.932L104.26 23h-9.77zm5.012-16.716l-3.41 11.72h6.66l-3.25-11.72z" stroke="none"></path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="header__logo__link__svg--nonmobile hidden md:block" width="209" height="53" style="">
+                            <path d="M41.998 51.996V13.332l-9.62 38.664H21.495l-9.498-38.78v38.78H0V0h19.635l7.904 32.877L35.54 0h19.453v51.996h-13zm101 0h13V0h-19.454l-8.005 32.877L120.63 0H101v51.996h11.997v-38.78l9.498 38.78h10.883l9.62-38.664v38.664zm-71.244-18.77v1.736c0 6.595 2.62 9.294 6.193 9.294 3.7 0 6.317-2.7 6.317-9.294v-1.736c0-6.712-2.618-9.29-6.317-9.29-3.572 0-6.193 2.578-6.193 9.29zm-12.315.455c0-11.72 8.73-18.15 18.33-18.15 9.737 0 18.792 6.438 18.792 18.16v.764c0 11.978-9.056 18.285-18.793 18.285-9.608 0-18.34-6.308-18.34-18.286v-.766zM193.32 43H175l-2.85 8.996h-12.248L176.752 0h16.258l15.905 51.996h-12.87L193.325 43zm-8.82-30.415l-6.21 20.42h12.135l-5.927-20.42z" stroke="none" style=""></path>
+                        </svg>
+                    </a>
+                </h1>
+
+                <div class="flex gap-2 header__nav__upper__n gap-9 relative">
+                    <a href="" class="text-[18px] text-[#e82046]">Membership</a>
+                    <a href="" class="text-[18px] text-[#e82046]">Reserve timed ticket</a>
+                </div>
+            </div>
+            <div class="header__nav__lower" style="">
+                <ul class="header__primary-nav gap-10">
+                    <li class="header__primary-nav__item" data-header-primary-nav-item="story">
+                        <a class="header__primary-nav__item__link" aria-controls="story-nav" aria-expanded="false" data-gtm="story" href="#" data-skip-tab-focus="false">
+                            <span class="header__primary-nav__item__link__text nav-toggle">
+                                <span class="header__wording--visit ">Story</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="header__primary-nav__item" data-header-primary-nav-item="journey">
+                        <a class="header__primary-nav__item__link" aria-controls="journey-nav" aria-expanded="false" href="#" data-gtm="journey" data-skip-tab-focus="false">
+                            <span class="header__primary-nav__item__link__text">Journey</span>
+                        </a>
+                    </li>
+                    <li class="header__primary-nav__item header__primary-nav__item--selected" data-header-primary-nav-item="mission">
+                        <a class="header__primary-nav__item__link" aria-controls="mission-nav" aria-expanded="true" href="#" data-gtm="mission" data-skip-tab-focus="false">
+                            <span class="header__primary-nav__item__link__text nav-toggle">
+                                <span class="header__wording--art">Mission </span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="header__primary-nav__item" data-header-primary-nav-item="socials" data-nav-override="true">
+                        <a class="header__primary-nav__item__link" aria-controls="socials-nav" aria-expanded="false" href="https://store.moma.org/?utm_source=moma.org" data-gtm="socials" data-skip-tab-focus="false">
+                            <span class="header__primary-nav__item__link__text">Socials </span>
+                        </a>
+                    </li>
+                    <li class="header__primary-nav__item" data-header-primary-nav-item="lets-connect" data-nav-override="true">
+                        <a class="header__primary-nav__item__link" aria-controls="lets-connect-nav" aria-expanded="false" href="https://store.moma.org/?utm_source=moma.org" data-gtm="lets-connect" data-skip-tab-focus="false">
+                            <span class="header__primary-nav__item__link__text">Lets Connect </span>
+                        </a>
+                    </li>
+                    <li class="header__primary-nav__item" data-header-primary-nav-item="search">
+                        <a class="header__primary-nav__item__link " aria-controls="search-nav" aria-label="Search" aria-expanded="false" href="#" data-gtm="nav / Search" data-skip-tab-focus="false">
+
+                            <span class="nav-toggle">
+                                
+                                <svg xmlns="http://www.w3.org/2000/svg" class="header__primary-nav__item__link__svg block md:hidden" width="16" height="16">
+                                    <path d="M9.738 12.036a6.412 6.412 0 1 1 2.298-2.298l4.113 4.113-2.298 2.298-4.113-4.113zM6.5 10.088a3.588 3.588 0 1 0 0-7.176 3.588 3.588 0 0 0 0 7.176z" stroke="none"></path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="header__primary-nav__item__link__svg--nonmobile hidden md:block" width="20" height="20">
+                                    <path d="M11.514 14.343a7.25 7.25 0 1 1 2.828-2.828l4.822 4.82-2.828 2.83-4.822-4.822zM8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8z" stroke="none"></path>
+                                </svg>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="header__nav-spacer"></div>
+        <div class="header__optional" data-scrollbar-offset="" style="padding-right: 17px;">
+        </div>
+
+        <div class="overlay h-screen bg-white w-full fixed hidden overflow-y-auto -z-10">
+            <div class="header_inner_overlay_contents  grid grid-cols-1 sm:grid-cols-6 ">
+                <div class="header__overlay__upper px-[120px] sm:col-span-4 py-[50px]">
+                    
+                    <div data-nav-popup class="hidden story-nav ">
+                        <ul id="visit-nav" class="flex flex-col gap-8" data-header-secondary-nav="visit" aria-hidden="false">
+                          <li class="" data-header-secondary-nav-item="tickets">
+                            <a class="" href="/tickets/select" aria-label="MoMA timed tickets" data-gtm="nav / Plan your visit / Buy tickets / MoMA">
+                              <span class=" leading-[44px] text-[40px] font-[900]">Onitiri </span>
+                            </a>
+                          </li>
+                          <li class="" data-header-secondary-nav-item="tickets">
+                            <a class="" href="/tickets/select" aria-label="MoMA timed tickets" data-gtm="nav / Plan your visit / Buy tickets / MoMA">
+                              <span class=" leading-[44px] text-[40px] font-[900]">Coker family of Lagos</span>
+                            </a>
+                          </li>
+                          <li >
+                            <a class="close__overlay__popup" href="#" aria-label="close navigation" data-header-close-link="true" data-gtm="nav / overlay / close" style="fill: black; color: black;visibility: visible; height: 60px; display: block; width: 30px;">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="header__secondary-nav__item__link__svg--close" viewBox="0 0 24 24"> <path d="M1.5 22.5l21-21m-21 0l21 21" fill="none" vector-effect="non-scaling-stroke" style="    fill: black; stroke: black; color: black; display: block; opacity: 1; stroke-width: 5px; visibility: visible;"></path></svg>
+                            </a>
+                          </li>
+
+                        </ul>
+                    </div>
+
+                    <div data-nav-popup class="hidden mission-nav ">
+                        <ul id="visit-nav" class="flex flex-col gap-8" data-header-secondary-nav="visit" aria-hidden="false">
+                          <li class="" data-header-secondary-nav-item="tickets">
+                            <a class="" href="/tickets/select" aria-label="MoMA timed tickets" data-gtm="nav / Plan your visit / Buy tickets / MoMA">
+                              <span class=" leading-[44px] text-[40px] font-[900]">Sickle Cell </span>
+                            </a>
+                          </li>
+                          <li class="" data-header-secondary-nav-item="tickets">
+                            <a class="" href="/tickets/select" aria-label="MoMA timed tickets" data-gtm="nav / Plan your visit / Buy tickets / MoMA">
+                              <span class=" leading-[44px] text-[40px] font-[900]">The Elderly, Trees</span>
+                            </a>
+                          </li>
+                          <li >
+                            <a class="close__overlay__popup" href="#" aria-label="close navigation" data-header-close-link="true" data-gtm="nav / overlay / close" style="fill: black; color: black;visibility: visible; height: 60px; display: block; width: 30px;">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="header__secondary-nav__item__link__svg--close" viewBox="0 0 24 24"> <path d="M1.5 22.5l21-21m-21 0l21 21" fill="none" vector-effect="non-scaling-stroke" style="    fill: black; stroke: black; color: black; display: block; opacity: 1; stroke-width: 5px; visibility: visible;"></path></svg>
+                            </a>
+                          </li>
+
+                        </ul>
+                    </div>
+
+                     <div data-nav-popup class="hidden socials-nav ">
+                        <ul id="visit-nav" class="flex flex-col gap-8" data-header-secondary-nav="visit" aria-hidden="false">
+                           <li class="" data-header-secondary-nav-item="instagram">
+                            <a class="" href="/socials/instagram" aria-label="Visit Our Instagram Page" data-gtm="Visit Our Instagram Page">
+                              <span class=" leading-[44px] text-[40px] font-[900]">Instagram</span>
+                            </a>
+                          </li>
+                          <li class="" data-header-secondary-nav-item="twitter">
+                            <a class="" href="/socials/twitter" aria-label="Visit Our Twitter Page" data-gtm="Visit Our Twitter Page">
+                              <span class=" leading-[44px] text-[40px] font-[900]">Twitter</span>
+                            </a>
+                          </li>
+
+                           <li class="" data-header-secondary-nav-item="linkedIn">
+                            <a class="" href="/socials/linkedIn" aria-label="isit Our LinkedIn Page" data-gtm="Visit Our LinkedIn Page">
+                              <span class=" leading-[44px] text-[40px] font-[900]">LinkedIn</span>
+                            </a>
+                          </li>
+
+                           <li class="" data-header-secondary-nav-item="youtube">
+                            <a class="" href="/socials/youtube" aria-label="Visit Our YouTube Channel" data-gtm="Visit Our YouTube Channel">
+                              <span class=" leading-[44px] text-[40px] font-[900]">YouTube</span>
+                            </a>
+                          </li>
+                          <li >
+                            <a class="close__overlay__popup" href="#" aria-label="close navigation" data-header-close-link="true" data-gtm="nav / overlay / close" style="fill: black; color: black;visibility: visible; height: 60px; display: block; width: 30px;">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="header__secondary-nav__item__link__svg--close" viewBox="0 0 24 24"> <path d="M1.5 22.5l21-21m-21 0l21 21" fill="none" vector-effect="non-scaling-stroke" style="    fill: black; stroke: black; color: black; display: block; opacity: 1; stroke-width: 5px; visibility: visible;"></path></svg>
+                            </a>
+                          </li>
+
+                        </ul>
+                    </div>
+
+                    <div  data-nav-popup class="hidden search-nav">
+                        <form action="./" method="GET">
+                            <input type="search" name="search" class="text-[#e82046] text-[40px] font-[900] placeholder:text-gray-400 outline-none leading-[52px] mb-10 tracking-[1.1px] focus:outline-none border-none w-full" placeholder="Search moma.org">
+                        </form>
+
+                        <ul class="flex flex-col gap-">
+                            <li >
+                                <a class="close__overlay__popup" href="#" aria-label="close navigation" data-header-close-link="true" data-gtm="nav / overlay / close" style="fill: black; color: black;visibility: visible; height: 60px; display: block; width: 30px;">
+                                  <svg xmlns="http://www.w3.org/2000/svg" class="header__secondary-nav__item__link__svg--close" viewBox="0 0 24 24"> <path d="M1.5 22.5l21-21m-21 0l21 21" fill="none" vector-effect="non-scaling-stroke" style="    fill: black; stroke: black; color: black; display: block; opacity: 1; stroke-width: 5px; visibility: visible;"></path></svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="sm:col-span-2 fixed_overlay_header_section">
+                    <ul class=" flex flex-col gap-3">
+                        <li>
+                          <a  href="/about" data-gtm="nav / overlay / About us" data-skip-tab-focus="false">
+                            <span class=" leading-[44px] text-[25px] font-[900]" style="">About us</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a  href="/support" data-gtm="nav / overlay / Support" data-skip-tab-focus="false">
+                            <span class=" leading-[44px] text-[25px] font-[900]">Support</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a  href="/research-and-learning" data-gtm="nav / overlay / Research and learning" data-skip-tab-focus="false">
+                            <span class=" leading-[44px] text-[25px] font-[900]">Research and learning</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a  href="/magazine/" data-gtm="nav / overlay / Magazine" data-skip-tab-focus="false">
+                            <span class=" leading-[44px] text-[25px] font-[900]">Magazine</span>
+                          </a>
+                        </li>
+
+                        <li>    
+                            <a href="" class="text-[25px] font-[900] text-[#e82046]">MoMa Timed Tickets</a>
+                        </li>
+                        <li>
+                            <a href="" class="text-[25px] font-[900] text-[#e82046]">Become a member</a>
+                        </li>
+                      </ul>
+                </div>
+
+            </div>
+        </div>
+        
+    </header>
+
+
+    <main class=" mt-[150px] py-10  block relative overflow-hidden "> 
+        <section class="bg-gray-200 py-7 gap-3 font-[900] leading-[22px] w-full text-[#555555]">
+
+            <div class="flex container-fluid align-middle">
+                
+                <div class="w-max">
+                    <a href="" class="font-[900] text-2xl">Masks are strongly recommended, but not required, for all visitors.</a>
+                </div>
+
+                <div class="w-max float-right ml-5 pl-4">
+                    <a href="" class="flex items-center">
+                        <span class="font-[900] text-xl">See Our Tips for visiting</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="typography/icon:after fill-black stroke-black w-[25px] h-[25px]" viewBox="0 0 16 16"> <path d="M2.5 8H13" fill="none" vector-effect="non-scaling-stroke"></path> <path d="M8 3l5 5-5 5" fill="none" vector-effect="non-scaling-stroke"></path></svg>   
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid">
+            
+            <div class="bg-blue-900">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-3 col-md-4 col-lg-3 padding-topx3">
+                    <h2 class="h6">CONNECT</h2>
+                    <div class="footer-icons flex gap-4">
+                        <a href="https://twitter.com/FordFoundation" target="blank" title="Ford Foundation on Twitter" tabindex="0" aria-label="Click to visit Ford Foundation on Twitter"> <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+                                <title>Twitter</title>
+                                <g class="icon">
+                                    <g class="twitter">
+                                        <path d="M20,4A16,16,0,1,0,36,20,16,16,0,0,0,20,4Zm8,13c0,.16,0,.33,0,.49a10.9,10.9,0,0,1-11,11,10.75,10.75,0,0,1-5.89-1.74,6.9,6.9,0,0,0,.92.05,7.72,7.72,0,0,0,4.79-1.65,3.84,3.84,0,0,1-3.6-2.68,3.55,3.55,0,0,0,.73.08,3.73,3.73,0,0,0,1-.14,3.85,3.85,0,0,1-3.09-3.78v0a3.8,3.8,0,0,0,1.74.48A3.84,3.84,0,0,1,12,15.8a3.88,3.88,0,0,1,.52-1.94,10.92,10.92,0,0,0,8,4,3.65,3.65,0,0,1-.1-.88,3.86,3.86,0,0,1,3.85-3.86A3.8,3.8,0,0,1,27,14.38a8,8,0,0,0,2.45-.94,3.89,3.89,0,0,1-1.7,2.14A8.09,8.09,0,0,0,30,15,8.15,8.15,0,0,1,28,17Z"></path>
+                                    </g>
+                                </g>
+                                <g class="border">
+                                    <path d="M20,1.5A18.5,18.5,0,1,1,1.5,20,18.52,18.52,0,0,1,20,1.5M20,0A20,20,0,1,0,40,20,20,20,0,0,0,20,0Z"></path>
+                                </g>
+                            </svg>
+                        </a>
+                        <a href="https://www.facebook.com/FordFoundation/" target="blank" title="Ford Foundation on Facebook" tabindex="0" aria-label="Click to visit Ford Foundation on Facebook"> <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+                                <title>Facebook</title>
+                                <g class="icon">
+                                    <g class="facebook">
+                                        <path d="M20,4A16,16,0,1,0,36,20,16,16,0,0,0,20,4Zm4.6,16.7h-4V31.3h-4V20.7H13.8V16.9h2.8V13.6c0-2.6,1.7-4.9,5.5-4.9a18.76,18.76,0,0,1,2.7.2l-.1,3.6H22.3c-1.4,0-1.6.6-1.6,1.7V17h4.2Z"></path>
+                                    </g>
+                                </g>
+                                <g class="border">
+                                    <path d="M20,1.5A18.5,18.5,0,1,1,1.5,20,18.52,18.52,0,0,1,20,1.5M20,0A20,20,0,1,0,40,20,20,20,0,0,0,20,0Z"></path>
+                                </g>
+                            </svg>
+                        </a>
+                        <a href="http://www.linkedin.com/company/ford-foundation" target="blank" title="Ford Foundation on LinkedIn" tabindex="0" aria-label="Click to visit Ford Foundation on LinkedIn"> <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+                                <title>LinkedIn</title>
+                                <g class="icon linkedin">
+                                    <path d="M20,4A16,16,0,1,0,36,20,16,16,0,0,0,20,4ZM15.7,28.3H11.5V15.8h4.2ZM13.6,14a2.18,2.18,0,0,1-2.3-2.2,2.21,2.21,0,0,1,2.4-2.2A2.13,2.13,0,0,1,16,11.8,2.16,2.16,0,0,1,13.6,14ZM30.7,28.3H26.5V21.6c0-1.7-.6-2.8-2.1-2.8a2.33,2.33,0,0,0-2.1,1.5,3.08,3.08,0,0,0-.1,1v7H18s.1-11.3,0-12.5h4.2v1.8A4.09,4.09,0,0,1,26,15.5c2.7,0,4.8,1.8,4.8,5.6Z"></path>
+                                </g>
+                                <g class="border">
+                                    <path d="M20,1.5A18.5,18.5,0,1,1,1.5,20,18.52,18.52,0,0,1,20,1.5M20,0A20,20,0,1,0,40,20,20,20,0,0,0,20,0Z"></path>
+                                </g>
+                            </svg>
+                        </a>
+                        <a href="https://www.youtube.com/fordfoundation" target="blank" title="Ford Foundation on YouTube" tabindex="0" aria-label="Click to visit Ford Foundation on YouTube"> <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+                                <title>YouTube</title>
+                                <g class="icon youtube">
+                                    <path d="M17.88,17.07l5.4,2.83-5.4,2.94ZM36,20A16,16,0,1,1,20,4,16,16,0,0,1,36,20Zm-5.84-.78a30.47,30.47,0,0,0-.2-3.31,4.44,4.44,0,0,0-.81-2,2.86,2.86,0,0,0-2-.86C24.27,12.8,20,12.8,20,12.8h0s-4.27,0-7.11.21a2.86,2.86,0,0,0-2,.86,4.44,4.44,0,0,0-.81,2c-.12,1.1-.19,2.2-.2,3.31v1.55a30.65,30.65,0,0,0,.2,3.32,4.44,4.44,0,0,0,.81,2,3.44,3.44,0,0,0,2.2.95c1.63.16,6.91.21,6.91.21s4.27,0,7.11-.21a2.91,2.91,0,0,0,2-.87,4.44,4.44,0,0,0,.81-2c.12-1.1.19-2.21.2-3.32Z"></path>
+                                </g>
+                                <g class="border">
+                                    <path d="M20,1.5A18.5,18.5,0,1,1,1.5,20,18.52,18.52,0,0,1,20,1.5M20,0A20,20,0,1,0,40,20,20,20,0,0,0,20,0Z"></path>
+                                </g>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/fordfoundation/" target="blank" title="Ford Foundation on Instagram" tabindex="0" aria-label="Click to visit Ford Foundation on Instagram"> <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+                                <title>Instagram</title>
+                                <g class="icon">
+                                    <path d="M27.49,14.34a3.23,3.23,0,0,0-.72-1.1,3.06,3.06,0,0,0-1.1-.71,5.21,5.21,0,0,0-1.79-.33c-1,0-1.31-.06-3.87-.06H16.13a5.39,5.39,0,0,0-1.78.33,3.14,3.14,0,0,0-1.82,1.82,5.45,5.45,0,0,0-.33,1.79c0,1-.06,1.31-.06,3.87v3.88a5.39,5.39,0,0,0,.33,1.78,3,3,0,0,0,.72,1.11,2.9,2.9,0,0,0,1.11.71,5.15,5.15,0,0,0,1.78.33c1,0,1.32.06,3.88.06s2.86,0,3.87-.05a6.09,6.09,0,0,0,1.79-.33,3.23,3.23,0,0,0,1.1-.72,2.9,2.9,0,0,0,.71-1.11,5.39,5.39,0,0,0,.33-1.78c0-1,.06-1.32.06-3.88s0-2.86-.05-3.87A5.71,5.71,0,0,0,27.49,14.34ZM20,24.93A4.93,4.93,0,1,1,24.93,20,4.93,4.93,0,0,1,20,24.93ZM25.12,16a1.16,1.16,0,1,1,1.16-1.16h0A1.16,1.16,0,0,1,25.12,16Zm-1.91,4A3.2,3.2,0,1,1,20,16.8,3.2,3.2,0,0,1,23.21,20ZM20,4A16,16,0,1,0,36,20,16,16,0,0,0,20,4Zm9.54,20a6.88,6.88,0,0,1-.44,2.33,4.92,4.92,0,0,1-2.81,2.81,6.88,6.88,0,0,1-2.33.44c-1,.05-1.35.06-3.95.06s-2.94,0-4-.06a6.88,6.88,0,0,1-2.33-.44A4.6,4.6,0,0,1,12,28a4.77,4.77,0,0,1-1.09-1.7,7.22,7.22,0,0,1-.44-2.3c0-1-.06-1.35-.06-4,0-1.31,0-2.63.06-3.95a6.88,6.88,0,0,1,.44-2.33A4.71,4.71,0,0,1,12,12a4.9,4.9,0,0,1,1.71-1.09,7.46,7.46,0,0,1,2.34-.44c1,0,1.35-.07,4-.07,1.31,0,2.63,0,3.95.07a7.4,7.4,0,0,1,2.33.44A5.13,5.13,0,0,1,28,12a4.69,4.69,0,0,1,1.11,1.7A7.4,7.4,0,0,1,29.55,16c.05,1,.06,1.35.06,3.95S29.59,22.94,29.54,24Z"></path>
+                                </g>
+                                <g class="border">
+                                    <path d="M20,1.5A18.5,18.5,0,1,1,1.5,20,18.52,18.52,0,0,1,20,1.5M20,0A20,20,0,1,0,40,20,20,20,0,0,0,20,0Z"></path>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="visible-xs">
+                        <div class="rule margin-topx5 margin-bottomx3"></div>
+                    </div>
+                    <h2 class="h6 padding-topx3 ">CAREERS</h2>
+                    <span class="small sans careers">Learn about <a target="_self" href="/about/careers/">Careers</a>, view <a target="_self" href="https://fordfoundation.wd1.myworkdayjobs.com/FordFoundationCareerPage">Current openings</a>, and <a target="_self" href="https://fordfoundation.wd1.myworkdayjobs.com/en-US/FordFoundationCareerPage/introduceYourself">Join our talent pool</a></span>
+                    <div class="visible-xs">
+                        <div class="rule margin-topx5 margin-bottomx3"></div>
+                    </div>
+                    <h2 class="h6 padding-topx3 ">PRESS ROOM</h2>
+                    <span class="small sans careers">Visit the <a target="_self" href="/news-and-stories/news-and-press/">Press Room</a></span>
+                </div>
+                <div class="col-xs-12 visible-xs">
+                    <div class="rule margin-topx5 margin-bottomx3"></div>
+                </div>
+                <div class="col-xs-12 col-sm-9 col-md-4 col-lg-6 padding-topx3">
+                    <h2 class="h6 contact">CONTACT</h2>
+                    <div class="row" itemscope="" itemtype="http://schema.org/Organization">
+                        <meta itemprop="name" content="Ford Foundation">
+                        <div class="col-xs-7 col-md-12 col-lg-6 padding-bottom-small">
+                            <div class="office-address">
+                                <p>Ford Foundation<br>320 E 43rd St<br>New York, NY 10017<br>USA</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-5 col-md-12 col-lg-6">
+                            <p itemprop="telephone" class="hidden-xs office-telephone">Tel. (+1) 212-573-5000</p>
+                            <div>
+                                <a href="/about/the-ford-foundation-center-for-social-justice/visitor-information/" tabindex="0"><span class="directions small sans">Visitor information</span></a>
+                                <br>
+                            </div>
+                            <a href="/about/about-ford/#regional-offices" tabindex="0"><span class="small sans">Regional offices</span></a>
+                        </div>
+                        <div class="col-xs-12 visible-xs footer-number-directions" aria-hidden="true">
+                            <div class="row">
+                                <div class="col-xs-12 padding-bottomx3">
+                                    <button type="button" class="btn btn-primary" tabindex="-1">(+1) 212-573-5000</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 padding-bottomx2">
+                            <div class="visible-xs rule margin-topx3 margin-bottomx3"></div>
+                            <h2 class="h6 padding-topx2">Event spaces</h2>
+                            <span class="small sans grey-light"><a href="https://www.fordfoundation.org/about/the-ford-foundation-center-for-social-justice/event-spaces/">Learn how to book an event space</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-9 col-sm-offset-3 col-xs-12 visible-xs clearfix">
+                    <div class="rule margin-topx3 margin-bottomx3"></div>
+                </div>
+                <div class="col-xs-12 col-sm-9 col-sm-offset-3 col-md-4 col-md-offset-0 col-lg-3 padding-topx3 email-update">
+                    <form action="/umbraco/Surface/Email/Signup" class="form-group animated-label-form" method="post" novalidate="novalidate">
+                        <div class="rte email-signup-header">
+                            <h2 class="h6">SIGN UP FOR EMAIL UPDATES</h2>
+                        </div>
+                        <input data-val="true" data-val-required="The OptIn field is required." id="Footer_OptIn" name="Footer.OptIn" type="hidden" value="True"><input data-val="true" data-val-number="The field PageId must be a number." data-val-required="The PageId field is required." id="Footer_PageId" name="Footer.PageId" type="hidden" value="1332"><input id="Footer_SuccessMessageOverrideFooter" name="Footer.SuccessMessageOverride" type="hidden" value=""><input id="Footer_SubscriptionFooter" name="Footer.subscription" type="hidden" value="0d218310e6"><input id="Footer_SubscriptionFooter" name="Footer.subscription" type="hidden" value="642ef63489">
+                        <div class="signup-name-group">
+                            <div class="formpadding signup-first-name animated-label ">
+                                <input aria-label="Email signup enter first name" class="form-control empty" data-val="true" data-val-maxlength="The field First Name must be a string or array type with a maximum length of '500'." data-val-maxlength-max="500" data-val-required="First name required" id="FirstNameFooter" name="Footer.FirstName" tabindex="0" type="text" value="">
+                                <label for="FirstNameFooter">First Name</label> <span class="field-validation-valid red" data-valmsg-for="Footer.FirstName" data-valmsg-replace="true" id="FirstNameFooter-error"></span>
+                            </div>
+                            <div class="formpadding signup-last-name animated-label ">
+                                <input aria-label="Email signup enter last name" class="form-control empty" data-val="true" data-val-maxlength="The field Last Name must be a string or array type with a maximum length of '500'." data-val-maxlength-max="500" data-val-required="Last name required" id="LastNameFooter" name="Footer.LastName" tabindex="0" type="text" value="">
+                                <label for="LastNameFooter">Last Name</label>
+                                <span class="field-validation-valid red" data-valmsg-for="Footer.LastName" data-valmsg-replace="true" id="LastNameFooter-error"></span>
+                            </div>
+                        </div>
+                        <div class="formpadding signup-email animated-label ">
+                            <input aria-label="Email signup enter email" class="form-control empty" data-val="true" data-val-email="Please enter a valid email address" data-val-maxlength="The field Email must be a string or array type with a maximum length of '500'." data-val-maxlength-max="500" data-val-required="Email required" id="EmailFooter" name="Footer.Email" tabindex="0" type="text" value="">
+                            <label for="EmailFooter">Email</label> <span class="field-validation-valid red" data-valmsg-for="Footer.Email" data-valmsg-replace="true" id="EmailFooter-error"></span>
+                        </div>
+                        <div class="signup-submit-and-options">
+                            <div class="col-xs-5 no-padding">
+                                <input type="submit" class="btn btn-default short-email-submit638136128709258213 email-submit" tabindex="0" aria-label="Submit email subscription form" value="Sign up">
+                            </div>
+                            <div class="col-xs-7 ">
+                                <button type="button" class="btn btn-default btn-block email-dont-show" tabindex="0" aria-label="Do not show email popup">Don't show<span class="hidden-xxs"> this</span> again</button>
+                            </div>
+                        </div>
+                        <script>
+                        $(document).ready(function() {
+
+                            var emailSliderSelector = '.email-slider';
+                            var showingClass = 'slide-in';
+
+
+                            $('#EmailFooter, #FirstNameFooter, #LastNameFooter').on('input change', function() {
+                                var isEmpty = $(this).val() === '';
+                                $(this).toggleClass('empty', isEmpty);
+                            });
+
+                            $('#EmailFooter, #FirstNameFooter, #LastNameFooter').trigger('change');
+
+                            // Form submit
+                            $('.short-email-submit638136128709258213').click(function(e) {
+                                var $form = $(this).closest('form');
+                                if ($form.valid()) {
+
+                                    //submit
+                                    e.preventDefault();
+                                    $.ajax({
+                                        url: '/umbraco/Surface/Email/Signup',
+                                        type: 'POST',
+                                        cache: false,
+                                        data: $form.serialize(),
+                                        success: function(response, status, xhr) {
+                                            $form.parent().append(response);
+                                            $form.remove();
+                                            // Success will have a short response, failure has the full error validation messaging and form
+                                            if (response.length < 200) {
+                                                // Wait 3s and then close slider
+                                                if ($(emailSliderSelector).length) {
+                                                    setTimeout(function() {
+                                                        $(emailSliderSelector).removeClass(showingClass);
+                                                    }, 3000);
+                                                }
+                                            }
+                                        },
+                                        error: function(jqXHR, textStatus, errorThrown) {
+                                            console.log(jqXHR + " " + textStatus + " " + errorThrown);
+                                        }
+                                    });
+                                    FordFoundation.logEvent(_gaq, 'emailSignup', 'shortForm', 'TheLatest');
+                                }
+                            });
+                        });
+                        </script>
+                    </form>
+                </div>
+            </div>
+            <div class="row footer-detail">
+                <div class="col-xs-12">
+                    <div class="rule margin-topx3 margin-bottomx3"></div>
+                </div>
+                <div class="col-sm-7 col-md-6 col-lg-9">
+                    <img src="/assets/img/cc-by.svg" class="cc-by opacity-low" alt="creative commons icon">
+                    <span class="sr-only">Terms and Conditions of Use</span>
+                    <p>All our content may be republished or reused for free, except for most photographs, illustrations, and videos.</p>
+                    <ul class="list-unstyled list-inline margin-bottomx2">
+                        <li>
+                            <a href="/accessibility/" tabindex="0">Accessibility</a>
+                        </li>
+                        <li>
+                            <a href="/privacy/" tabindex="0">Privacy</a>
+                        </li>
+                        <li>
+                            <a href="/terms-and-conditions-of-use/" tabindex="0">Terms and Conditions</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-5 col-md-6 col-lg-3 text-right">
+                    <p>© 2023 Ford Foundation, some rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+</body>
+</html>
