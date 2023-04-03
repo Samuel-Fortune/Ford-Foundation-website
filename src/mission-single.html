@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mission Page</title>
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+
+    <header class="relative p-0 m-0 ">
+        <nav class="header__nav container-fluid pt-5" style="z-index: 4;" data-scrollbar-offset="" role="navigation" style="padding-right: 17px;">
+            <div class="header__nav__upper align-middle real-md:align-top" data-header-close="" >
+                <h1 class="header__logo" data-header-logo="true" aria-hidden="true">
+                    <a class="header__logo__link" data-skip-tab-focus="true" aria-label="MoMA" href="/" data-gtm="nav / Logo">
+                        <img src="./assets/img/logo.png" alt="Logo" class="h-[25px] lg:h-[30px] w-[80px] real-md:w-[100px] lg:w-[113px] object-contain">
+                    </a>
+                </h1>
+
+                <div class="flex gap-2 header__nav__upper__n gap-9 relative">
+                    <a href="" class="text-[15px] real-md:text-[16px] lg:text-[18px] text-[#e82046]">Membership</a>
+                    <a href="" class="text-[15px] real-md:text-[16px] lg:text-[18px] text-[#e82046]">Reserve timed ticket</a>
+                </div>
+            </div>
+            <div class="header__nav__lower" style="">
+                <ul class="header__primary-nav gap-10">
+                    <li class="header__primary-nav__item" data-header-primary-nav-item="story">
+                        <a class="header__primary-nav__item__link" aria-controls="story-nav" aria-expanded="false" data-gtm="story" href="#" data-skip-tab-focus="false">
+                            <span class="header__primary-nav__item__link__text nav-toggle">
+                                <span class="header__wording--visit ">Story</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="header__primary-nav__item" data-header-primary-nav-item="journey">
+                        <a class="header__primary-nav__item__link" aria-controls="journey-nav" aria-expanded="false" href="#" data-gtm="journey" data-skip-tab-focus="false">
+                            <span class="header__primary-nav__item__link__text">Journey</span>
+                        </a>
+                    </li>
+                    <li class="header__primary-nav__item header__primary-nav__item--selected" data-header-primary-nav-item="mission">
+                        <a class="header__primary-nav__item__link" aria-controls="mission-nav" aria-expanded="true" href="#" data-gtm="mission" data-skip-tab-focus="false">
+                            <span class="header__primary-nav__item__link__text nav-toggle">
+                                <span class="header__wording--art">Mission </span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="header__primary-nav__item" data-header-primary-nav-item="socials" data-nav-override="true">
+                        <a class="header__primary-nav__item__link" aria-controls="socials-nav" aria-expanded="false" href="https://store.moma.org/?utm_source=moma.org" data-gtm="socials" data-skip-tab-focus="false">
+                            <span class="header__primary-nav__item__link__text">Socials </span>
+                        </a>
+                    </li>
+                    <li class="header__primary-nav__item" data-header-primary-nav-item="lets-connect" data-nav-override="true">
+                        <a class="header__primary-nav__item__link" aria-controls="lets-connect-nav" aria-expanded="false" href="https://store.moma.org/?utm_source=moma.org" data-gtm="lets-connect" data-skip-tab-focus="false">
+                            <span class="header__primary-nav__item__link__text">
+                                <span class="real-md:inline hidden">Lets</span> 
+                                <span class="inline">Connect</span> 
+                            </span>
+                        </a>
+                    </li>
+                    <li class="header__primary-nav__item" data-header-primary-nav-item="search">
+                        <a class="header__primary-nav__item__link " aria-controls="search-nav" aria-label="Search" aria-expanded="false" href="#" data-gtm="nav / Search" data-skip-tab-focus="false">
+
+                            <span class="nav-toggle">
+                                
+                                <svg xmlns="http://www.w3.org/2000/svg" class="header__primary-nav__item__link__svg block real-md:hidden" width="16" height="16">
+                                    <path d="M9.738 12.036a6.412 6.412 0 1 1 2.298-2.298l4.113 4.113-2.298 2.298-4.113-4.113zM6.5 10.088a3.588 3.588 0 1 0 0-7.176 3.588 3.588 0 0 0 0 7.176z" stroke="none"></path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="header__primary-nav__item__link__svg--nonmobile hidden real-md:block" width="20" height="20">
+                                    <path d="M11.514 14.343a7.25 7.25 0 1 1 2.828-2.828l4.822 4.82-2.828 2.83-4.822-4.822zM8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8z" stroke="none"></path>
+                                </svg>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="header__nav-spacer"></div>
+        <div class="header__optional" data-scrollbar-offset="" style="padding-right: 17px;">
+        </div>
+
+        <div class="overlay h-screen bg-white w-full fixed hidden overflow-y-auto -z-10">
+            <div class="header_inner_overlay_contents  grid grid-cols-1 real-md:grid-cols-6 ">
+                <div class="header__overlay__upper px-[120px] real-md:col-span-4 py-[50px]">
+                    
+                    <div data-nav-popup class="hidden story-nav ">
+                        <ul id="visit-nav" class="flex flex-col gap-8" data-header-secondary-nav="visit" aria-hidden="false">
+                          <li class="" data-header-secondary-nav-item="tickets">
+                            <a class="" href="/tickets/select" aria-label="MoMA timed tickets" data-gtm="nav / Plan your visit / Buy tickets / MoMA">
+                              <span class=" leading-[44px] text-[40px] font-[900]">Onitiri </span>
+                            </a>
+                          </li>
+                          <li class="" data-header-secondary-nav-item="tickets">
+                            <a class="" href="/tickets/select" aria-label="MoMA timed tickets" data-gtm="nav / Plan your visit / Buy tickets / MoMA">
+                              <span class=" leading-[44px] text-[40px] font-[900]">Coker family of Lagos</span>
+                            </a>
+                          </li>
+                          <li >
+                            <a class="close__overlay__popup" href="#" aria-label="close navigation" data-header-close-link="true" data-gtm="nav / overlay / close" style="fill: black; color: black;visibility: visible; height: 60px; display: block; width: 30px;">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="header__secondary-nav__item__link__svg--close" viewBox="0 0 24 24"> <path d="M1.5 22.5l21-21m-21 0l21 21" fill="none" vector-effect="non-scaling-stroke" style="    fill: black; stroke: black; color: black; display: block; opacity: 1; stroke-width: 5px; visibility: visible;"></path></svg>
+                            </a>
+                          </li>
+
+                        </ul>
+                    </div>
+
+                    <div data-nav-popup class="hidden mission-nav ">
+                        <ul id="visit-nav" class="flex flex-col gap-8" data-header-secondary-nav="visit" aria-hidden="false">
+                          <li class="" data-header-secondary-nav-item="tickets">
+                            <a class="" href="/tickets/select" aria-label="MoMA timed tickets" data-gtm="nav / Plan your visit / Buy tickets / MoMA">
+                              <span class=" leading-[44px] text-[40px] font-[900]">Sickle Cell </span>
+                            </a>
+                          </li>
+                          <li class="" data-header-secondary-nav-item="tickets">
+                            <a class="" href="/tickets/select" aria-label="MoMA timed tickets" data-gtm="nav / Plan your visit / Buy tickets / MoMA">
+                              <span class=" leading-[44px] text-[40px] font-[900]">The Elderly, Trees</span>
+                            </a>
+                          </li>
+                          <li >
+                            <a class="close__overlay__popup" href="#" aria-label="close navigation" data-header-close-link="true" data-gtm="nav / overlay / close" style="fill: black; color: black;visibility: visible; height: 60px; display: block; width: 30px;">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="header__secondary-nav__item__link__svg--close" viewBox="0 0 24 24"> <path d="M1.5 22.5l21-21m-21 0l21 21" fill="none" vector-effect="non-scaling-stroke" style="    fill: black; stroke: black; color: black; display: block; opacity: 1; stroke-width: 5px; visibility: visible;"></path></svg>
+                            </a>
+                          </li>
+
+                        </ul>
+                    </div>
+
+                     <div data-nav-popup class="hidden socials-nav ">
+                        <ul id="visit-nav" class="flex flex-col gap-8" data-header-secondary-nav="visit" aria-hidden="false">
+                           <li class="" data-header-secondary-nav-item="instagram">
+                            <a class="" href="/socials/instagram" aria-label="Visit Our Instagram Page" data-gtm="Visit Our Instagram Page">
+                              <span class=" leading-[44px] text-[40px] font-[900]">Instagram</span>
+                            </a>
+                          </li>
+                          <li class="" data-header-secondary-nav-item="twitter">
+                            <a class="" href="/socials/twitter" aria-label="Visit Our Twitter Page" data-gtm="Visit Our Twitter Page">
+                              <span class=" leading-[44px] text-[40px] font-[900]">Twitter</span>
+                            </a>
+                          </li>
+
+                           <li class="" data-header-secondary-nav-item="linkedIn">
+                            <a class="" href="/socials/linkedIn" aria-label="isit Our LinkedIn Page" data-gtm="Visit Our LinkedIn Page">
+                              <span class=" leading-[44px] text-[40px] font-[900]">LinkedIn</span>
+                            </a>
+                          </li>
+
+                           <li class="" data-header-secondary-nav-item="youtube">
+                            <a class="" href="/socials/youtube" aria-label="Visit Our YouTube Channel" data-gtm="Visit Our YouTube Channel">
+                              <span class=" leading-[44px] text-[40px] font-[900]">YouTube</span>
+                            </a>
+                          </li>
+                          <li >
+                            <a class="close__overlay__popup" href="#" aria-label="close navigation" data-header-close-link="true" data-gtm="nav / overlay / close" style="fill: black; color: black;visibility: visible; height: 60px; display: block; width: 30px;">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="header__secondary-nav__item__link__svg--close" viewBox="0 0 24 24"> <path d="M1.5 22.5l21-21m-21 0l21 21" fill="none" vector-effect="non-scaling-stroke" style="    fill: black; stroke: black; color: black; display: block; opacity: 1; stroke-width: 5px; visibility: visible;"></path></svg>
+                            </a>
+                          </li>
+
+                        </ul>
+                    </div>
+
+                    <div  data-nav-popup class="hidden search-nav">
+                        <form action="./" method="GET">
+                            <input type="search" name="search" class="text-[#e82046] text-[40px] font-[900] placeholder:text-gray-400 outline-none leading-[52px] mb-10 tracking-[1.1px] focus:outline-none border-none w-full" placeholder="Search moma.org">
+                        </form>
+
+                        <ul class="flex flex-col gap-">
+                            <li >
+                                <a class="close__overlay__popup" href="#" aria-label="close navigation" data-header-close-link="true" data-gtm="nav / overlay / close" style="fill: black; color: black;visibility: visible; height: 60px; display: block; width: 30px;">
+                                  <svg xmlns="http://www.w3.org/2000/svg" class="header__secondary-nav__item__link__svg--close" viewBox="0 0 24 24"> <path d="M1.5 22.5l21-21m-21 0l21 21" fill="none" vector-effect="non-scaling-stroke" style="    fill: black; stroke: black; color: black; display: block; opacity: 1; stroke-width: 5px; visibility: visible;"></path></svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="real-md:col-span-2 fixed_overlay_header_section">
+                    <ul class=" flex flex-col gap-3">
+                        <li>
+                          <a  href="/about" data-gtm="nav / overlay / About us" data-skip-tab-focus="false">
+                            <span class=" leading-[44px] text-[25px] font-[900]" style="">About us</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a  href="/support" data-gtm="nav / overlay / Support" data-skip-tab-focus="false">
+                            <span class=" leading-[44px] text-[25px] font-[900]">Support</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a  href="/research-and-learning" data-gtm="nav / overlay / Research and learning" data-skip-tab-focus="false">
+                            <span class=" leading-[44px] text-[25px] font-[900]">Research and learning</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a  href="/magazine/" data-gtm="nav / overlay / Magazine" data-skip-tab-focus="false">
+                            <span class=" leading-[44px] text-[25px] font-[900]">Magazine</span>
+                          </a>
+                        </li>
+
+                        <li>    
+                            <a href="" class="text-[25px] font-[900] text-[#e82046]">MoMa Timed Tickets</a>
+                        </li>
+                        <li>
+                            <a href="" class="text-[25px] font-[900] text-[#e82046]">Become a member</a>
+                        </li>
+                      </ul>
+                </div>
+
+            </div>
+        </div>
+        
+    </header>
+
+    <main class=" mt-[150px] py-0  block relative overflow-hidden main_contents"> 
+        
+        <div class="container-fluid flex flex-col py-5">
+            <!-- Navigations -->
+            <div class="navigations flex gap-1 py-3 pt-5 align-middle items-center font-Inter">
+                <a href="/" class="font-semibold text-blue-600 text-sm hover:text-blue-900 transition-all duration-300 hover:duration-300">Home</a>
+
+                <svg fill="none" stroke="currentColor" class="w-4 h-4" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5"></path>
+                </svg>
+
+                <!-- Category Navigation -->
+                <a class="font-semibold text-blue-600 text-sm hover:text-blue-900 transition-all duration-300 hover:duration-300" href="./category_page">The tony robbins blog</a>
+
+                <svg fill="none" stroke="currentColor" class="w-4 h-4" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5"></path>
+                </svg>
+
+                <!-- Posts title -->
+                <span class="text-black font-normal text-sm">How to deal with work stress</span>
+            </div>
+            
+
+            <!-- Main Blong contents -->
+            <section class="p-7 px-0">
+                <span class="text-sm font-semibold text-[#faa41bd4] capitalize mt-4 relative block font-Lato">Health and vitality.</span>
+
+                <hr size="2" width="25px" color="#faa41bd4 my-3" style="background-color: #faa41bd4; color: #faa41bd4; border: 1px solid #faa41bd4; margin: 10px 0px;">
+
+
+                <span style="font-family: Proxima Nova;" class="font-[700] tracking-wide mb-4 relative text-5xl uppercase block">How to deal with work stress</span>
+                <span class="font-[500] font-Barlow text-3xl capitalize block">Instead of stressing out, follow this trips for anxiety-free work</span>
+
+                <span class="block pt-4 text-sm font-normal font-Inter text-gray-500">Posted by: <span class="text-black">Team Tony</span></span>
+
+                 <!-- Advertisement section -->
+                 <img class="float-right p-3 h-[400px] w-[240px]" src="./assets/img/SiteAds-ResultsCoaching-2.jpg" alt="Coaching Adverts">
+
+                 
+                <!-- Main Posts Contents -->
+                <div class="main_contents py-10">
+                    <p>Work stress: We’ve all felt it, especially in today’s environment. Working from home may be convenient, but it can also mean that spouses and children interrupt. Large companies seem to be laying off workers in droves, and uncertainty about the economy can add to our own stress as we wonder if we’re next. Everything seems to have changed over the past few years. </p> <br>
+                    
+                   
+                    <p>Work <b>stress</b> isn’t going anywhere, but that doesn’t mean we have to accept it. The great news is, you are not powerless. Work stress doesn’t have to be an inevitable part of your day. You can learn how to deal with work stress – and even make those emotions work in your favor. But you must focus on what is under your control: you.</p>                    
+                    
+                    <h2>WHAT ARE SOME EXAMPLES OF WORK-RELATED STRESS?</h2>
+                    <p>The answer to “What is work-related stress?” isn’t one-size-fits-all. Some examples of short-term or temporary work stress include preparing an important client presentation, covering for a sick coworker or working on a big project. Longer-term work stress can be caused by an overly demanding boss, coworkers who don’t pull their weight, tough clients or chronic understaffing. You may even experience work stress if you feel a lack of control over your role or don’t have the growth opportunities you desire.</p> <br>
+
+                  
+
+                    <p>Work stress can also take the form of fear – for example, if your company recently went through cutbacks, you may be afraid of being laid off. Work stress also can be caused by interpersonal conflicts, toxic coworkers or an environment in which you don’t feel physically or emotionally safe. In all of these scenarios, you must learn how to deal with work stress before it negatively affects your state.</p>
+
+                    <h2>HOW TO DEAL WITH WORK STRESS</h2>
+                    <p>You can often reduce stress at work by improving your soft skills, like communication and teamwork, working on your time management and prioritizing your tasks. Even when work stress can’t be avoided, there are stress management strategies you can use to cope in the moment. Here are 12 strategies for how to reduce stress at work – and deal with it when it inevitably happens.
+                    </p> <br>
+
+                    <p>Work stress can also take the form of fear – for example, if your company recently went through cutbacks, you may be afraid of being laid off. Work stress also can be caused by interpersonal conflicts, toxic coworkers or an environment in which you don’t feel physically or emotionally safe. In all of these scenarios, you must learn how to deal with work stress before it negatively affects your state.</p>
+
+
+                    <h3>1. COMMUNICATE</h3>
+                    <p><span style="font-weight: 400;">In a perfect world, you’d have</span><a href="https://www.tonyrobbins.com/ask-tony/effective-communication/" data-uw-rm-brl="false" style="transition: all 0s ease 0s;"> <span style="font-weight: 400;">open lines of communication</span></a><span style="font-weight: 400;"> with your immediate boss or supervisor. Tell them you’re feeling stressed. They’ll have the best ideas for </span><span style="font-weight: 400;">how to reduce stress at work</span><span style="font-weight: 400;">. If you don’t feel you can be open with your boss, have a one-on-one with HR or even a manager from another department. They may be able to help.</span></p>
+
+                    <h3>2. CLARIFY</h3>
+                    <p><span style="font-weight: 400;">Don’t guess what you need to be doing. Ask questions until you are crystal clear on your goals and the steps to get there. Understanding the “why” behind your tasks</span><span style="font-weight: 400;"> is key to</span><span style="font-weight: 400;"> how to cope with stress at work</span><span style="font-weight: 400;">.</span><span style="font-weight: 400;"> You’ll also be able to identify which factors in a stressful situation are under your control. Let go of what isn’t, and excel at what is.</span></p>
+
+                    <h3>3. LEARN TO SAY NO</h3>
+                    <p><span style="font-weight: 400;">Sometimes, people who need to learn </span><span style="font-weight: 400;">how to deal with </span><span style="font-weight: 400;">work stress</span> <span style="font-weight: 400;">are guilty of over-committing themselves. Don’t aim for invincible – amazing is your attainable goal. Back-to-back scheduling is almost never going to work, because unexpected things come up and tasks often take longer than planned. Focus on what must get done. Trim the fatty extras for a lean and purposeful schedule.</span></p>
+
+                    <h3>4. GIVE YOURSELF A TIME CUSHION</h3>
+                    <p><span style="font-weight: 400;">Leave just 15 extra minutes in the morning so you don’t start your day feeling rushed and behind. Schedule regular, short breaks and stick to that schedule. Breaks interspersed throughout the day amp up your focus and</span><a href="https://www.tonyrobbins.com/how-to-focus/how-to-clear-your-mind/" data-uw-rm-brl="false"> <span style="font-weight: 400;">clear your mind</span></a><span style="font-weight: 400;">. </span><span style="font-weight: 400;">On your breaks, go for a walk, listen to your favorite song or read an empowering book. You’ll return more energized and better prepared for</span><span style="font-weight: 400;"> how to handle work stress </span><span style="font-weight: 400;">that does occur.</span></p>
+                </div>
+
+
+
+                <!-- Author Section -->
+                <div id="author" class="pt-14 !px-4 md:!px-10 my-10">
+                    <hr size="1" color="#ccc">
+
+                    <div class="flex flex-col md:flex-row w-full justify-between items-center gap-8 sm:gap-10 md:gap-16 lg:gap-20 px-10 py-5 pt-10 align-middle">
+                        <img src="./assets/img/author.jpeg" class="h-[100px] w-[100px] rounded-full shadow-md" alt="">
+
+                        <div class="flex flex-col gap-3 justify-between">
+                            <strong class="text-[16px] text-center md:text-left font-semibold">Team Tony</strong>
+
+                            <p class="text-lg text-center md:text-left">Team Tony cultivates, curates and shares Tony Robbins’ stories and core principles, to help others achieve an extraordinary life.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Featured collections / featured category -->
+
+                <div class="py-10 relative" id="featured_category">
+                    <h2 style="letter-spacing: 2px;" class="text-center block relative text-[25px] leading-[30px] font-[700] text-black uppercase">FEATURED COLLECTIONS</h2>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-7 px-5 p-10 md:grid-cols-3 place-content-center place-items-center">
+
+                        <div class="relative h-[170px] overflow-hidden">
+                            <img src="./assets/img/career_business.jpg" class="h-full" alt="Career and Business">
+
+                            <h4 class="font-[500] absolute text-white bg-[#44414175] top-0 h-full right-0 w-full text-center bottom-0 left-0 text-[60px] leading-[50px] tracking-[4px] m-0 flex place-content-center place-items-center uppercase" style="font-family: Tungsten-Medium; letter-spacing: 4px;">Career & Business</h4>
+                        </div>
+                        <div class="relative h-[170px] overflow-hidden">
+                            <img src="./assets/img/love_relationship.jpg" class="h-full" alt="Love and Relationship">
+
+                            <h4 class="font-[500] absolute text-white bg-[#44414175] top-0 h-full right-0 w-full text-center bottom-0 left-0 text-[60px] leading-[50px] tracking-[4px] m-0 flex place-content-center place-items-center uppercase" style="font-family: Tungsten-Medium; letter-spacing: 4px;">Love & Relationship</h4>
+                        </div>
+                        <div class="relative h-[170px] overflow-hidden">
+                            <img src="./assets/img/mindmeaning.jpg" class="h-full" alt="Mind and Meaning">
+
+                            <h4 class="font-[500] absolute text-white bg-[#44414175] top-0 h-full right-0 w-full text-center bottom-0 left-0 text-[60px] leading-[50px] tracking-[4px] m-0 flex place-content-center place-items-center uppercase" style="font-family: Tungsten-Medium; letter-spacing: 4px;">Mind & Meaning</h4>
+                        </div>
+                        
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Related Posts -->
+            <div id="related_posts" class=" py-10 relative" >
+                <h2 style="letter-spacing: 2px;" class="text-center block relative text-[25px] leading-[30px] font-[700] text-black uppercase">Related Posts</h2>
+                <div class="grid grid-cols-1 gap-6 pb-20 md:grid-cols-2 lg:grid-cols-3">
+
+                    <div class="duration-200 mt-12 transition-all hover:duration-200 main_card">
+                        <a href="" class="image_card">
+                            <div class="h-[400px] block bg-[url('../img/healthy-aging.jpg')] bg-cover object-contain bg-center relative">
+                                <div class="hover_contents hidden transition-all duration-200 absolute top-0 left-0 right-0 bottom-0 h-full w-full bg-[#faa41b85] place-content-center place-items-center">
+                                    <img src="./assets/img/running-hover.png" alt="Running Hover">
+                                </div>
+                            </div>
+        
+                            <div class="flex flex-col gap-3 py-4 px-7 relative">
+                                <span class="text-sm font-semibold text-[#faa41bd4] mt-4 relative block font-Lato">Health and vitality</span>
+
+                                <hr size="2" width="25px" color="#faa41bd4 my-3" style="background-color: #faa41bd4; color: #faa41bd4; border: 1px solid #faa41bd4; margin: 10px 0px;">
+
+
+                                <span class="font-semibold font-Outfit text-2xl">ENERGY AND FOCUS SUPPLEMENTS TO IMPROVE YOUR LIFE</span>
+
+                                <!-- Read More Button -->
+                                <a href="" class="read_more font-normal hover:text-black transition-all duration-200 font-Poppins text-gray-400 text-left text-sm">Read More</a>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="duration-200 mt-12 transition-all hover:duration-200 main_card">
+                        <a href="" class="image_card ">
+                            <div class="h-[400px] block bg-[url('../img/healthy-aging.jpg')] bg-cover object-contain bg-center relative">
+                                <div class="hover_contents hidden transition-all duration-200 absolute top-0 left-0 right-0 bottom-0 h-full w-full bg-[#faa41b85] place-content-center place-items-center">
+                                    <img src="./assets/img/running-hover.png" alt="Running Hover">
+                                </div>
+                            </div>
+        
+                            <div class="flex flex-col gap-3 py-4 px-7 relative">
+                                <span class="text-sm font-semibold text-[#faa41bd4] mt-4 relative block font-Lato">Health and vitality</span>
+
+                                <hr size="2" width="25px" color="#faa41bd4 my-3" style="background-color: #faa41bd4; color: #faa41bd4; border: 1px solid #faa41bd4; margin: 10px 0px;">
+
+
+                                <span class="font-semibold font-Outfit text-2xl">ENERGY AND FOCUS SUPPLEMENTS TO IMPROVE YOUR LIFE</span>
+
+                                <!-- Read More Button -->
+                                <a href="" class="read_more font-normal hover:text-black transition-all duration-200 font-Poppins text-gray-400 text-left text-sm">Read More</a>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Signup Section -->
+        <section class="bg-[#F5F5F5] align-middle md:items-center flex flex-col md:flex-row justify-between gap-2 md:gap-7 container-fluid py-5 md:py-7">
+            <div class="font-Proxima text-lg md:text-xl lg:text-2xl">Get Tony Robbins' articles, podcasts and videos in your inbox, biweekly. </div>
+
+            <a href="#" class="text-white uppercase bg-[#14aecf] md:w-max trigger_newsletter md:py-6 py-5 px-7 text-sm font-Proxima">Sign up now</a>
+        </section>
+
+        <section id="newsletter_popup" class="fixed overflow-auto py-7 z-30 top-0 right-0 left-0 bottom-0 w-full h-screen  hidden place-items-center place-content-center bg-[#14aecf] font-Proxima text-white;">
+            <div class="col-md-10 text-center center">
+                <h2 class="text-white text-[82px] leading-[73px] font-[500] tracking-[7px] uppercase" style="font-family: Tungsten-Semibold;">Join Our Newsletter!</h2>
+                <div class="embedded-marketo-form w-full center">
+                    <form  autocomplete="off" novalidate="novalidate" class="w-full flex flex-col gap-4"
+                        style="font-family: Helvetica, Arial, sans-serif; font-size: 13px; color: rgb(51, 51, 51); ">
+                       
+                        <div class="p-3 px-0 m-0 w-full grid grid-cols-2 gap-4 justify-between">
+                            <div class="flex items-center">
+                                <input
+                                    id="FirstName" name="FirstName" placeholder="First Name:" maxlength="255"
+                                    aria-labelledby="LblFirstName InstructFirstName" type="text"
+                                    class="border-b pb-4 text-lg border-white w-full bg-transparent placeholder:text-white text-white outline-none focus:outline-none bg-none focus:bg-none autofill:none  font-Inter font-semibold" aria-required="true"
+                                    data-uw-rm-form="nfx"  autocomplete="off" style="padding-bottom: 10px;padding-bottom: 10px;">
+                                <label for="FirstName" id="LblFirstName">
+                                    <div class="text-red-600 p-2 text-lg">*</div>
+                                </label>
+                            </div>
+
+                            <div class="flex items-center">
+                                <input
+                                    id="LastName" name="LastName" placeholder="Last Name:" maxlength="255"
+                                    aria-labelledby="LblLastName InstructLastName" type="text"
+                                    class="border-b pb-4 text-lg border-white w-full bg-transparent placeholder:text-white text-white outline-none bg-none focus:bg-none autofill:none focus:outline-none font-Inter font-semibold" autocomplete="off" aria-required="true"
+                                    data-uw-rm-form="nfx" style="padding-bottom: 10px;padding-bottom: 10px;">
+                                <label for="LastName" id="LblLastName">
+                                    <div class="text-red-600 p-2 text-lg">*</div>
+                                </label>
+                            </div>
+                           
+                        </div>
+                        <div class="flex items-center group peer">
+                            <input
+                                id="EmailAddress" name="EmailAddress" placeholder="Valid Email Address:" maxlength="255"
+                                aria-labelledby="LblEmailAddress InstructEmailAddress" type="email"
+                                class="border-b pb-4 text-lg border-white w-full bg-transparent placeholder:text-white text-white outline-none focus:outline-none invalid:border-red-600 invalid:text-red-600 valid:text-white valid:border-white font-Inter font-semibold" aria-required="true"
+                                data-uw-rm-form="nfx" autocomplete="off" style="padding-bottom: 10px;padding-bottom: 10px;">
+                            <label for="EmailAddress" id="LblEmailAddress">
+                                <div class="text-red-600 p-2 text-lg">*</div>
+                            </label>
+                        </div>
+                    
+                       
+                      
+                        <button type="submit" class="mktoButton text-white bg-[#0f839c] hover:bg-[#1191ad] hover:border-[#1191ad] w-max m-auto block transition-all duration-200 uppercase px-7 py-4 tracking-[1px] border border-[#0f839c]" data-uw-rm-form="submit" class>Submit</button>
+                            
+                    </form>
+                </div>
+                <p class="small"></p>
+            </div>
+
+            <div class="close_btn cursor-pointer absolute top-10 right-10 flex place-content-center place-items-center">
+                <svg fill="none" class="text-white font-semibold w-12 h-12" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </div>
+        </section>
+
+
+         <!-- Social Content  -->
+        <section class="social fixed top-1/2">
+
+            <!-- Close Social button-->
+            <span class="bg-white rounded-full h-[50px] w-[50px] transition-all duration-500  cursor-pointer shadow-md border border-gray-300 flex align-middle items-center justify-center toggle_social">
+
+                <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"  class="stroke-black h-full w-full">
+                    <path d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                
+            </span>
+            <ul class="flex flex-col gap-0 w-full bg-white">
+                <li class="w-full p-0">
+                    <a title="Facebook" class="sumome-share-client-animated block overflow-hidden p-2 w-full text-center  sumome-share-client-share" data-sumome-share="facebook" href="javascript:void(0);" style="background: rgb(59, 89, 152); color: rgb(255, 255, 255);" data-uw-rm-brl="exc">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2RpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo4NDAyNUQ0MzgyMjFFNDExOThCNzhFNEVDQjI2M0JDRSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpCMkRFNUIxNTcxQzcxMUU0QTBDM0NDMjdCOUUzQThGRCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpCMkRFNUIxNDcxQzcxMUU0QTBDM0NDMjdCOUUzQThGRCIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IFdpbmRvd3MiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4NTFEMzA1NkM3NzFFNDExQjI0M0FEN0JENTgwQjRFMSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4NDAyNUQ0MzgyMjFFNDExOThCNzhFNEVDQjI2M0JDRSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pv5hWioAAADBSURBVGje7dZhDcJAEEThSkAKElZKJVQCDpBQCUiolEpAwuN/kwJHgXS7b5IR8OWSm+2ArlI7wYIFCxb8uj1wA+68n5TgAGY+Szpwz7akAgfbkwo8VwL3fCdpwFM1MJXA50bUFbisNAU4GrHpL60WcAgWLFjwv8HLKRkbwOOTSdrtLP0ygo8MngQfHDxWA5f7pYdq4NgrOBYdGl8xVnrytBQsWLBgwYIFCxYsWLBgwYIFCxYsWLBgwRkrWLBgwan6AK1SmLzQ8wXuAAAAAElFTkSuQmCC" alt="Facebook" data-uw-rm-ima-original="facebook" class="w-6 h-6">
+                    </a>
+                </li>
+
+
+                <li class="w-full p-0">
+                    <a title="LinkedIn" class="sumome-share-client-animated block overflow-hidden p-2 w-full text-center  sumome-share-client-share" data-sumome-share="linkedin" href="javascript:void(0);" style="background: rgb(0, 123, 182); color: rgb(255, 255, 255);" data-uw-rm-brl="exc"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjJCRTFDNTcxMjE4MjExRTRBMzM1OEFEMDE4NzgyOTc4IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjJCRTFDNTcyMjE4MjExRTRBMzM1OEFEMDE4NzgyOTc4Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MkJFMUM1NkYyMTgyMTFFNEEzMzU4QUQwMTg3ODI5NzgiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MkJFMUM1NzAyMTgyMTFFNEEzMzU4QUQwMTg3ODI5NzgiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6ot2X/AAABE0lEQVRo3u3b0Q2DIBDGcUboCI7gCI7ACI7CBo7ACI7ACI7gCI5wfeHBNLWItikHf5KLL5Lw0+QTL2pExLRUBjBgwIBrATsR2UTf2OLas8BO9A+XA65lAAYMGHC74BCj38bjWjN4PJjnawTPie3bWhvYJsBTa2BXG9gnwEtLoTXVGFr7O21FZIgXILDxAAz43VhiFrhY843Oy1fAIZHSpzoPsYaXTOg+nGsvPAGKBY8ZjTivHewkv/sYtIIfcq3d2mkF3ymvGdzHNN6/kfWJOYNW8NHCt0RqG63g9YcvKsWB+xObkDtpXfTG4/SiAQMGDBgwYMCAAQMGrANMXxowYMCA/w1u7mva5r6X5hcAwIABF1lPC+hbkAAI2VcAAAAASUVORK5CYII=" alt="LinkedIn" data-uw-rm-ima-original="linkedin"  class="w-6 h-6"></a>
+                </li>
+
+                <li class="w-full p-0">
+                    <a title="Twitter" class="sumome-share-client-animated block overflow-hidden p-2 w-full text-center  sumome-share-client-share"  data-sumome-share="twitter" href="javascript:void(0);" style="background: rgb(0, 172, 237); color: rgb(255, 255, 255);" data-uw-rm-brl="exc"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkYzNDgxQ0E3MjE4MTExRTQ4MEYzOTUxQTUwNjE2NUI2IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkYzNDgxQ0E4MjE4MTExRTQ4MEYzOTUxQTUwNjE2NUI2Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RjM0ODFDQTUyMTgxMTFFNDgwRjM5NTFBNTA2MTY1QjYiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RjM0ODFDQTYyMTgxMTFFNDgwRjM5NTFBNTA2MTY1QjYiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7FgHRtAAAB7ElEQVRo3u3a0Y2EIBAGYEugBEqwBEqwBEughO3AEiyBEihhS7AESvjvZTbZeLcnwgxidiYx2RddP2EGBAcAwzcdg4IVrGAFK1jBClbwt4JnAAFAwu+IADwAk3EdVwO2DaAOwIa8SAT/9MA2AI9SsKE/mIRbtSRWur+Jfqe3B2JKwf7tImNH2P/C1+Rw3HUlx4i1H3K1JtajPD66qb9iZgJHZuxCyIXyOHCB3/OnpnUl4/np/krBr4uWdnEviN1qilbKzJuzQ1do3bIlRetobFxOwKMANuakmUTXCxnjtgSYZWppKoeOQA/N7Z5+t2CJAhNPTCMvAQ9UmHoPFvBGLWw7Rz+5wPtK3GtEzha+Qzy4wOtNwBMXeLwJ2IKxSofOsdkFKxdsOs9lL7GIN3ZcpS2EVi2N0JSwyXBUs0w7dwR3kuCJoFFwPizaumfBtrPu7NBg5+HRCTag0VaLoXHvykio2A0pOelqdNUuSOmJ5qIZ2IqLdw9dQ3hER9ulhvBS4/Ph8mtrsL0DlgMsvfSzcmJLwSO9oUhXao+GnzwsNMl4HSt12RZvTE/I7EX/CzYEbflKmKRaFSd3HqThr6Vgg86+4pkZx9xEaTIB9/hsyVHLh8ziFQnoJfOz5TisH6YpWMEKVrCCFaxgBe+PH85P0QgnW+lGAAAAAElFTkSuQmCC" alt="Twitter" data-uw-rm-ima-original="twitter" class="w-6 h-6"></a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-3 col-md-4 col-lg-3 padding-topx3">
+                    <h2 class="h6">CONNECT</h2>
+                    <div class="footer-icons flex gap-4">
+                        <a href="https://twitter.com/FordFoundation" target="blank" title="Ford Foundation on Twitter" tabindex="0" aria-label="Click to visit Ford Foundation on Twitter"> <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+                                <title>Twitter</title>
+                                <g class="icon">
+                                    <g class="twitter">
+                                        <path d="M20,4A16,16,0,1,0,36,20,16,16,0,0,0,20,4Zm8,13c0,.16,0,.33,0,.49a10.9,10.9,0,0,1-11,11,10.75,10.75,0,0,1-5.89-1.74,6.9,6.9,0,0,0,.92.05,7.72,7.72,0,0,0,4.79-1.65,3.84,3.84,0,0,1-3.6-2.68,3.55,3.55,0,0,0,.73.08,3.73,3.73,0,0,0,1-.14,3.85,3.85,0,0,1-3.09-3.78v0a3.8,3.8,0,0,0,1.74.48A3.84,3.84,0,0,1,12,15.8a3.88,3.88,0,0,1,.52-1.94,10.92,10.92,0,0,0,8,4,3.65,3.65,0,0,1-.1-.88,3.86,3.86,0,0,1,3.85-3.86A3.8,3.8,0,0,1,27,14.38a8,8,0,0,0,2.45-.94,3.89,3.89,0,0,1-1.7,2.14A8.09,8.09,0,0,0,30,15,8.15,8.15,0,0,1,28,17Z"></path>
+                                    </g>
+                                </g>
+                                <g class="border">
+                                    <path d="M20,1.5A18.5,18.5,0,1,1,1.5,20,18.52,18.52,0,0,1,20,1.5M20,0A20,20,0,1,0,40,20,20,20,0,0,0,20,0Z"></path>
+                                </g>
+                            </svg>
+                        </a>
+                        <a href="https://www.facebook.com/FordFoundation/" target="blank" title="Ford Foundation on Facebook" tabindex="0" aria-label="Click to visit Ford Foundation on Facebook"> <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+                                <title>Facebook</title>
+                                <g class="icon">
+                                    <g class="facebook">
+                                        <path d="M20,4A16,16,0,1,0,36,20,16,16,0,0,0,20,4Zm4.6,16.7h-4V31.3h-4V20.7H13.8V16.9h2.8V13.6c0-2.6,1.7-4.9,5.5-4.9a18.76,18.76,0,0,1,2.7.2l-.1,3.6H22.3c-1.4,0-1.6.6-1.6,1.7V17h4.2Z"></path>
+                                    </g>
+                                </g>
+                                <g class="border">
+                                    <path d="M20,1.5A18.5,18.5,0,1,1,1.5,20,18.52,18.52,0,0,1,20,1.5M20,0A20,20,0,1,0,40,20,20,20,0,0,0,20,0Z"></path>
+                                </g>
+                            </svg>
+                        </a>
+                        <a href="http://www.linkedin.com/company/ford-foundation" target="blank" title="Ford Foundation on LinkedIn" tabindex="0" aria-label="Click to visit Ford Foundation on LinkedIn"> <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+                                <title>LinkedIn</title>
+                                <g class="icon linkedin">
+                                    <path d="M20,4A16,16,0,1,0,36,20,16,16,0,0,0,20,4ZM15.7,28.3H11.5V15.8h4.2ZM13.6,14a2.18,2.18,0,0,1-2.3-2.2,2.21,2.21,0,0,1,2.4-2.2A2.13,2.13,0,0,1,16,11.8,2.16,2.16,0,0,1,13.6,14ZM30.7,28.3H26.5V21.6c0-1.7-.6-2.8-2.1-2.8a2.33,2.33,0,0,0-2.1,1.5,3.08,3.08,0,0,0-.1,1v7H18s.1-11.3,0-12.5h4.2v1.8A4.09,4.09,0,0,1,26,15.5c2.7,0,4.8,1.8,4.8,5.6Z"></path>
+                                </g>
+                                <g class="border">
+                                    <path d="M20,1.5A18.5,18.5,0,1,1,1.5,20,18.52,18.52,0,0,1,20,1.5M20,0A20,20,0,1,0,40,20,20,20,0,0,0,20,0Z"></path>
+                                </g>
+                            </svg>
+                        </a>
+                        <a href="https://www.youtube.com/fordfoundation" target="blank" title="Ford Foundation on YouTube" tabindex="0" aria-label="Click to visit Ford Foundation on YouTube"> <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+                                <title>YouTube</title>
+                                <g class="icon youtube">
+                                    <path d="M17.88,17.07l5.4,2.83-5.4,2.94ZM36,20A16,16,0,1,1,20,4,16,16,0,0,1,36,20Zm-5.84-.78a30.47,30.47,0,0,0-.2-3.31,4.44,4.44,0,0,0-.81-2,2.86,2.86,0,0,0-2-.86C24.27,12.8,20,12.8,20,12.8h0s-4.27,0-7.11.21a2.86,2.86,0,0,0-2,.86,4.44,4.44,0,0,0-.81,2c-.12,1.1-.19,2.2-.2,3.31v1.55a30.65,30.65,0,0,0,.2,3.32,4.44,4.44,0,0,0,.81,2,3.44,3.44,0,0,0,2.2.95c1.63.16,6.91.21,6.91.21s4.27,0,7.11-.21a2.91,2.91,0,0,0,2-.87,4.44,4.44,0,0,0,.81-2c.12-1.1.19-2.21.2-3.32Z"></path>
+                                </g>
+                                <g class="border">
+                                    <path d="M20,1.5A18.5,18.5,0,1,1,1.5,20,18.52,18.52,0,0,1,20,1.5M20,0A20,20,0,1,0,40,20,20,20,0,0,0,20,0Z"></path>
+                                </g>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/fordfoundation/" target="blank" title="Ford Foundation on Instagram" tabindex="0" aria-label="Click to visit Ford Foundation on Instagram"> <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+                                <title>Instagram</title>
+                                <g class="icon">
+                                    <path d="M27.49,14.34a3.23,3.23,0,0,0-.72-1.1,3.06,3.06,0,0,0-1.1-.71,5.21,5.21,0,0,0-1.79-.33c-1,0-1.31-.06-3.87-.06H16.13a5.39,5.39,0,0,0-1.78.33,3.14,3.14,0,0,0-1.82,1.82,5.45,5.45,0,0,0-.33,1.79c0,1-.06,1.31-.06,3.87v3.88a5.39,5.39,0,0,0,.33,1.78,3,3,0,0,0,.72,1.11,2.9,2.9,0,0,0,1.11.71,5.15,5.15,0,0,0,1.78.33c1,0,1.32.06,3.88.06s2.86,0,3.87-.05a6.09,6.09,0,0,0,1.79-.33,3.23,3.23,0,0,0,1.1-.72,2.9,2.9,0,0,0,.71-1.11,5.39,5.39,0,0,0,.33-1.78c0-1,.06-1.32.06-3.88s0-2.86-.05-3.87A5.71,5.71,0,0,0,27.49,14.34ZM20,24.93A4.93,4.93,0,1,1,24.93,20,4.93,4.93,0,0,1,20,24.93ZM25.12,16a1.16,1.16,0,1,1,1.16-1.16h0A1.16,1.16,0,0,1,25.12,16Zm-1.91,4A3.2,3.2,0,1,1,20,16.8,3.2,3.2,0,0,1,23.21,20ZM20,4A16,16,0,1,0,36,20,16,16,0,0,0,20,4Zm9.54,20a6.88,6.88,0,0,1-.44,2.33,4.92,4.92,0,0,1-2.81,2.81,6.88,6.88,0,0,1-2.33.44c-1,.05-1.35.06-3.95.06s-2.94,0-4-.06a6.88,6.88,0,0,1-2.33-.44A4.6,4.6,0,0,1,12,28a4.77,4.77,0,0,1-1.09-1.7,7.22,7.22,0,0,1-.44-2.3c0-1-.06-1.35-.06-4,0-1.31,0-2.63.06-3.95a6.88,6.88,0,0,1,.44-2.33A4.71,4.71,0,0,1,12,12a4.9,4.9,0,0,1,1.71-1.09,7.46,7.46,0,0,1,2.34-.44c1,0,1.35-.07,4-.07,1.31,0,2.63,0,3.95.07a7.4,7.4,0,0,1,2.33.44A5.13,5.13,0,0,1,28,12a4.69,4.69,0,0,1,1.11,1.7A7.4,7.4,0,0,1,29.55,16c.05,1,.06,1.35.06,3.95S29.59,22.94,29.54,24Z"></path>
+                                </g>
+                                <g class="border">
+                                    <path d="M20,1.5A18.5,18.5,0,1,1,1.5,20,18.52,18.52,0,0,1,20,1.5M20,0A20,20,0,1,0,40,20,20,20,0,0,0,20,0Z"></path>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="visible-xs">
+                        <div class="rule margin-topx5 margin-bottomx3"></div>
+                    </div>
+                    <h2 class="h6 padding-topx3 ">CAREERS</h2>
+                    <span class="small sans careers">Learn about <a target="_self" href="/about/careers/">Careers</a>, view <a target="_self" href="https://fordfoundation.wd1.myworkdayjobs.com/FordFoundationCareerPage">Current openings</a>, and <a target="_self" href="https://fordfoundation.wd1.myworkdayjobs.com/en-US/FordFoundationCareerPage/introduceYourself">Join our talent pool</a></span>
+                    <div class="visible-xs">
+                        <div class="rule margin-topx5 margin-bottomx3"></div>
+                    </div>
+                    <h2 class="h6 padding-topx3 ">PRESS ROOM</h2>
+                    <span class="small sans careers">Visit the <a target="_self" href="/news-and-stories/news-and-press/">Press Room</a></span>
+                </div>
+                <div class="col-xs-12 visible-xs">
+                    <div class="rule margin-topx5 margin-bottomx3"></div>
+                </div>
+                <div class="col-xs-12 col-sm-9 col-md-4 col-lg-6 padding-topx3">
+                    <h2 class="h6 contact">CONTACT</h2>
+                    <div class="row" itemscope="" itemtype="http://schema.org/Organization">
+                        <meta itemprop="name" content="Ford Foundation">
+                        <div class="col-xs-7 col-md-12 col-lg-6 padding-bottom-small">
+                            <div class="office-address">
+                                <p>Ford Foundation<br>320 E 43rd St<br>New York, NY 10017<br>USA</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-5 col-md-12 col-lg-6">
+                            <p itemprop="telephone" class="hidden-xs office-telephone">Tel. (+1) 212-573-5000</p>
+                            <div>
+                                <a href="/about/the-ford-foundation-center-for-social-justice/visitor-information/" tabindex="0"><span class="directions small sans">Visitor information</span></a>
+                                <br>
+                            </div>
+                            <a href="/about/about-ford/#regional-offices" tabindex="0"><span class="small sans">Regional offices</span></a>
+                        </div>
+                        <div class="col-xs-12 visible-xs footer-number-directions" aria-hidden="true">
+                            <div class="row">
+                                <div class="col-xs-12 padding-bottomx3">
+                                    <button type="button" class="btn btn-primary" tabindex="-1">(+1) 212-573-5000</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 padding-bottomx2">
+                            <div class="visible-xs rule margin-topx3 margin-bottomx3"></div>
+                            <h2 class="h6 padding-topx2">Event spaces</h2>
+                            <span class="small sans grey-light"><a href="https://www.fordfoundation.org/about/the-ford-foundation-center-for-social-justice/event-spaces/">Learn how to book an event space</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-9 col-sm-offset-3 col-xs-12 visible-xs clearfix">
+                    <div class="rule margin-topx3 margin-bottomx3"></div>
+                </div>
+                <div class="col-xs-12 col-sm-9 col-sm-offset-3 col-md-4 col-md-offset-0 col-lg-3 padding-topx3 email-update">
+                    <form action="/umbraco/Surface/Email/Signup" class="form-group animated-label-form" method="post" novalidate="novalidate">
+                        <div class="rte email-signup-header">
+                            <h2 class="h6">SIGN UP FOR EMAIL UPDATES</h2>
+                        </div>
+                        <input data-val="true" data-val-required="The OptIn field is required." id="Footer_OptIn" name="Footer.OptIn" type="hidden" value="True"><input data-val="true" data-val-number="The field PageId must be a number." data-val-required="The PageId field is required." id="Footer_PageId" name="Footer.PageId" type="hidden" value="1332"><input id="Footer_SuccessMessageOverrideFooter" name="Footer.SuccessMessageOverride" type="hidden" value=""><input id="Footer_SubscriptionFooter" name="Footer.subscription" type="hidden" value="0d218310e6"><input id="Footer_SubscriptionFooter" name="Footer.subscription" type="hidden" value="642ef63489">
+                        <div class="signup-name-group">
+                            <div class="formpadding signup-first-name animated-label ">
+                                <input aria-label="Email signup enter first name" class="form-control empty" data-val="true" data-val-maxlength="The field First Name must be a string or array type with a maximum length of '500'." data-val-maxlength-max="500" data-val-required="First name required" id="FirstNameFooter" name="Footer.FirstName" tabindex="0" type="text" value="">
+                                <label for="FirstNameFooter">First Name</label> <span class="field-validation-valid red" data-valmsg-for="Footer.FirstName" data-valmsg-replace="true" id="FirstNameFooter-error"></span>
+                            </div>
+                            <div class="formpadding signup-last-name animated-label ">
+                                <input aria-label="Email signup enter last name" class="form-control empty" data-val="true" data-val-maxlength="The field Last Name must be a string or array type with a maximum length of '500'." data-val-maxlength-max="500" data-val-required="Last name required" id="LastNameFooter" name="Footer.LastName" tabindex="0" type="text" value="">
+                                <label for="LastNameFooter">Last Name</label>
+                                <span class="field-validation-valid red" data-valmsg-for="Footer.LastName" data-valmsg-replace="true" id="LastNameFooter-error"></span>
+                            </div>
+                        </div>
+                        <div class="formpadding signup-email animated-label ">
+                            <input aria-label="Email signup enter email" class="form-control empty" data-val="true" data-val-email="Please enter a valid email address" data-val-maxlength="The field Email must be a string or array type with a maximum length of '500'." data-val-maxlength-max="500" data-val-required="Email required" id="EmailFooter" name="Footer.Email" tabindex="0" type="text" value="">
+                            <label for="EmailFooter">Email</label> <span class="field-validation-valid red" data-valmsg-for="Footer.Email" data-valmsg-replace="true" id="EmailFooter-error"></span>
+                        </div>
+                        <div class="signup-submit-and-options">
+                            <div class="col-xs-5 no-padding">
+                                <input type="submit" class="btn btn-default short-email-submit638136128709258213 email-submit" tabindex="0" aria-label="Submit email subscription form" value="Sign up">
+                            </div>
+                            <div class="col-xs-7 ">
+                                <button type="button" class="btn btn-default btn-block email-dont-show" tabindex="0" aria-label="Do not show email popup">Don't show<span class="hidden-xxs"> this</span> again</button>
+                            </div>
+                        </div>
+                        <script>
+                        $(document).ready(function() {
+
+                            var emailSliderSelector = '.email-slider';
+                            var showingClass = 'slide-in';
+
+
+                            $('#EmailFooter, #FirstNameFooter, #LastNameFooter').on('input change', function() {
+                                var isEmpty = $(this).val() === '';
+                                $(this).toggleClass('empty', isEmpty);
+                            });
+
+                            $('#EmailFooter, #FirstNameFooter, #LastNameFooter').trigger('change');
+
+                            // Form submit
+                            $('.short-email-submit638136128709258213').click(function(e) {
+                                var $form = $(this).closest('form');
+                                if ($form.valid()) {
+
+                                    //submit
+                                    e.preventDefault();
+                                    $.ajax({
+                                        url: '/umbraco/Surface/Email/Signup',
+                                        type: 'POST',
+                                        cache: false,
+                                        data: $form.serialize(),
+                                        success: function(response, status, xhr) {
+                                            $form.parent().append(response);
+                                            $form.remove();
+                                            // Success will have a short response, failure has the full error validation messaging and form
+                                            if (response.length < 200) {
+                                                // Wait 3s and then close slider
+                                                if ($(emailSliderSelector).length) {
+                                                    setTimeout(function() {
+                                                        $(emailSliderSelector).removeClass(showingClass);
+                                                    }, 3000);
+                                                }
+                                            }
+                                        },
+                                        error: function(jqXHR, textStatus, errorThrown) {
+                                            console.log(jqXHR + " " + textStatus + " " + errorThrown);
+                                        }
+                                    });
+                                    FordFoundation.logEvent(_gaq, 'emailSignup', 'shortForm', 'TheLatest');
+                                }
+                            });
+                        });
+                        </script>
+                    </form>
+                </div>
+            </div>
+            <div class="row footer-detail">
+                <div class="col-xs-12">
+                    <div class="rule margin-topx3 margin-bottomx3"></div>
+                </div>
+                <div class="col-sm-7 col-md-6 col-lg-9">
+                    <img src="/assets/img/cc-by.svg" class="cc-by opacity-low" alt="creative commons icon">
+                    <span class="sr-only">Terms and Conditions of Use</span>
+                    <p>All our content may be republished or reused for free, except for most photographs, illustrations, and videos.</p>
+                    <ul class="list-unstyled list-inline margin-bottomx2">
+                        <li>
+                            <a href="/accessibility/" tabindex="0">Accessibility</a>
+                        </li>
+                        <li>
+                            <a href="/privacy/" tabindex="0">Privacy</a>
+                        </li>
+                        <li>
+                            <a href="/terms-and-conditions-of-use/" tabindex="0">Terms and Conditions</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-5 col-md-6 col-lg-3 text-right">
+                    <p>© 2023 Ford Foundation, some rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".image_card").hover(function (){
+                $(this).find('.hover_contents').toggleClass('hover_active');
+                
+                if ( $(this).find('.hover_contents').hasClass('back_drop') ) {
+                    $(this).find('.hover_contents').toggleClass('back_drop');
+                }
+
+                let __that = $(this);
+                __that.find('.hover_contents').css({
+                    'display': 'flex',
+                    'background-color': '#faa41b85'
+                });
+
+                __that.find('.hover_contents img').css({
+                    'transform': 'translateY(0px)'
+                });
+            });
+
+            $(".image_card").mouseleave(function (){
+        
+                if ( $(this).find('.hover_contents').hasClass('hover_active') ) {
+                    $(this).find('.hover_contents').toggleClass('hover_active');
+                }
+
+                $(this).find('.hover_contents').toggleClass('back_drop');
+
+                let __that = $(this);
+                __that.find('.hover_contents').fadeOut(300);
+
+                __that.find('.hover_contents img').css({
+                    'transform': 'translateY(0px)'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

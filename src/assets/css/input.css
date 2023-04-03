@@ -1,0 +1,939 @@
+
+
+@import url('./external.css');
+@import url('./tasty.css');
+@import url('./custom.css');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Cormorant+SC:wght@300;400;500;600;700&family=Delicious+Handrawn&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nothing+You+Could+Do&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,900&family=Slabo+27px&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
+
+form,
+input {
+    font-family: "MoMA Sans", var(--language-font-face), Helvetica, sans-serif
+}
+
+button {
+    font-family: "MoMA Sans", var(--language-font-face), Helvetica, sans-serif
+}
+
+input {
+    font-family: "MoMA Sans", var(--language-font-face), Helvetica, sans-serif
+}
+
+input.placeholder {
+    font-family: "MoMA Sans", var(--language-font-face), Helvetica, sans-serif
+}
+
+input:-moz-placeholder {
+    font-family: "MoMA Sans", var(--language-font-face), Helvetica, sans-serif
+}
+
+input::-moz-placeholder {
+    font-family: "MoMA Sans", var(--language-font-face), Helvetica, sans-serif
+}
+
+input:-ms-input-placeholder {
+    font-family: "MoMA Sans", var(--language-font-face), Helvetica, sans-serif
+}
+
+input::-webkit-input-placeholder {
+    font-family: "MoMA Sans", var(--language-font-face), Helvetica, sans-serif
+}
+
+@font-face {
+    font-family: "MoMA Sans";
+    src: url("/dist/moma-sans/moma-sans__light.eot");
+    src: url("/dist/moma-sans/moma-sans__light.eot?#iefix") format("embedded-opentype"), url("/dist/moma-sans/moma-sans__light.woff2") format("woff2"), url("/dist/moma-sans/moma-sans__light.woff") format("woff");
+    font-weight: 100;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "MoMA Sans";
+    src: url("/dist/moma-sans/moma-sans__light--italic.eot");
+    src: url("/dist/moma-sans/moma-sans__light--italic.eot?#iefix") format("embedded-opentype"), url("/dist/moma-sans/moma-sans__light--italic.woff2") format("woff2"), url("/dist/moma-sans/moma-sans__light--italic.woff") format("woff");
+    font-weight: 100;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "MoMA Sans";
+    src: url("/dist/moma-sans/moma-sans__light.eot");
+    src: url("/dist/moma-sans/moma-sans__light.eot?#iefix") format("embedded-opentype"), url("/dist/moma-sans/moma-sans__light.woff2") format("woff2"), url("/dist/moma-sans/moma-sans__light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "MoMA Sans";
+    src: url("/dist/moma-sans/moma-sans__light--italic.eot");
+    src: url("/dist/moma-sans/moma-sans__light--italic.eot?#iefix") format("embedded-opentype"), url("/dist/moma-sans/moma-sans__light--italic.woff2") format("woff2"), url("/dist/moma-sans/moma-sans__light--italic.woff") format("woff");
+    font-weight: 300;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "MoMA Sans";
+    src: url("/dist/moma-sans/moma-sans__regular.eot");
+    src: url("/dist/moma-sans/moma-sans__regular.eot?#iefix") format("embedded-opentype"), url("/dist/moma-sans/moma-sans__regular.woff2") format("woff2"), url("/dist/moma-sans/moma-sans__regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "MoMA Sans";
+    src: url("/dist/moma-sans/moma-sans__regular--italic.eot");
+    src: url("/dist/moma-sans/moma-sans__regular--italic.eot?#iefix") format("embedded-opentype"), url("/dist/moma-sans/moma-sans__regular--italic.woff2") format("woff2"), url("/dist/moma-sans/moma-sans__regular--italic.woff") format("woff");
+    font-weight: 400;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "MoMA Sans";
+    src: url("/dist/moma-sans/moma-sans__medium.eot");
+    src: url("/dist/moma-sans/moma-sans__medium.eot?#iefix") format("embedded-opentype"), url("/dist/moma-sans/moma-sans__medium.woff2") format("woff2"), url("/dist/moma-sans/moma-sans__medium.woff") format("woff");
+    font-weight: 600;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "MoMA Sans";
+    src: url("/dist/moma-sans/moma-sans__medium--italic.eot");
+    src: url("/dist/moma-sans/moma-sans__medium--italic.eot?#iefix") format("embedded-opentype"), url("/dist/moma-sans/moma-sans__medium--italic.woff2") format("woff2"), url("/dist/moma-sans/moma-sans__medium--italic.woff") format("woff");
+    font-weight: 600;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "MoMA Sans";
+    src: url("/dist/moma-sans/moma-sans__semibold.eot");
+    src: url("/dist/moma-sans/moma-sans__semibold.eot?#iefix") format("embedded-opentype"), url("/dist/moma-sans/moma-sans__semibold.woff2") format("woff2"), url("/dist/moma-sans/moma-sans__semibold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "MoMA Sans";
+    src: url("/dist/moma-sans/moma-sans__semibold--italic.eot");
+    src: url("/dist/moma-sans/moma-sans__semibold--italic.eot?#iefix") format("embedded-opentype"), url("/dist/moma-sans/moma-sans__semibold--italic.woff2") format("woff2"), url("/dist/moma-sans/moma-sans__semibold--italic.woff") format("woff");
+    font-weight: 700;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "MoMA Sans";
+    src: url("/dist/moma-sans/moma-sans__bold.eot");
+    src: url("/dist/moma-sans/moma-sans__bold.eot?#iefix") format("embedded-opentype"), url("/dist/moma-sans/moma-sans__bold.woff2") format("woff2"), url("/dist/moma-sans/moma-sans__bold.woff") format("woff");
+    font-weight: 900;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "MoMA Sans";
+    src: url("/dist/moma-sans/moma-sans__bold--italic.eot");
+    src: url("/dist/moma-sans/moma-sans__bold--italic.eot?#iefix") format("embedded-opentype"), url("/dist/moma-sans/moma-sans__bold--italic.woff2") format("woff2"), url("/dist/moma-sans/moma-sans__bold--italic.woff") format("woff");
+    font-weight: 900;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "MoMA Sans Condensed";
+    src: url("/dist/moma-sans/moma-sans--condensed__light.eot");
+    src: url("/dist/moma-sans/moma-sans--condensed__light.eot?#iefix") format("embedded-opentype"), url("/dist/moma-sans/moma-sans--condensed__light.woff2") format("woff2"), url("/dist/moma-sans/moma-sans--condensed__light.woff") format("woff");
+    font-weight: 100;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "MoMA Sans Condensed";
+    src: url("/dist/moma-sans/moma-sans--condensed__light--italic.eot");
+    src: url("/dist/moma-sans/moma-sans--condensed__light--italic.eot?#iefix") format("embedded-opentype"), url("/dist/moma-sans/moma-sans--condensed__light--italic.woff2") format("woff2"), url("/dist/moma-sans/moma-sans--condensed__light--italic.woff") format("woff");
+    font-weight: 100;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "MoMA Sans Condensed";
+    src: url("/dist/moma-sans/moma-sans--condensed__light.eot");
+    src: url("/dist/moma-sans/moma-sans--condensed__light.eot?#iefix") format("embedded-opentype"), url("/dist/moma-sans/moma-sans--condensed__light.woff2") format("woff2"), url("/dist/moma-sans/moma-sans--condensed__light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "MoMA Sans Condensed";
+    src: url("/dist/moma-sans/moma-sans--condensed__light--italic.eot");
+    src: url("/dist/moma-sans/moma-sans--condensed__light--italic.eot?#iefix") format("embedded-opentype"), url("/dist/moma-sans/moma-sans--condensed__light--italic.woff2") format("woff2"), url("/dist/moma-sans/moma-sans--condensed__light--italic.woff") format("woff");
+    font-weight: 300;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "MoMA Sans Condensed";
+    src: url("/dist/moma-sans/moma-sans--condensed__regular.eot");
+    src: url("/dist/moma-sans/moma-sans--condensed__regular.eot?#iefix") format("embedded-opentype"), url("/dist/moma-sans/moma-sans--condensed__regular.woff2") format("woff2"), url("/dist/moma-sans/moma-sans--condensed__regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "MoMA Sans Condensed";
+    src: url("/dist/moma-sans/moma-sans--condensed__regular--italic.eot");
+    src: url("/dist/moma-sans/moma-sans--condensed__regular--italic.eot?#iefix") format("embedded-opentype"), url("/dist/moma-sans/moma-sans--condensed__regular--italic.woff2") format("woff2"), url("/dist/moma-sans/moma-sans--condensed__regular--italic.woff") format("woff");
+    font-weight: 400;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "MoMA Sans Condensed";
+    src: url("/dist/moma-sans/moma-sans--condensed__medium.eot");
+    src: url("/dist/moma-sans/moma-sans--condensed__medium.eot?#iefix") format("embedded-opentype"), url("/dist/moma-sans/moma-sans--condensed__medium.woff2") format("woff2"), url("/dist/moma-sans/moma-sans--condensed__medium.woff") format("woff");
+    font-weight: 600;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "MoMA Sans Condensed";
+    src: url("/dist/moma-sans/moma-sans--condensed__medium--italic.eot");
+    src: url("/dist/moma-sans/moma-sans--condensed__medium--italic.eot?#iefix") format("embedded-opentype"), url("/dist/moma-sans/moma-sans--condensed__medium--italic.woff2") format("woff2"), url("/dist/moma-sans/moma-sans--condensed__medium--italic.woff") format("woff");
+    font-weight: 600;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "MoMA Sans Condensed";
+    src: url("/dist/moma-sans/moma-sans--condensed__semibold.eot");
+    src: url("/dist/moma-sans/moma-sans--condensed__semibold.eot?#iefix") format("embedded-opentype"), url("/dist/moma-sans/moma-sans--condensed__semibold.woff2") format("woff2"), url("/dist/moma-sans/moma-sans--condensed__semibold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "MoMA Sans Condensed";
+    src: url("/dist/moma-sans/moma-sans--condensed__semibold--italic.eot");
+    src: url("/dist/moma-sans/moma-sans--condensed__semibold--italic.eot?#iefix") format("embedded-opentype"), url("/dist/moma-sans/moma-sans--condensed__semibold--italic.woff2") format("woff2"), url("/dist/moma-sans/moma-sans--condensed__semibold--italic.woff") format("woff");
+    font-weight: 700;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "MoMA Sans Condensed";
+    src: url("/dist/moma-sans/moma-sans--condensed__bold.eot");
+    src: url("/dist/moma-sans/moma-sans--condensed__bold.eot?#iefix") format("embedded-opentype"), url("/dist/moma-sans/moma-sans--condensed__bold.woff2") format("woff2"), url("/dist/moma-sans/moma-sans--condensed__bold.woff") format("woff");
+    font-weight: 900;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "MoMA Sans Condensed";
+    src: url("/dist/moma-sans/moma-sans--condensed__bold--italic.eot");
+    src: url("/dist/moma-sans/moma-sans--condensed__bold--italic.eot?#iefix") format("embedded-opentype"), url("/dist/moma-sans/moma-sans--condensed__bold--italic.woff2") format("woff2"), url("/dist/moma-sans/moma-sans--condensed__bold--italic.woff") format("woff");
+    font-weight: 900;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Noto Sans SC";
+    src: url("/dist/noto-sans/noto-sans--sc__thin.eot");
+    src: url("/dist/noto-sans/noto-sans--sc__thin.eot?#iefix") format("embedded-opentype"), url("/dist/noto-sans/noto-sans--sc__thin.woff2") format("woff2"), url("/dist/noto-sans/noto-sans--sc__thin.woff") format("woff");
+    font-weight: 100;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Noto Sans SC";
+    src: url("/dist/noto-sans/noto-sans--sc__light.eot");
+    src: url("/dist/noto-sans/noto-sans--sc__light.eot?#iefix") format("embedded-opentype"), url("/dist/noto-sans/noto-sans--sc__light.woff2") format("woff2"), url("/dist/noto-sans/noto-sans--sc__light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Noto Sans SC";
+    src: url("/dist/noto-sans/noto-sans--sc__regular.eot");
+    src: url("/dist/noto-sans/noto-sans--sc__regular.eot?#iefix") format("embedded-opentype"), url("/dist/noto-sans/noto-sans--sc__regular.woff2") format("woff2"), url("/dist/noto-sans/noto-sans--sc__regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Noto Sans SC";
+    src: url("/dist/noto-sans/noto-sans--sc__medium.eot");
+    src: url("/dist/noto-sans/noto-sans--sc__medium.eot?#iefix") format("embedded-opentype"), url("/dist/noto-sans/noto-sans--sc__medium.woff2") format("woff2"), url("/dist/noto-sans/noto-sans--sc__medium.woff") format("woff");
+    font-weight: 600;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Noto Sans SC";
+    src: url("/dist/noto-sans/noto-sans--sc__bold.eot");
+    src: url("/dist/noto-sans/noto-sans--sc__bold.eot?#iefix") format("embedded-opentype"), url("/dist/noto-sans/noto-sans--sc__bold.woff2") format("woff2"), url("/dist/noto-sans/noto-sans--sc__bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Noto Sans SC";
+    src: url("/dist/noto-sans/noto-sans--sc__black.eot");
+    src: url("/dist/noto-sans/noto-sans--sc__black.eot?#iefix") format("embedded-opentype"), url("/dist/noto-sans/noto-sans--sc__black.woff2") format("woff2"), url("/dist/noto-sans/noto-sans--sc__black.woff") format("woff");
+    font-weight: 900;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Noto Sans TC";
+    src: url("/dist/noto-sans/noto-sans--tc__thin.eot");
+    src: url("/dist/noto-sans/noto-sans--tc__thin.eot?#iefix") format("embedded-opentype"), url("/dist/noto-sans/noto-sans--tc__thin.woff2") format("woff2"), url("/dist/noto-sans/noto-sans--tc__thin.woff") format("woff");
+    font-weight: 100;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Noto Sans TC";
+    src: url("/dist/noto-sans/noto-sans--tc__light.eot");
+    src: url("/dist/noto-sans/noto-sans--tc__light.eot?#iefix") format("embedded-opentype"), url("/dist/noto-sans/noto-sans--tc__light.woff2") format("woff2"), url("/dist/noto-sans/noto-sans--tc__light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Noto Sans TC";
+    src: url("/dist/noto-sans/noto-sans--tc__regular.eot");
+    src: url("/dist/noto-sans/noto-sans--tc__regular.eot?#iefix") format("embedded-opentype"), url("/dist/noto-sans/noto-sans--tc__regular.woff2") format("woff2"), url("/dist/noto-sans/noto-sans--tc__regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Noto Sans TC";
+    src: url("/dist/noto-sans/noto-sans--tc__medium.eot");
+    src: url("/dist/noto-sans/noto-sans--tc__medium.eot?#iefix") format("embedded-opentype"), url("/dist/noto-sans/noto-sans--tc__medium.woff2") format("woff2"), url("/dist/noto-sans/noto-sans--tc__medium.woff") format("woff");
+    font-weight: 600;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Noto Sans TC";
+    src: url("/dist/noto-sans/noto-sans--tc__bold.eot");
+    src: url("/dist/noto-sans/noto-sans--tc__bold.eot?#iefix") format("embedded-opentype"), url("/dist/noto-sans/noto-sans--tc__bold.woff2") format("woff2"), url("/dist/noto-sans/noto-sans--tc__bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Noto Sans TC";
+    src: url("/dist/noto-sans/noto-sans--tc__black.eot");
+    src: url("/dist/noto-sans/noto-sans--tc__black.eot?#iefix") format("embedded-opentype"), url("/dist/noto-sans/noto-sans--tc__black.woff2") format("woff2"), url("/dist/noto-sans/noto-sans--tc__black.woff") format("woff");
+    font-weight: 900;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Noto Sans KR";
+    src: url("/dist/noto-sans/noto-sans--kr__thin.eot");
+    src: url("/dist/noto-sans/noto-sans--kr__thin.eot?#iefix") format("embedded-opentype"), url("/dist/noto-sans/noto-sans--kr__thin.woff2") format("woff2"), url("/dist/noto-sans/noto-sans--kr__thin.woff") format("woff");
+    font-weight: 100;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Noto Sans KR";
+    src: url("/dist/noto-sans/noto-sans--kr__light.eot");
+    src: url("/dist/noto-sans/noto-sans--kr__light.eot?#iefix") format("embedded-opentype"), url("/dist/noto-sans/noto-sans--kr__light.woff2") format("woff2"), url("/dist/noto-sans/noto-sans--kr__light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Noto Sans KR";
+    src: url("/dist/noto-sans/noto-sans--kr__regular.eot");
+    src: url("/dist/noto-sans/noto-sans--kr__regular.eot?#iefix") format("embedded-opentype"), url("/dist/noto-sans/noto-sans--kr__regular.woff2") format("woff2"), url("/dist/noto-sans/noto-sans--kr__regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Noto Sans KR";
+    src: url("/dist/noto-sans/noto-sans--kr__medium.eot");
+    src: url("/dist/noto-sans/noto-sans--kr__medium.eot?#iefix") format("embedded-opentype"), url("/dist/noto-sans/noto-sans--kr__medium.woff2") format("woff2"), url("/dist/noto-sans/noto-sans--kr__medium.woff") format("woff");
+    font-weight: 600;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Noto Sans KR";
+    src: url("/dist/noto-sans/noto-sans--kr__bold.eot");
+    src: url("/dist/noto-sans/noto-sans--kr__bold.eot?#iefix") format("embedded-opentype"), url("/dist/noto-sans/noto-sans--kr__bold.woff2") format("woff2"), url("/dist/noto-sans/noto-sans--kr__bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Noto Sans KR";
+    src: url("/dist/noto-sans/noto-sans--kr__black.eot");
+    src: url("/dist/noto-sans/noto-sans--kr__black.eot?#iefix") format("embedded-opentype"), url("/dist/noto-sans/noto-sans--kr__black.woff2") format("woff2"), url("/dist/noto-sans/noto-sans--kr__black.woff") format("woff");
+    font-weight: 900;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Noto Sans JP";
+    src: url("/dist/noto-sans/noto-sans--jp__thin.eot");
+    src: url("/dist/noto-sans/noto-sans--jp__thin.eot?#iefix") format("embedded-opentype"), url("/dist/noto-sans/noto-sans--jp__thin.woff2") format("woff2"), url("/dist/noto-sans/noto-sans--jp__thin.woff") format("woff");
+    font-weight: 100;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Noto Sans JP";
+    src: url("/dist/noto-sans/noto-sans--jp__light.eot");
+    src: url("/dist/noto-sans/noto-sans--jp__light.eot?#iefix") format("embedded-opentype"), url("/dist/noto-sans/noto-sans--jp__light.woff2") format("woff2"), url("/dist/noto-sans/noto-sans--jp__light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Noto Sans JP";
+    src: url("/dist/noto-sans/noto-sans--jp__regular.eot");
+    src: url("/dist/noto-sans/noto-sans--jp__regular.eot?#iefix") format("embedded-opentype"), url("/dist/noto-sans/noto-sans--jp__regular.woff2") format("woff2"), url("/dist/noto-sans/noto-sans--jp__regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Noto Sans JP";
+    src: url("/dist/noto-sans/noto-sans--jp__medium.eot");
+    src: url("/dist/noto-sans/noto-sans--jp__medium.eot?#iefix") format("embedded-opentype"), url("/dist/noto-sans/noto-sans--jp__medium.woff2") format("woff2"), url("/dist/noto-sans/noto-sans--jp__medium.woff") format("woff");
+    font-weight: 600;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Noto Sans JP";
+    src: url("/dist/noto-sans/noto-sans--jp__bold.eot");
+    src: url("/dist/noto-sans/noto-sans--jp__bold.eot?#iefix") format("embedded-opentype"), url("/dist/noto-sans/noto-sans--jp__bold.woff2") format("woff2"), url("/dist/noto-sans/noto-sans--jp__bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Noto Sans JP";
+    src: url("/dist/noto-sans/noto-sans--jp__black.eot");
+    src: url("/dist/noto-sans/noto-sans--jp__black.eot?#iefix") format("embedded-opentype"), url("/dist/noto-sans/noto-sans--jp__black.woff2") format("woff2"), url("/dist/noto-sans/noto-sans--jp__black.woff") format("woff");
+    font-weight: 900;
+    font-style: normal
+}
+
+.header__nav {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 4;
+}
+.header__nav__upper, .header__nav__lower {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    transition-duration: 200ms;
+    transition-property: visibility, opacity, transform;
+    transition-timing-function: ease-in-out;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 9.6rem;
+}
+
+.header__nav__lower {    
+    display: flex;
+    flex-direction: column;
+    transition-duration: 200ms;
+    transition-property: visibility, opacity, transform;
+    transition-timing-function: ease-in-out;
+    height: 3rem !important;
+}
+
+.header__nav__lower .header__primary-nav {
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    list-style: none;
+    -webkit-text-size-adjust: none;
+    align-items: flex-start;
+    display: flex;
+    justify-content: flex-start;
+    width: auto;
+    margin-top: 2.0rem;
+}
+
+.header__nav__lower .header__primary-nav, .header__primary-nav__item {
+    -webkit-tap-highlight-color: transparent;
+    list-style: none;
+    box-sizing: border-box;
+    border: 0;
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    -webkit-text-size-adjust: none;
+    margin-left: initial;
+}
+
+.header__nav__upper__n, a {
+    color: var(--color--session);
+    fill: var(--color--session);
+    stroke: var(--color--session);
+    font-size: 18px;
+    font-weight: bolder;
+}
+@font-face {
+    font-family: "Noto Sans JP";
+    src: url("/dist/noto-sans/noto-sans--jp__black.eot");
+    src: url("/dist/noto-sans/noto-sans--jp__black.eot?#iefix") format("embedded-opentype"), url("/dist/noto-sans/noto-sans--jp__black.woff2") format("woff2"), url("/dist/noto-sans/noto-sans--jp__black.woff") format("woff");
+    font-weight: 900;
+    font-style: normal
+}
+
+.header__nav {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 4;
+}
+.header__nav__upper, .header__nav__lower {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    transition-duration: 200ms;
+    transition-property: visibility, opacity, transform;
+    transition-timing-function: ease-in-out;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 9.6rem;
+
+}
+
+.header__nav__lower {    
+    display: flex;
+    flex-direction: column;
+    transition-duration: 200ms;
+    transition-property: visibility, opacity, transform;
+    transition-timing-function: ease-in-out;
+    height: 6rem;
+}
+
+.header__nav__lower .header__primary-nav {
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    list-style: none;
+    -webkit-text-size-adjust: none;
+    align-items: flex-start;
+    display: flex;
+    justify-content: flex-start;
+    width: auto;
+    margin-top: 2.0rem;
+    top: 10px;
+    position: relative;
+}
+
+.header__nav__lower .header__primary-nav, .header__primary-nav__item {
+    -webkit-tap-highlight-color: transparent;
+    list-style: none;
+    box-sizing: border-box;
+    border: 0;
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    -webkit-text-size-adjust: none;
+    margin-left: initial;
+}
+
+.header__nav__lower .header__primary-nav, .header__primary-nav__item .header__primary-nav__item__link {
+    vertical-align: top;
+    -webkit-text-size-adjust: none;
+    color: inherit;
+    text-decoration: none;
+    padding: .8rem;
+    margin: -.8rem;
+    display: inline-flex;
+    -webkit-tap-highlight-color: rgba(0,0,0,0.07);
+    cursor: pointer;
+    touch-action: manipulation;
+}
+
+.header__primary-nav__item__link a {
+    display: block;
+}
+
+.header__primary-nav__item__link__text {
+    -webkit-font-smoothing: antialiased;
+    font-kerning: normal;
+    text-rendering: optimizeLegibility;
+    list-style: none;
+    color: inherit;
+    -webkit-tap-highlight-color: rgba(0,0,0,0.07);
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 0;
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    -webkit-text-size-adjust: none;
+    line-height: 28px;
+    letter-spacing: -0.44px;
+    font-size: 22px;
+    display: block;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    margin-top: -1.2rem;
+}
+header nav .header__wording--visit {
+    -webkit-font-smoothing: antialiased;
+    font-kerning: normal;
+    text-rendering: optimizeLegibility;
+    list-style: none;
+    color: inherit;
+    -webkit-tap-highlight-color: rgba(0,0,0,0.07);
+    cursor: pointer;
+    letter-spacing: -0.02em;
+    box-sizing: border-box;
+    border: 0;
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    -webkit-text-size-adjust: none;
+}
+
+
+.header__primary-nav__item:first-of-type {
+    margin-left: initial;
+}
+
+@media screen and  (min-width: 1280px) {
+    .header__primary-nav__item {
+/*        margin-left: 1.3rem;*/
+    }
+}
+
+.active-nav-border {
+    margin-bottom: -1rem;
+    padding-bottom: .8rem;
+    background-size: calc(100% - 0.2rem) 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-clip: padding-box;
+    background-image: linear-gradient(to top, transparent, transparent 0, #000 0, #000 0.3rem, transparent 0.3rem);
+    background-repeat: repeat-x;
+}
+
+
+.header__nav__upper__n, a {
+    color: var(--color--session);
+    fill: var(--color--session);
+    stroke: var(--color--session);
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.overlay {
+    min-height: calc(1 * var(--visible-height) - 16rem);
+    transition-duration: 200ms;
+    transition-property: min-height,opacity,visibility;
+    transition-timing-function: linear;
+
+    height: calc(100% + 9.6rem);
+    opacity: 1;
+    visibility: visible;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+.header_inner_overlay_contents {
+    position: relative;
+    top: 80px;
+    height: 100vh;
+}
+
+header nav {
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 4;
+    transition-duration: 200ms;
+    transition-property: visibility, opacity, transform;
+    transition-timing-function: ease-in-out;
+    will-change: position, transform;
+    transform: translateY(0);
+    padding-right: 0px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .header__nav__upper {
+        height: 12.4rem;
+    }
+    
+}
+
+
+
+.header__overlay__upper {
+    height: 100%;
+    position: relative;
+    display: block;
+    height: 100%;
+    padding-top: 80px;
+    padding-bottom: 150px;
+}
+
+.header__overlay__upper .section_inner {
+    display: block;
+    height: 100%;
+    overflow: hidden;
+}
+.fixed_overlay_header_section {
+    height: 90vh;
+    overflow-y: auto;
+    position: fixed;
+    width: 30%;
+    right: 50px;
+    padding-bottom: 50px;
+}
+
+
+
+
+@media screen and (min-width: 768px) and (orientation: landscape) {
+    .header__nav__upper {
+        height: 6rem;
+    }
+}
+
+
+
+.header--full>.header__nav,
+.header--full>.header__fixed,
+.header--full>.header__optional,
+.header--full>.header__overlay {
+    transform: translateY(0)
+}
+
+.header--partial>.header__nav,
+.header--partial>.header__fixed,
+.header--partial>.header__optional,
+.header--partial>.header__overlay {
+    transform: translateY(-5.6rem)
+}
+
+@media (orientation: landscape) {
+
+    .header--partial>.header__nav,
+    .header--partial>.header__fixed,
+    .header--partial>.header__optional,
+    .header--partial>.header__overlay {
+        transform: translateY(-4.4rem)
+    }
+
+    .header--partial>.header__nav .header__logo,
+    .header--partial>.header__fixed .header__logo,
+    .header--partial>.header__optional .header__logo,
+    .header--partial>.header__overlay .header__logo {
+        transform: translateY(-0.1rem)
+    }
+}
+
+@media (min-width: 768px) {
+
+    .header--partial>.header__nav,
+    .header--partial>.header__fixed,
+    .header--partial>.header__optional,
+    .header--partial>.header__overlay {
+        transform: translateY(-12.4rem)
+    }
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+
+    .header--partial>.header__nav,
+    .header--partial>.header__fixed,
+    .header--partial>.header__optional,
+    .header--partial>.header__overlay {
+        transform: translateY(-9.6rem)
+    }
+}
+
+@media (min-width: 768px) and (orientation: landscape) and (min-height: 900px) {
+
+    .header--partial>.header__nav,
+    .header--partial>.header__fixed,
+    .header--partial>.header__optional,
+    .header--partial>.header__overlay {
+        transform: translateY(-12.4rem)
+    }
+}
+
+@media (min-width: 1024px) {
+    .header--partial>.header__fixed {
+        transform: translateY(-0.8rem)
+    }
+}
+
+@media (min-width: 1024px) and (min-height: 900px) {
+    .header--partial>.header__fixed {
+        transform: translateY(-2rem)
+    }
+}
+
+.header--partial~* {
+    --header-height--current: calc(var(--header-height) - var(--header-height--headroom))
+}
+
+.header__optional {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1
+}
+
+.header__optional:after {
+    background-color: #fff;
+    bottom: 0;
+    content: '';
+    position: absolute;
+    top: 10.8rem;
+    transition-delay: 0ms;
+    width: 100%;
+    z-index: -1
+}
+
+@media (orientation: landscape) {
+    .header__optional:after {
+        top: 8.8rem
+    }
+}
+
+@media (min-width: 768px) {
+    .header__optional:after {
+        top: 19.2rem
+    }
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+    .header__optional:after {
+        top: 15.6rem
+    }
+}
+
+@media (min-width: 768px) and (orientation: landscape) and (min-height: 900px) {
+    .header__optional:after {
+        top: 19.2rem
+    }
+}
+
+
+.header--opened {
+    z-index: 10
+}
+
+.header--opened .header__optional:after {
+    transition-delay: 50ms
+}
+
+.header--opened.header--opened--fixed .header__overlay {
+    overflow: hidden
+}
+
+
+.header--not-top.header--full .search--header {
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem
+}
+
+@media (orientation: landscape) {
+    .header--not-top.header--full .search--header {
+        padding-top: 1.6rem
+    }
+}
+
+@media (min-width: 768px) {
+    .header--not-top.header--full .search--header {
+        padding-top: 4.8rem
+    }
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+    .header--not-top.header--full .search--header {
+        padding-top: 3.2rem
+    }
+}
+
+@media (min-width: 768px) and (orientation: landscape) and (min-height: 900px) {
+    .header--not-top.header--full .search--header {
+        padding-top: 4.8rem
+    }
+}
+
+@media (orientation: landscape) {
+    .header--not-top.header--full .search--header {
+        padding-bottom: 1.6rem
+    }
+}
+
+@media (min-width: 768px) {
+    .header--not-top.header--full .search--header {
+        padding-bottom: 4.8rem
+    }
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+    .header--not-top.header--full .search--header {
+        padding-bottom: 3.2rem
+    }
+}
+
+@media (min-width: 768px) and (orientation: landscape) and (min-height: 900px) {
+    .header--not-top.header--full .search--header {
+        padding-bottom: 4.8rem
+    }
+}
+
+
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, h7, .h7 {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "KievitWeb";
+    font-weight: 200;
+    line-height: 1.1;
+    color: inherit;
+}
+
+/* [ === FOOTER === ] */
+footer {
+    font-size: 1.25rem;
+    position: relative;
+    overflow: hidden;
+}

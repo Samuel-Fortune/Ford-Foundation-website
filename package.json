@@ -1,0 +1,23 @@
+{
+  "name": "ford_foundation",
+  "version": "1.0.0",
+  "description": "ford_foundation",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "build-tailwind": "npx tailwindcss -o ./src/assets/css/style.css -i ./src/assets/css/input.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Samuel-Fortune/Ford-Foundation-website.git"
+  },
+  "author": "fortune",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Samuel-Fortune/Ford-Foundation-website/issues"
+  },
+  "homepage": "https://github.com/Samuel-Fortune/Ford-Foundation-website#readme",
+  "dependencies": {
+    "tailwindcss": "^3.2.7"
+  },
+  "keywords": []
+}
