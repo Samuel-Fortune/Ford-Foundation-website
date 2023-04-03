@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+<html class="has-scroll-init has-scroll-smooth" data-scroll-direction="vertical" data-direction="down">
+<style class="adjust-screen-brightness" media="screen"></style>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,460 +10,1045 @@
 
     <!-- Jquery CDN -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+
+    <meta name="next-head-count" content="2">
+    <link rel="preload" href="./assets/css/21351ea55bc56505b0db.css" as="style">
+    <link rel="stylesheet" href="./assets/css/21351ea55bc56505b0db.css" data-n-g=""><noscript
+        data-n-css=""></noscript>
+    <link rel="preload" href="./assets/js/main-5b68261d40b089e23d7a.js.download" as="script">
+    <link rel="preload" href="./assets/js/webpack-de26111b7aadfd273675.js.download" as="script">
+    <link rel="preload" href="./assets/js/framework.321e467a69e4f193431e.js.download"
+        as="script">
+    <link rel="preload" href="./assets/js/commons.86a4e8417b81a27f51cb.js.download" as="script">
+    <link rel="preload"
+        href="./assets/js/dd4705d29f2781f4c5876fc9cea5d13018c37460.debacb9578092936517d.js.download"
+        as="script">
+    <link rel="preload" href="./assets/js/_app-2ff8e5ed403c436f6683.js.download" as="script">
+    <link rel="preload"
+        href="./assets/js/311e4e60e27b1bbada09e777db85b903e7cde89b.7fa50ee5b3f7cfb85318.js.download"
+        as="script">
+    <link rel="preload"
+        href="./assets/js/0b546012402a5e4b9a7398327cede7c8a80cdafc.5e47a6c0fc35c7d904db.js.download"
+        as="script">
+    <link rel="preload" href="./assets/js/index-b38270301411796ea0ee.js.download" as="script">
+    
+    <style data-styled="active" data-styled-version="5.2.1"></style>
+    <script charset="utf-8" src="./assets/js/6.5baf94c73554f85fba62.js.download"></script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
-<body>
-
-    <header class="relative p-0 m-0 ">
-        <nav class="header__nav container-fluid pt-5" style="z-index: 4;" data-scrollbar-offset="" role="navigation" style="padding-right: 17px;">
-            <div class="header__nav__upper" data-header-close="" style="">
-                <h1 class="header__logo" data-header-logo="true" aria-hidden="true">
-                    <a class="header__logo__link" data-skip-tab-focus="true" aria-label="MoMA" href="/" data-gtm="nav / Logo" style="">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="header__logo__link__svg block md:hidden" width="113" height="29">
-                            <path d="M22.003 28.004H29V0H18.647l-4.202 18.31L10.298 0H0v28.004h6V6.567l5.116 21.437h5.704L22.003 6.63v21.374zm55 0H84V0H73.647l-4.202 18.31L65.298 0H55v28.004h6V6.567l5.116 21.437h5.704L77.003 6.63v21.374zM38.49 17.656v.956c0 3.634 1.5 5.12 3.47 5.12 2.034 0 3.535-1.486 3.535-5.12v-.956c0-3.698-1.5-5.117-3.535-5.117-1.97 0-3.47 1.41-3.47 5.11zm-6.814.252c0-6.457 4.99-10.003 10.284-10.003 5.363 0 10.35 3.546 10.35 10.003v.42c0 6.597-4.987 10.072-10.35 10.072-5.294 0-10.284-3.475-10.284-10.072v-.42zM94.49 23l-1.586 5.004H86.35L95.427 0h8.71l8.567 28.004h-6.932L104.26 23h-9.77zm5.012-16.716l-3.41 11.72h6.66l-3.25-11.72z" stroke="none"></path>
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="header__logo__link__svg--nonmobile hidden md:block" width="209" height="53" style="">
-                            <path d="M41.998 51.996V13.332l-9.62 38.664H21.495l-9.498-38.78v38.78H0V0h19.635l7.904 32.877L35.54 0h19.453v51.996h-13zm101 0h13V0h-19.454l-8.005 32.877L120.63 0H101v51.996h11.997v-38.78l9.498 38.78h10.883l9.62-38.664v38.664zm-71.244-18.77v1.736c0 6.595 2.62 9.294 6.193 9.294 3.7 0 6.317-2.7 6.317-9.294v-1.736c0-6.712-2.618-9.29-6.317-9.29-3.572 0-6.193 2.578-6.193 9.29zm-12.315.455c0-11.72 8.73-18.15 18.33-18.15 9.737 0 18.792 6.438 18.792 18.16v.764c0 11.978-9.056 18.285-18.793 18.285-9.608 0-18.34-6.308-18.34-18.286v-.766zM193.32 43H175l-2.85 8.996h-12.248L176.752 0h16.258l15.905 51.996h-12.87L193.325 43zm-8.82-30.415l-6.21 20.42h12.135l-5.927-20.42z" stroke="none" style=""></path>
-                        </svg>
-                    </a>
-                </h1>
-
-                <div class="flex gap-2 header__nav__upper__n gap-9 relative">
-                    <a href="" class="text-[18px] text-[#e82046]">Membership</a>
-                    <a href="" class="text-[18px] text-[#e82046]">Reserve timed ticket</a>
-                </div>
-            </div>
-            <div class="header__nav__lower" style="">
-                <ul class="header__primary-nav gap-10">
-                    <li class="header__primary-nav__item" data-header-primary-nav-item="story">
-                        <a class="header__primary-nav__item__link" aria-controls="story-nav" aria-expanded="false" data-gtm="story" href="#" data-skip-tab-focus="false">
-                            <span class="header__primary-nav__item__link__text nav-toggle">
-                                <span class="header__wording--visit ">Story</span>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="header__primary-nav__item" data-header-primary-nav-item="journey">
-                        <a class="header__primary-nav__item__link" aria-controls="journey-nav" aria-expanded="false" href="#" data-gtm="journey" data-skip-tab-focus="false">
-                            <span class="header__primary-nav__item__link__text">Journey</span>
-                        </a>
-                    </li>
-                    <li class="header__primary-nav__item header__primary-nav__item--selected" data-header-primary-nav-item="mission">
-                        <a class="header__primary-nav__item__link" aria-controls="mission-nav" aria-expanded="true" href="#" data-gtm="mission" data-skip-tab-focus="false">
-                            <span class="header__primary-nav__item__link__text nav-toggle">
-                                <span class="header__wording--art">Mission </span>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="header__primary-nav__item" data-header-primary-nav-item="socials" data-nav-override="true">
-                        <a class="header__primary-nav__item__link" aria-controls="socials-nav" aria-expanded="false" href="https://store.moma.org/?utm_source=moma.org" data-gtm="socials" data-skip-tab-focus="false">
-                            <span class="header__primary-nav__item__link__text">Socials </span>
-                        </a>
-                    </li>
-                    <li class="header__primary-nav__item" data-header-primary-nav-item="lets-connect" data-nav-override="true">
-                        <a class="header__primary-nav__item__link" aria-controls="lets-connect-nav" aria-expanded="false" href="https://store.moma.org/?utm_source=moma.org" data-gtm="lets-connect" data-skip-tab-focus="false">
-                            <span class="header__primary-nav__item__link__text">Lets Connect </span>
-                        </a>
-                    </li>
-                    <li class="header__primary-nav__item" data-header-primary-nav-item="search">
-                        <a class="header__primary-nav__item__link " aria-controls="search-nav" aria-label="Search" aria-expanded="false" href="#" data-gtm="nav / Search" data-skip-tab-focus="false">
-
-                            <span class="nav-toggle">
-                                
-                                <svg xmlns="http://www.w3.org/2000/svg" class="header__primary-nav__item__link__svg block md:hidden" width="16" height="16">
-                                    <path d="M9.738 12.036a6.412 6.412 0 1 1 2.298-2.298l4.113 4.113-2.298 2.298-4.113-4.113zM6.5 10.088a3.588 3.588 0 1 0 0-7.176 3.588 3.588 0 0 0 0 7.176z" stroke="none"></path>
-                                </svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="header__primary-nav__item__link__svg--nonmobile hidden md:block" width="20" height="20">
-                                    <path d="M11.514 14.343a7.25 7.25 0 1 1 2.828-2.828l4.822 4.82-2.828 2.83-4.822-4.822zM8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8z" stroke="none"></path>
-                                </svg>
-                            </span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <div class="header__nav-spacer"></div>
-        <div class="header__optional" data-scrollbar-offset="" style="padding-right: 17px;">
-        </div>
-
-        <div class="overlay h-screen bg-white w-full fixed hidden overflow-y-auto -z-10">
-            <div class="header_inner_overlay_contents  grid grid-cols-1 sm:grid-cols-6 ">
-                <div class="header__overlay__upper px-[120px] sm:col-span-4 py-[50px]">
-                    
-                    <div data-nav-popup class="hidden story-nav ">
-                        <ul id="visit-nav" class="flex flex-col gap-8" data-header-secondary-nav="visit" aria-hidden="false">
-                          <li class="" data-header-secondary-nav-item="tickets">
-                            <a class="" href="/tickets/select" aria-label="MoMA timed tickets" data-gtm="nav / Plan your visit / Buy tickets / MoMA">
-                              <span class=" leading-[44px] text-[40px] font-[900]">Onitiri </span>
-                            </a>
-                          </li>
-                          <li class="" data-header-secondary-nav-item="tickets">
-                            <a class="" href="/tickets/select" aria-label="MoMA timed tickets" data-gtm="nav / Plan your visit / Buy tickets / MoMA">
-                              <span class=" leading-[44px] text-[40px] font-[900]">Coker family of Lagos</span>
-                            </a>
-                          </li>
-                          <li >
-                            <a class="close__overlay__popup" href="#" aria-label="close navigation" data-header-close-link="true" data-gtm="nav / overlay / close" style="fill: black; color: black;visibility: visible; height: 60px; display: block; width: 30px;">
-                              <svg xmlns="http://www.w3.org/2000/svg" class="header__secondary-nav__item__link__svg--close" viewBox="0 0 24 24"> <path d="M1.5 22.5l21-21m-21 0l21 21" fill="none" vector-effect="non-scaling-stroke" style="    fill: black; stroke: black; color: black; display: block; opacity: 1; stroke-width: 5px; visibility: visible;"></path></svg>
-                            </a>
-                          </li>
-
-                        </ul>
-                    </div>
-
-                    <div data-nav-popup class="hidden mission-nav ">
-                        <ul id="visit-nav" class="flex flex-col gap-8" data-header-secondary-nav="visit" aria-hidden="false">
-                          <li class="" data-header-secondary-nav-item="tickets">
-                            <a class="" href="/tickets/select" aria-label="MoMA timed tickets" data-gtm="nav / Plan your visit / Buy tickets / MoMA">
-                              <span class=" leading-[44px] text-[40px] font-[900]">Sickle Cell </span>
-                            </a>
-                          </li>
-                          <li class="" data-header-secondary-nav-item="tickets">
-                            <a class="" href="/tickets/select" aria-label="MoMA timed tickets" data-gtm="nav / Plan your visit / Buy tickets / MoMA">
-                              <span class=" leading-[44px] text-[40px] font-[900]">The Elderly, Trees</span>
-                            </a>
-                          </li>
-                          <li >
-                            <a class="close__overlay__popup" href="#" aria-label="close navigation" data-header-close-link="true" data-gtm="nav / overlay / close" style="fill: black; color: black;visibility: visible; height: 60px; display: block; width: 30px;">
-                              <svg xmlns="http://www.w3.org/2000/svg" class="header__secondary-nav__item__link__svg--close" viewBox="0 0 24 24"> <path d="M1.5 22.5l21-21m-21 0l21 21" fill="none" vector-effect="non-scaling-stroke" style="    fill: black; stroke: black; color: black; display: block; opacity: 1; stroke-width: 5px; visibility: visible;"></path></svg>
-                            </a>
-                          </li>
-
-                        </ul>
-                    </div>
-
-                     <div data-nav-popup class="hidden socials-nav ">
-                        <ul id="visit-nav" class="flex flex-col gap-8" data-header-secondary-nav="visit" aria-hidden="false">
-                           <li class="" data-header-secondary-nav-item="instagram">
-                            <a class="" href="/socials/instagram" aria-label="Visit Our Instagram Page" data-gtm="Visit Our Instagram Page">
-                              <span class=" leading-[44px] text-[40px] font-[900]">Instagram</span>
-                            </a>
-                          </li>
-                          <li class="" data-header-secondary-nav-item="twitter">
-                            <a class="" href="/socials/twitter" aria-label="Visit Our Twitter Page" data-gtm="Visit Our Twitter Page">
-                              <span class=" leading-[44px] text-[40px] font-[900]">Twitter</span>
-                            </a>
-                          </li>
-
-                           <li class="" data-header-secondary-nav-item="linkedIn">
-                            <a class="" href="/socials/linkedIn" aria-label="isit Our LinkedIn Page" data-gtm="Visit Our LinkedIn Page">
-                              <span class=" leading-[44px] text-[40px] font-[900]">LinkedIn</span>
-                            </a>
-                          </li>
-
-                           <li class="" data-header-secondary-nav-item="youtube">
-                            <a class="" href="/socials/youtube" aria-label="Visit Our YouTube Channel" data-gtm="Visit Our YouTube Channel">
-                              <span class=" leading-[44px] text-[40px] font-[900]">YouTube</span>
-                            </a>
-                          </li>
-                          <li >
-                            <a class="close__overlay__popup" href="#" aria-label="close navigation" data-header-close-link="true" data-gtm="nav / overlay / close" style="fill: black; color: black;visibility: visible; height: 60px; display: block; width: 30px;">
-                              <svg xmlns="http://www.w3.org/2000/svg" class="header__secondary-nav__item__link__svg--close" viewBox="0 0 24 24"> <path d="M1.5 22.5l21-21m-21 0l21 21" fill="none" vector-effect="non-scaling-stroke" style="    fill: black; stroke: black; color: black; display: block; opacity: 1; stroke-width: 5px; visibility: visible;"></path></svg>
-                            </a>
-                          </li>
-
-                        </ul>
-                    </div>
-
-                    <div  data-nav-popup class="hidden search-nav">
-                        <form action="./" method="GET">
-                            <input type="search" name="search" class="text-[#e82046] text-[40px] font-[900] placeholder:text-gray-400 outline-none leading-[52px] mb-10 tracking-[1.1px] focus:outline-none border-none w-full" placeholder="Search moma.org">
-                        </form>
-
-                        <ul class="flex flex-col gap-">
-                            <li >
-                                <a class="close__overlay__popup" href="#" aria-label="close navigation" data-header-close-link="true" data-gtm="nav / overlay / close" style="fill: black; color: black;visibility: visible; height: 60px; display: block; width: 30px;">
-                                  <svg xmlns="http://www.w3.org/2000/svg" class="header__secondary-nav__item__link__svg--close" viewBox="0 0 24 24"> <path d="M1.5 22.5l21-21m-21 0l21 21" fill="none" vector-effect="non-scaling-stroke" style="    fill: black; stroke: black; color: black; display: block; opacity: 1; stroke-width: 5px; visibility: visible;"></path></svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="sm:col-span-2 fixed_overlay_header_section">
-                    <ul class=" flex flex-col gap-3">
-                        <li>
-                          <a  href="/about" data-gtm="nav / overlay / About us" data-skip-tab-focus="false">
-                            <span class=" leading-[44px] text-[25px] font-[900]" style="">About us</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a  href="/support" data-gtm="nav / overlay / Support" data-skip-tab-focus="false">
-                            <span class=" leading-[44px] text-[25px] font-[900]">Support</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a  href="/research-and-learning" data-gtm="nav / overlay / Research and learning" data-skip-tab-focus="false">
-                            <span class=" leading-[44px] text-[25px] font-[900]">Research and learning</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a  href="/magazine/" data-gtm="nav / overlay / Magazine" data-skip-tab-focus="false">
-                            <span class=" leading-[44px] text-[25px] font-[900]">Magazine</span>
-                          </a>
-                        </li>
-
-                        <li>    
-                            <a href="" class="text-[25px] font-[900] text-[#e82046]">MoMa Timed Tickets</a>
-                        </li>
-                        <li>
-                            <a href="" class="text-[25px] font-[900] text-[#e82046]">Become a member</a>
-                        </li>
-                      </ul>
-                </div>
-
-            </div>
-        </div>
-        
-    </header>
+<body data-new-gr-c-s-check-loaded="14.1102.0" data-gr-ext-installed="" class="">
 
 
-    <main class=" mt-[150px] py-10  block relative overflow-hidden "> 
-        <section class="bg-gray-200 py-7 gap-3 font-[900] leading-[22px] w-full text-[#555555]">
-
-            <div class="flex container-fluid align-middle">
-                
-                <div class="w-max">
-                    <a href="" class="font-[900] text-2xl">Masks are strongly recommended, but not required, for all visitors.</a>
-                </div>
-
-                <div class="w-max float-right ml-5 pl-4">
-                    <a href="" class="flex items-center">
-                        <span class="font-[900] text-xl">See Our Tips for visiting</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="typography/icon:after fill-black stroke-black w-[25px] h-[25px]" viewBox="0 0 16 16"> <path d="M2.5 8H13" fill="none" vector-effect="non-scaling-stroke"></path> <path d="M8 3l5 5-5 5" fill="none" vector-effect="non-scaling-stroke"></path></svg>   
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section class="container-fluid">
-            
-            <div class="bg-blue-900">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="footer-wrapper">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-3 col-md-4 col-lg-3 padding-topx3">
-                    <h2 class="h6">CONNECT</h2>
-                    <div class="footer-icons flex gap-4">
-                        <a href="https://twitter.com/FordFoundation" target="blank" title="Ford Foundation on Twitter" tabindex="0" aria-label="Click to visit Ford Foundation on Twitter"> <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
-                                <title>Twitter</title>
-                                <g class="icon">
-                                    <g class="twitter">
-                                        <path d="M20,4A16,16,0,1,0,36,20,16,16,0,0,0,20,4Zm8,13c0,.16,0,.33,0,.49a10.9,10.9,0,0,1-11,11,10.75,10.75,0,0,1-5.89-1.74,6.9,6.9,0,0,0,.92.05,7.72,7.72,0,0,0,4.79-1.65,3.84,3.84,0,0,1-3.6-2.68,3.55,3.55,0,0,0,.73.08,3.73,3.73,0,0,0,1-.14,3.85,3.85,0,0,1-3.09-3.78v0a3.8,3.8,0,0,0,1.74.48A3.84,3.84,0,0,1,12,15.8a3.88,3.88,0,0,1,.52-1.94,10.92,10.92,0,0,0,8,4,3.65,3.65,0,0,1-.1-.88,3.86,3.86,0,0,1,3.85-3.86A3.8,3.8,0,0,1,27,14.38a8,8,0,0,0,2.45-.94,3.89,3.89,0,0,1-1.7,2.14A8.09,8.09,0,0,0,30,15,8.15,8.15,0,0,1,28,17Z"></path>
-                                    </g>
-                                </g>
-                                <g class="border">
-                                    <path d="M20,1.5A18.5,18.5,0,1,1,1.5,20,18.52,18.52,0,0,1,20,1.5M20,0A20,20,0,1,0,40,20,20,20,0,0,0,20,0Z"></path>
-                                </g>
+    <div id="__next">
+        <header class="relative p-0 m-0 ">
+            <nav class="header__nav container-fluid pt-5" style="z-index: 4;" data-scrollbar-offset="" role="navigation" style="padding-right: 17px;">
+                <div class="header__nav__upper" data-header-close="" style="">
+                    <h1 class="header__logo" data-header-logo="true" aria-hidden="true">
+                        <a class="header__logo__link" data-skip-tab-focus="true" aria-label="MoMA" href="/" data-gtm="nav / Logo" style="">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="header__logo__link__svg block md:hidden" width="113" height="29">
+                                <path d="M22.003 28.004H29V0H18.647l-4.202 18.31L10.298 0H0v28.004h6V6.567l5.116 21.437h5.704L22.003 6.63v21.374zm55 0H84V0H73.647l-4.202 18.31L65.298 0H55v28.004h6V6.567l5.116 21.437h5.704L77.003 6.63v21.374zM38.49 17.656v.956c0 3.634 1.5 5.12 3.47 5.12 2.034 0 3.535-1.486 3.535-5.12v-.956c0-3.698-1.5-5.117-3.535-5.117-1.97 0-3.47 1.41-3.47 5.11zm-6.814.252c0-6.457 4.99-10.003 10.284-10.003 5.363 0 10.35 3.546 10.35 10.003v.42c0 6.597-4.987 10.072-10.35 10.072-5.294 0-10.284-3.475-10.284-10.072v-.42zM94.49 23l-1.586 5.004H86.35L95.427 0h8.71l8.567 28.004h-6.932L104.26 23h-9.77zm5.012-16.716l-3.41 11.72h6.66l-3.25-11.72z" stroke="none"></path>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="header__logo__link__svg--nonmobile hidden md:block" width="209" height="53" style="">
+                                <path d="M41.998 51.996V13.332l-9.62 38.664H21.495l-9.498-38.78v38.78H0V0h19.635l7.904 32.877L35.54 0h19.453v51.996h-13zm101 0h13V0h-19.454l-8.005 32.877L120.63 0H101v51.996h11.997v-38.78l9.498 38.78h10.883l9.62-38.664v38.664zm-71.244-18.77v1.736c0 6.595 2.62 9.294 6.193 9.294 3.7 0 6.317-2.7 6.317-9.294v-1.736c0-6.712-2.618-9.29-6.317-9.29-3.572 0-6.193 2.578-6.193 9.29zm-12.315.455c0-11.72 8.73-18.15 18.33-18.15 9.737 0 18.792 6.438 18.792 18.16v.764c0 11.978-9.056 18.285-18.793 18.285-9.608 0-18.34-6.308-18.34-18.286v-.766zM193.32 43H175l-2.85 8.996h-12.248L176.752 0h16.258l15.905 51.996h-12.87L193.325 43zm-8.82-30.415l-6.21 20.42h12.135l-5.927-20.42z" stroke="none" style=""></path>
                             </svg>
                         </a>
-                        <a href="https://www.facebook.com/FordFoundation/" target="blank" title="Ford Foundation on Facebook" tabindex="0" aria-label="Click to visit Ford Foundation on Facebook"> <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
-                                <title>Facebook</title>
-                                <g class="icon">
-                                    <g class="facebook">
-                                        <path d="M20,4A16,16,0,1,0,36,20,16,16,0,0,0,20,4Zm4.6,16.7h-4V31.3h-4V20.7H13.8V16.9h2.8V13.6c0-2.6,1.7-4.9,5.5-4.9a18.76,18.76,0,0,1,2.7.2l-.1,3.6H22.3c-1.4,0-1.6.6-1.6,1.7V17h4.2Z"></path>
-                                    </g>
-                                </g>
-                                <g class="border">
-                                    <path d="M20,1.5A18.5,18.5,0,1,1,1.5,20,18.52,18.52,0,0,1,20,1.5M20,0A20,20,0,1,0,40,20,20,20,0,0,0,20,0Z"></path>
-                                </g>
-                            </svg>
-                        </a>
-                        <a href="http://www.linkedin.com/company/ford-foundation" target="blank" title="Ford Foundation on LinkedIn" tabindex="0" aria-label="Click to visit Ford Foundation on LinkedIn"> <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
-                                <title>LinkedIn</title>
-                                <g class="icon linkedin">
-                                    <path d="M20,4A16,16,0,1,0,36,20,16,16,0,0,0,20,4ZM15.7,28.3H11.5V15.8h4.2ZM13.6,14a2.18,2.18,0,0,1-2.3-2.2,2.21,2.21,0,0,1,2.4-2.2A2.13,2.13,0,0,1,16,11.8,2.16,2.16,0,0,1,13.6,14ZM30.7,28.3H26.5V21.6c0-1.7-.6-2.8-2.1-2.8a2.33,2.33,0,0,0-2.1,1.5,3.08,3.08,0,0,0-.1,1v7H18s.1-11.3,0-12.5h4.2v1.8A4.09,4.09,0,0,1,26,15.5c2.7,0,4.8,1.8,4.8,5.6Z"></path>
-                                </g>
-                                <g class="border">
-                                    <path d="M20,1.5A18.5,18.5,0,1,1,1.5,20,18.52,18.52,0,0,1,20,1.5M20,0A20,20,0,1,0,40,20,20,20,0,0,0,20,0Z"></path>
-                                </g>
-                            </svg>
-                        </a>
-                        <a href="https://www.youtube.com/fordfoundation" target="blank" title="Ford Foundation on YouTube" tabindex="0" aria-label="Click to visit Ford Foundation on YouTube"> <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
-                                <title>YouTube</title>
-                                <g class="icon youtube">
-                                    <path d="M17.88,17.07l5.4,2.83-5.4,2.94ZM36,20A16,16,0,1,1,20,4,16,16,0,0,1,36,20Zm-5.84-.78a30.47,30.47,0,0,0-.2-3.31,4.44,4.44,0,0,0-.81-2,2.86,2.86,0,0,0-2-.86C24.27,12.8,20,12.8,20,12.8h0s-4.27,0-7.11.21a2.86,2.86,0,0,0-2,.86,4.44,4.44,0,0,0-.81,2c-.12,1.1-.19,2.2-.2,3.31v1.55a30.65,30.65,0,0,0,.2,3.32,4.44,4.44,0,0,0,.81,2,3.44,3.44,0,0,0,2.2.95c1.63.16,6.91.21,6.91.21s4.27,0,7.11-.21a2.91,2.91,0,0,0,2-.87,4.44,4.44,0,0,0,.81-2c.12-1.1.19-2.21.2-3.32Z"></path>
-                                </g>
-                                <g class="border">
-                                    <path d="M20,1.5A18.5,18.5,0,1,1,1.5,20,18.52,18.52,0,0,1,20,1.5M20,0A20,20,0,1,0,40,20,20,20,0,0,0,20,0Z"></path>
-                                </g>
-                            </svg>
-                        </a>
-                        <a href="https://www.instagram.com/fordfoundation/" target="blank" title="Ford Foundation on Instagram" tabindex="0" aria-label="Click to visit Ford Foundation on Instagram"> <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
-                                <title>Instagram</title>
-                                <g class="icon">
-                                    <path d="M27.49,14.34a3.23,3.23,0,0,0-.72-1.1,3.06,3.06,0,0,0-1.1-.71,5.21,5.21,0,0,0-1.79-.33c-1,0-1.31-.06-3.87-.06H16.13a5.39,5.39,0,0,0-1.78.33,3.14,3.14,0,0,0-1.82,1.82,5.45,5.45,0,0,0-.33,1.79c0,1-.06,1.31-.06,3.87v3.88a5.39,5.39,0,0,0,.33,1.78,3,3,0,0,0,.72,1.11,2.9,2.9,0,0,0,1.11.71,5.15,5.15,0,0,0,1.78.33c1,0,1.32.06,3.88.06s2.86,0,3.87-.05a6.09,6.09,0,0,0,1.79-.33,3.23,3.23,0,0,0,1.1-.72,2.9,2.9,0,0,0,.71-1.11,5.39,5.39,0,0,0,.33-1.78c0-1,.06-1.32.06-3.88s0-2.86-.05-3.87A5.71,5.71,0,0,0,27.49,14.34ZM20,24.93A4.93,4.93,0,1,1,24.93,20,4.93,4.93,0,0,1,20,24.93ZM25.12,16a1.16,1.16,0,1,1,1.16-1.16h0A1.16,1.16,0,0,1,25.12,16Zm-1.91,4A3.2,3.2,0,1,1,20,16.8,3.2,3.2,0,0,1,23.21,20ZM20,4A16,16,0,1,0,36,20,16,16,0,0,0,20,4Zm9.54,20a6.88,6.88,0,0,1-.44,2.33,4.92,4.92,0,0,1-2.81,2.81,6.88,6.88,0,0,1-2.33.44c-1,.05-1.35.06-3.95.06s-2.94,0-4-.06a6.88,6.88,0,0,1-2.33-.44A4.6,4.6,0,0,1,12,28a4.77,4.77,0,0,1-1.09-1.7,7.22,7.22,0,0,1-.44-2.3c0-1-.06-1.35-.06-4,0-1.31,0-2.63.06-3.95a6.88,6.88,0,0,1,.44-2.33A4.71,4.71,0,0,1,12,12a4.9,4.9,0,0,1,1.71-1.09,7.46,7.46,0,0,1,2.34-.44c1,0,1.35-.07,4-.07,1.31,0,2.63,0,3.95.07a7.4,7.4,0,0,1,2.33.44A5.13,5.13,0,0,1,28,12a4.69,4.69,0,0,1,1.11,1.7A7.4,7.4,0,0,1,29.55,16c.05,1,.06,1.35.06,3.95S29.59,22.94,29.54,24Z"></path>
-                                </g>
-                                <g class="border">
-                                    <path d="M20,1.5A18.5,18.5,0,1,1,1.5,20,18.52,18.52,0,0,1,20,1.5M20,0A20,20,0,1,0,40,20,20,20,0,0,0,20,0Z"></path>
-                                </g>
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="visible-xs">
-                        <div class="rule margin-topx5 margin-bottomx3"></div>
-                    </div>
-                    <h2 class="h6 padding-topx3 ">CAREERS</h2>
-                    <span class="small sans careers">Learn about <a target="_self" href="/about/careers/">Careers</a>, view <a target="_self" href="https://fordfoundation.wd1.myworkdayjobs.com/FordFoundationCareerPage">Current openings</a>, and <a target="_self" href="https://fordfoundation.wd1.myworkdayjobs.com/en-US/FordFoundationCareerPage/introduceYourself">Join our talent pool</a></span>
-                    <div class="visible-xs">
-                        <div class="rule margin-topx5 margin-bottomx3"></div>
-                    </div>
-                    <h2 class="h6 padding-topx3 ">PRESS ROOM</h2>
-                    <span class="small sans careers">Visit the <a target="_self" href="/news-and-stories/news-and-press/">Press Room</a></span>
-                </div>
-                <div class="col-xs-12 visible-xs">
-                    <div class="rule margin-topx5 margin-bottomx3"></div>
-                </div>
-                <div class="col-xs-12 col-sm-9 col-md-4 col-lg-6 padding-topx3">
-                    <h2 class="h6 contact">CONTACT</h2>
-                    <div class="row" itemscope="" itemtype="http://schema.org/Organization">
-                        <meta itemprop="name" content="Ford Foundation">
-                        <div class="col-xs-7 col-md-12 col-lg-6 padding-bottom-small">
-                            <div class="office-address">
-                                <p>Ford Foundation<br>320 E 43rd St<br>New York, NY 10017<br>USA</p>
-                            </div>
-                        </div>
-                        <div class="col-xs-5 col-md-12 col-lg-6">
-                            <p itemprop="telephone" class="hidden-xs office-telephone">Tel. (+1) 212-573-5000</p>
-                            <div>
-                                <a href="/about/the-ford-foundation-center-for-social-justice/visitor-information/" tabindex="0"><span class="directions small sans">Visitor information</span></a>
-                                <br>
-                            </div>
-                            <a href="/about/about-ford/#regional-offices" tabindex="0"><span class="small sans">Regional offices</span></a>
-                        </div>
-                        <div class="col-xs-12 visible-xs footer-number-directions" aria-hidden="true">
-                            <div class="row">
-                                <div class="col-xs-12 padding-bottomx3">
-                                    <button type="button" class="btn btn-primary" tabindex="-1">(+1) 212-573-5000</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 padding-bottomx2">
-                            <div class="visible-xs rule margin-topx3 margin-bottomx3"></div>
-                            <h2 class="h6 padding-topx2">Event spaces</h2>
-                            <span class="small sans grey-light"><a href="https://www.fordfoundation.org/about/the-ford-foundation-center-for-social-justice/event-spaces/">Learn how to book an event space</a></span>
-                        </div>
+                    </h1>
+    
+                    <div class="flex gap-2 header__nav__upper__n gap-9 relative">
+                        <a href="" class="text-[18px] text-[#e82046]">Membership</a>
+                        <a href="" class="text-[18px] text-[#e82046]">Reserve timed ticket</a>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-9 col-sm-offset-3 col-xs-12 visible-xs clearfix">
-                    <div class="rule margin-topx3 margin-bottomx3"></div>
-                </div>
-                <div class="col-xs-12 col-sm-9 col-sm-offset-3 col-md-4 col-md-offset-0 col-lg-3 padding-topx3 email-update">
-                    <form action="/umbraco/Surface/Email/Signup" class="form-group animated-label-form" method="post" novalidate="novalidate">
-                        <div class="rte email-signup-header">
-                            <h2 class="h6">SIGN UP FOR EMAIL UPDATES</h2>
-                        </div>
-                        <input data-val="true" data-val-required="The OptIn field is required." id="Footer_OptIn" name="Footer.OptIn" type="hidden" value="True"><input data-val="true" data-val-number="The field PageId must be a number." data-val-required="The PageId field is required." id="Footer_PageId" name="Footer.PageId" type="hidden" value="1332"><input id="Footer_SuccessMessageOverrideFooter" name="Footer.SuccessMessageOverride" type="hidden" value=""><input id="Footer_SubscriptionFooter" name="Footer.subscription" type="hidden" value="0d218310e6"><input id="Footer_SubscriptionFooter" name="Footer.subscription" type="hidden" value="642ef63489">
-                        <div class="signup-name-group">
-                            <div class="formpadding signup-first-name animated-label ">
-                                <input aria-label="Email signup enter first name" class="form-control empty" data-val="true" data-val-maxlength="The field First Name must be a string or array type with a maximum length of '500'." data-val-maxlength-max="500" data-val-required="First name required" id="FirstNameFooter" name="Footer.FirstName" tabindex="0" type="text" value="">
-                                <label for="FirstNameFooter">First Name</label> <span class="field-validation-valid red" data-valmsg-for="Footer.FirstName" data-valmsg-replace="true" id="FirstNameFooter-error"></span>
-                            </div>
-                            <div class="formpadding signup-last-name animated-label ">
-                                <input aria-label="Email signup enter last name" class="form-control empty" data-val="true" data-val-maxlength="The field Last Name must be a string or array type with a maximum length of '500'." data-val-maxlength-max="500" data-val-required="Last name required" id="LastNameFooter" name="Footer.LastName" tabindex="0" type="text" value="">
-                                <label for="LastNameFooter">Last Name</label>
-                                <span class="field-validation-valid red" data-valmsg-for="Footer.LastName" data-valmsg-replace="true" id="LastNameFooter-error"></span>
-                            </div>
-                        </div>
-                        <div class="formpadding signup-email animated-label ">
-                            <input aria-label="Email signup enter email" class="form-control empty" data-val="true" data-val-email="Please enter a valid email address" data-val-maxlength="The field Email must be a string or array type with a maximum length of '500'." data-val-maxlength-max="500" data-val-required="Email required" id="EmailFooter" name="Footer.Email" tabindex="0" type="text" value="">
-                            <label for="EmailFooter">Email</label> <span class="field-validation-valid red" data-valmsg-for="Footer.Email" data-valmsg-replace="true" id="EmailFooter-error"></span>
-                        </div>
-                        <div class="signup-submit-and-options">
-                            <div class="col-xs-5 no-padding">
-                                <input type="submit" class="btn btn-default short-email-submit638136128709258213 email-submit" tabindex="0" aria-label="Submit email subscription form" value="Sign up">
-                            </div>
-                            <div class="col-xs-7 ">
-                                <button type="button" class="btn btn-default btn-block email-dont-show" tabindex="0" aria-label="Do not show email popup">Don't show<span class="hidden-xxs"> this</span> again</button>
-                            </div>
-                        </div>
-                        <script>
-                        $(document).ready(function() {
-
-                            var emailSliderSelector = '.email-slider';
-                            var showingClass = 'slide-in';
-
-
-                            $('#EmailFooter, #FirstNameFooter, #LastNameFooter').on('input change', function() {
-                                var isEmpty = $(this).val() === '';
-                                $(this).toggleClass('empty', isEmpty);
-                            });
-
-                            $('#EmailFooter, #FirstNameFooter, #LastNameFooter').trigger('change');
-
-                            // Form submit
-                            $('.short-email-submit638136128709258213').click(function(e) {
-                                var $form = $(this).closest('form');
-                                if ($form.valid()) {
-
-                                    //submit
-                                    e.preventDefault();
-                                    $.ajax({
-                                        url: '/umbraco/Surface/Email/Signup',
-                                        type: 'POST',
-                                        cache: false,
-                                        data: $form.serialize(),
-                                        success: function(response, status, xhr) {
-                                            $form.parent().append(response);
-                                            $form.remove();
-                                            // Success will have a short response, failure has the full error validation messaging and form
-                                            if (response.length < 200) {
-                                                // Wait 3s and then close slider
-                                                if ($(emailSliderSelector).length) {
-                                                    setTimeout(function() {
-                                                        $(emailSliderSelector).removeClass(showingClass);
-                                                    }, 3000);
-                                                }
-                                            }
-                                        },
-                                        error: function(jqXHR, textStatus, errorThrown) {
-                                            console.log(jqXHR + " " + textStatus + " " + errorThrown);
-                                        }
-                                    });
-                                    FordFoundation.logEvent(_gaq, 'emailSignup', 'shortForm', 'TheLatest');
-                                }
-                            });
-                        });
-                        </script>
-                    </form>
-                </div>
-            </div>
-            <div class="row footer-detail">
-                <div class="col-xs-12">
-                    <div class="rule margin-topx3 margin-bottomx3"></div>
-                </div>
-                <div class="col-sm-7 col-md-6 col-lg-9">
-                    <img src="/assets/img/cc-by.svg" class="cc-by opacity-low" alt="creative commons icon">
-                    <span class="sr-only">Terms and Conditions of Use</span>
-                    <p>All our content may be republished or reused for free, except for most photographs, illustrations, and videos.</p>
-                    <ul class="list-unstyled list-inline margin-bottomx2">
-                        <li>
-                            <a href="/accessibility/" tabindex="0">Accessibility</a>
+                <div class="header__nav__lower" style="">
+                    <ul class="header__primary-nav gap-10">
+                        <li class="header__primary-nav__item" data-header-primary-nav-item="story">
+                            <a class="header__primary-nav__item__link" aria-controls="story-nav" aria-expanded="false" data-gtm="story" href="#" data-skip-tab-focus="false">
+                                <span class="header__primary-nav__item__link__text nav-toggle">
+                                    <span class="header__wording--visit ">Story</span>
+                                </span>
+                            </a>
                         </li>
-                        <li>
-                            <a href="/privacy/" tabindex="0">Privacy</a>
+                        <li class="header__primary-nav__item" data-header-primary-nav-item="journey">
+                            <a class="header__primary-nav__item__link" aria-controls="journey-nav" aria-expanded="false" href="#" data-gtm="journey" data-skip-tab-focus="false">
+                                <span class="header__primary-nav__item__link__text">Journey</span>
+                            </a>
                         </li>
-                        <li>
-                            <a href="/terms-and-conditions-of-use/" tabindex="0">Terms and Conditions</a>
+                        <li class="header__primary-nav__item header__primary-nav__item--selected" data-header-primary-nav-item="mission">
+                            <a class="header__primary-nav__item__link" aria-controls="mission-nav" aria-expanded="true" href="#" data-gtm="mission" data-skip-tab-focus="false">
+                                <span class="header__primary-nav__item__link__text nav-toggle">
+                                    <span class="header__wording--art">Mission </span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="header__primary-nav__item" data-header-primary-nav-item="socials" data-nav-override="true">
+                            <a class="header__primary-nav__item__link" aria-controls="socials-nav" aria-expanded="false" href="https://store.moma.org/?utm_source=moma.org" data-gtm="socials" data-skip-tab-focus="false">
+                                <span class="header__primary-nav__item__link__text">Socials </span>
+                            </a>
+                        </li>
+                        <li class="header__primary-nav__item" data-header-primary-nav-item="lets-connect" data-nav-override="true">
+                            <a class="header__primary-nav__item__link" aria-controls="lets-connect-nav" aria-expanded="false" href="https://store.moma.org/?utm_source=moma.org" data-gtm="lets-connect" data-skip-tab-focus="false">
+                                <span class="header__primary-nav__item__link__text">Lets Connect </span>
+                            </a>
+                        </li>
+                        <li class="header__primary-nav__item" data-header-primary-nav-item="search">
+                            <a class="header__primary-nav__item__link " aria-controls="search-nav" aria-label="Search" aria-expanded="false" href="#" data-gtm="nav / Search" data-skip-tab-focus="false">
+    
+                                <span class="nav-toggle">
+                                    
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="header__primary-nav__item__link__svg block md:hidden" width="16" height="16">
+                                        <path d="M9.738 12.036a6.412 6.412 0 1 1 2.298-2.298l4.113 4.113-2.298 2.298-4.113-4.113zM6.5 10.088a3.588 3.588 0 1 0 0-7.176 3.588 3.588 0 0 0 0 7.176z" stroke="none"></path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="header__primary-nav__item__link__svg--nonmobile hidden md:block" width="20" height="20">
+                                        <path d="M11.514 14.343a7.25 7.25 0 1 1 2.828-2.828l4.822 4.82-2.828 2.83-4.822-4.822zM8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8z" stroke="none"></path>
+                                    </svg>
+                                </span>
+                            </a>
                         </li>
                     </ul>
                 </div>
-                <div class="col-sm-5 col-md-6 col-lg-3 text-right">
-                    <p>© 2023 Ford Foundation, some rights reserved.</p>
+            </nav>
+            <div class="header__nav-spacer"></div>
+            <div class="header__optional" data-scrollbar-offset="" style="padding-right: 17px;">
+            </div>
+    
+            <div class="overlay h-screen bg-white w-full fixed hidden overflow-y-auto -z-10">
+                <div class="header_inner_overlay_contents  grid grid-cols-1 sm:grid-cols-6 ">
+                    <div class="header__overlay__upper px-[120px] sm:col-span-4 py-[50px]">
+                        
+                        <div data-nav-popup class="hidden story-nav ">
+                            <ul id="visit-nav" class="flex flex-col gap-8" data-header-secondary-nav="visit" aria-hidden="false">
+                              <li class="" data-header-secondary-nav-item="tickets">
+                                <a class="" href="/tickets/select" aria-label="MoMA timed tickets" data-gtm="nav / Plan your visit / Buy tickets / MoMA">
+                                  <span class=" leading-[44px] text-[40px] font-[900]">Onitiri </span>
+                                </a>
+                              </li>
+                              <li class="" data-header-secondary-nav-item="tickets">
+                                <a class="" href="/tickets/select" aria-label="MoMA timed tickets" data-gtm="nav / Plan your visit / Buy tickets / MoMA">
+                                  <span class=" leading-[44px] text-[40px] font-[900]">Coker family of Lagos</span>
+                                </a>
+                              </li>
+                              <li >
+                                <a class="close__overlay__popup" href="#" aria-label="close navigation" data-header-close-link="true" data-gtm="nav / overlay / close" style="fill: black; color: black;visibility: visible; height: 60px; display: block; width: 30px;">
+                                  <svg xmlns="http://www.w3.org/2000/svg" class="header__secondary-nav__item__link__svg--close" viewBox="0 0 24 24"> <path d="M1.5 22.5l21-21m-21 0l21 21" fill="none" vector-effect="non-scaling-stroke" style="    fill: black; stroke: black; color: black; display: block; opacity: 1; stroke-width: 5px; visibility: visible;"></path></svg>
+                                </a>
+                              </li>
+    
+                            </ul>
+                        </div>
+    
+                        <div data-nav-popup class="hidden mission-nav ">
+                            <ul id="visit-nav" class="flex flex-col gap-8" data-header-secondary-nav="visit" aria-hidden="false">
+                              <li class="" data-header-secondary-nav-item="tickets">
+                                <a class="" href="/tickets/select" aria-label="MoMA timed tickets" data-gtm="nav / Plan your visit / Buy tickets / MoMA">
+                                  <span class=" leading-[44px] text-[40px] font-[900]">Sickle Cell </span>
+                                </a>
+                              </li>
+                              <li class="" data-header-secondary-nav-item="tickets">
+                                <a class="" href="/tickets/select" aria-label="MoMA timed tickets" data-gtm="nav / Plan your visit / Buy tickets / MoMA">
+                                  <span class=" leading-[44px] text-[40px] font-[900]">The Elderly, Trees</span>
+                                </a>
+                              </li>
+                              <li >
+                                <a class="close__overlay__popup" href="#" aria-label="close navigation" data-header-close-link="true" data-gtm="nav / overlay / close" style="fill: black; color: black;visibility: visible; height: 60px; display: block; width: 30px;">
+                                  <svg xmlns="http://www.w3.org/2000/svg" class="header__secondary-nav__item__link__svg--close" viewBox="0 0 24 24"> <path d="M1.5 22.5l21-21m-21 0l21 21" fill="none" vector-effect="non-scaling-stroke" style="    fill: black; stroke: black; color: black; display: block; opacity: 1; stroke-width: 5px; visibility: visible;"></path></svg>
+                                </a>
+                              </li>
+    
+                            </ul>
+                        </div>
+    
+                         <div data-nav-popup class="hidden socials-nav ">
+                            <ul id="visit-nav" class="flex flex-col gap-8" data-header-secondary-nav="visit" aria-hidden="false">
+                               <li class="" data-header-secondary-nav-item="instagram">
+                                <a class="" href="/socials/instagram" aria-label="Visit Our Instagram Page" data-gtm="Visit Our Instagram Page">
+                                  <span class=" leading-[44px] text-[40px] font-[900]">Instagram</span>
+                                </a>
+                              </li>
+                              <li class="" data-header-secondary-nav-item="twitter">
+                                <a class="" href="/socials/twitter" aria-label="Visit Our Twitter Page" data-gtm="Visit Our Twitter Page">
+                                  <span class=" leading-[44px] text-[40px] font-[900]">Twitter</span>
+                                </a>
+                              </li>
+    
+                               <li class="" data-header-secondary-nav-item="linkedIn">
+                                <a class="" href="/socials/linkedIn" aria-label="isit Our LinkedIn Page" data-gtm="Visit Our LinkedIn Page">
+                                  <span class=" leading-[44px] text-[40px] font-[900]">LinkedIn</span>
+                                </a>
+                              </li>
+    
+                               <li class="" data-header-secondary-nav-item="youtube">
+                                <a class="" href="/socials/youtube" aria-label="Visit Our YouTube Channel" data-gtm="Visit Our YouTube Channel">
+                                  <span class=" leading-[44px] text-[40px] font-[900]">YouTube</span>
+                                </a>
+                              </li>
+                              <li >
+                                <a class="close__overlay__popup" href="#" aria-label="close navigation" data-header-close-link="true" data-gtm="nav / overlay / close" style="fill: black; color: black;visibility: visible; height: 60px; display: block; width: 30px;">
+                                  <svg xmlns="http://www.w3.org/2000/svg" class="header__secondary-nav__item__link__svg--close" viewBox="0 0 24 24"> <path d="M1.5 22.5l21-21m-21 0l21 21" fill="none" vector-effect="non-scaling-stroke" style="    fill: black; stroke: black; color: black; display: block; opacity: 1; stroke-width: 5px; visibility: visible;"></path></svg>
+                                </a>
+                              </li>
+    
+                            </ul>
+                        </div>
+    
+                        <div  data-nav-popup class="hidden search-nav">
+                            <form action="./" method="GET">
+                                <input type="search" name="search" class="text-[#e82046] text-[40px] font-[900] placeholder:text-gray-400 outline-none leading-[52px] mb-10 tracking-[1.1px] focus:outline-none border-none w-full" placeholder="Search moma.org">
+                            </form>
+    
+                            <ul class="flex flex-col gap-">
+                                <li >
+                                    <a class="close__overlay__popup" href="#" aria-label="close navigation" data-header-close-link="true" data-gtm="nav / overlay / close" style="fill: black; color: black;visibility: visible; height: 60px; display: block; width: 30px;">
+                                      <svg xmlns="http://www.w3.org/2000/svg" class="header__secondary-nav__item__link__svg--close" viewBox="0 0 24 24"> <path d="M1.5 22.5l21-21m-21 0l21 21" fill="none" vector-effect="non-scaling-stroke" style="    fill: black; stroke: black; color: black; display: block; opacity: 1; stroke-width: 5px; visibility: visible;"></path></svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <div class="sm:col-span-2 fixed_overlay_header_section">
+                        <ul class=" flex flex-col gap-3">
+                            <li>
+                              <a  href="/about" data-gtm="nav / overlay / About us" data-skip-tab-focus="false">
+                                <span class=" leading-[44px] text-[25px] font-[900]" style="">About us</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a  href="/support" data-gtm="nav / overlay / Support" data-skip-tab-focus="false">
+                                <span class=" leading-[44px] text-[25px] font-[900]">Support</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a  href="/research-and-learning" data-gtm="nav / overlay / Research and learning" data-skip-tab-focus="false">
+                                <span class=" leading-[44px] text-[25px] font-[900]">Research and learning</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a  href="/magazine/" data-gtm="nav / overlay / Magazine" data-skip-tab-focus="false">
+                                <span class=" leading-[44px] text-[25px] font-[900]">Magazine</span>
+                              </a>
+                            </li>
+    
+                            <li>    
+                                <a href="" class="text-[25px] font-[900] text-[#e82046]">MoMa Timed Tickets</a>
+                            </li>
+                            <li>
+                                <a href="" class="text-[25px] font-[900] text-[#e82046]">Become a member</a>
+                            </li>
+                          </ul>
+                    </div>
+    
                 </div>
             </div>
-        </div>
-    </footer>
+            
+        </header>
+    
+    
+        <main class=" mt-[150px] py-10  block relative overflow-hidden "> 
+            <section class="bg-gray-200 py-7 gap-3 font-[900] leading-[22px] w-full text-[#555555]">
+    
+                <div class="flex container-fluid align-middle">
+                    
+                    <div class="w-max">
+                        <a href="" class="font-[900] text-2xl">Masks are strongly recommended, but not required, for all visitors.</a>
+                    </div>
+    
+                    <div class="w-max float-right ml-5 pl-4">
+                        <a href="" class="flex items-center">
+                            <span class="font-[900] text-xl">See Our Tips for visiting</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="typography/icon:after fill-black stroke-black w-[25px] h-[25px]" viewBox="0 0 16 16"> <path d="M2.5 8H13" fill="none" vector-effect="non-scaling-stroke"></path> <path d="M8 3l5 5-5 5" fill="none" vector-effect="non-scaling-stroke"></path></svg>   
+                        </a>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="container-fluid">
+                <div class="pages__Container-sc-177lhxc-0 dwMxXZ">
+                    <div id="menu" class="Menu__Container-sc-11rx8tf-0 chrvCQ"><a
+                            href="https://www.hugobazin.com/#work">work</a><a
+                            href="https://www.hugobazin.com/#story">story</a><a
+                            href="https://www.hugobazin.com/#experiences">experiences</a><a
+                            href="https://www.hugobazin.com/#contact">contact</a></div>
+                    
+                        <div  id="menu" class="relative p-0 m-0 Menu__Container-sc-11rx8tf-0 chrvCQ">
+                            <nav class="header__nav container-fluid pt-5" style="z-index: 4;" data-scrollbar-offset="" role="navigation" style="padding-right: 17px;">
+                                <div class="header__nav__upper" data-header-close="" style="">
+                                    <h1 class="header__logo" data-header-logo="true" aria-hidden="true">
+                                        <a class="header__logo__link" data-skip-tab-focus="true" aria-label="MoMA" href="/" data-gtm="nav / Logo" style="">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="header__logo__link__svg block md:hidden" width="113" height="29">
+                                                <path d="M22.003 28.004H29V0H18.647l-4.202 18.31L10.298 0H0v28.004h6V6.567l5.116 21.437h5.704L22.003 6.63v21.374zm55 0H84V0H73.647l-4.202 18.31L65.298 0H55v28.004h6V6.567l5.116 21.437h5.704L77.003 6.63v21.374zM38.49 17.656v.956c0 3.634 1.5 5.12 3.47 5.12 2.034 0 3.535-1.486 3.535-5.12v-.956c0-3.698-1.5-5.117-3.535-5.117-1.97 0-3.47 1.41-3.47 5.11zm-6.814.252c0-6.457 4.99-10.003 10.284-10.003 5.363 0 10.35 3.546 10.35 10.003v.42c0 6.597-4.987 10.072-10.35 10.072-5.294 0-10.284-3.475-10.284-10.072v-.42zM94.49 23l-1.586 5.004H86.35L95.427 0h8.71l8.567 28.004h-6.932L104.26 23h-9.77zm5.012-16.716l-3.41 11.72h6.66l-3.25-11.72z" stroke="none"></path>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="header__logo__link__svg--nonmobile hidden md:block" width="209" height="53" style="">
+                                                <path d="M41.998 51.996V13.332l-9.62 38.664H21.495l-9.498-38.78v38.78H0V0h19.635l7.904 32.877L35.54 0h19.453v51.996h-13zm101 0h13V0h-19.454l-8.005 32.877L120.63 0H101v51.996h11.997v-38.78l9.498 38.78h10.883l9.62-38.664v38.664zm-71.244-18.77v1.736c0 6.595 2.62 9.294 6.193 9.294 3.7 0 6.317-2.7 6.317-9.294v-1.736c0-6.712-2.618-9.29-6.317-9.29-3.572 0-6.193 2.578-6.193 9.29zm-12.315.455c0-11.72 8.73-18.15 18.33-18.15 9.737 0 18.792 6.438 18.792 18.16v.764c0 11.978-9.056 18.285-18.793 18.285-9.608 0-18.34-6.308-18.34-18.286v-.766zM193.32 43H175l-2.85 8.996h-12.248L176.752 0h16.258l15.905 51.996h-12.87L193.325 43zm-8.82-30.415l-6.21 20.42h12.135l-5.927-20.42z" stroke="none" style=""></path>
+                                            </svg>
+                                        </a>
+                                    </h1>
+                    
+                                    <div class="flex gap-2 header__nav__upper__n gap-9 relative">
+                                        <a href="" class="text-[18px] text-[#e82046]">Membership</a>
+                                        <a href="" class="text-[18px] text-[#e82046]">Reserve timed ticket</a>
+                                    </div>
+                                </div>
+                                <div class="header__nav__lower" style="">
+                                    <ul class="header__primary-nav gap-10">
+                                        <li class="header__primary-nav__item" data-header-primary-nav-item="story">
+                                            <a class="header__primary-nav__item__link" aria-controls="story-nav" aria-expanded="false" data-gtm="story" href="#" data-skip-tab-focus="false">
+                                                <span class="header__primary-nav__item__link__text nav-toggle">
+                                                    <span class="header__wording--visit ">Story</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="header__primary-nav__item" data-header-primary-nav-item="journey">
+                                            <a class="header__primary-nav__item__link" aria-controls="journey-nav" aria-expanded="false" href="#" data-gtm="journey" data-skip-tab-focus="false">
+                                                <span class="header__primary-nav__item__link__text">Journey</span>
+                                            </a>
+                                        </li>
+                                        <li class="header__primary-nav__item header__primary-nav__item--selected" data-header-primary-nav-item="mission">
+                                            <a class="header__primary-nav__item__link" aria-controls="mission-nav" aria-expanded="true" href="#" data-gtm="mission" data-skip-tab-focus="false">
+                                                <span class="header__primary-nav__item__link__text nav-toggle">
+                                                    <span class="header__wording--art">Mission </span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="header__primary-nav__item" data-header-primary-nav-item="socials" data-nav-override="true">
+                                            <a class="header__primary-nav__item__link" aria-controls="socials-nav" aria-expanded="false" href="https://store.moma.org/?utm_source=moma.org" data-gtm="socials" data-skip-tab-focus="false">
+                                                <span class="header__primary-nav__item__link__text">Socials </span>
+                                            </a>
+                                        </li>
+                                        <li class="header__primary-nav__item" data-header-primary-nav-item="lets-connect" data-nav-override="true">
+                                            <a class="header__primary-nav__item__link" aria-controls="lets-connect-nav" aria-expanded="false" href="https://store.moma.org/?utm_source=moma.org" data-gtm="lets-connect" data-skip-tab-focus="false">
+                                                <span class="header__primary-nav__item__link__text">Lets Connect </span>
+                                            </a>
+                                        </li>
+                                        <li class="header__primary-nav__item" data-header-primary-nav-item="search">
+                                            <a class="header__primary-nav__item__link " aria-controls="search-nav" aria-label="Search" aria-expanded="false" href="#" data-gtm="nav / Search" data-skip-tab-focus="false">
+                    
+                                                <span class="nav-toggle">
+                                                    
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="header__primary-nav__item__link__svg block md:hidden" width="16" height="16">
+                                                        <path d="M9.738 12.036a6.412 6.412 0 1 1 2.298-2.298l4.113 4.113-2.298 2.298-4.113-4.113zM6.5 10.088a3.588 3.588 0 1 0 0-7.176 3.588 3.588 0 0 0 0 7.176z" stroke="none"></path>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="header__primary-nav__item__link__svg--nonmobile hidden md:block" width="20" height="20">
+                                                        <path d="M11.514 14.343a7.25 7.25 0 1 1 2.828-2.828l4.822 4.82-2.828 2.83-4.822-4.822zM8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8z" stroke="none"></path>
+                                                    </svg>
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="header__nav-spacer"></div>
+                            <div class="header__optional" data-scrollbar-offset="" style="padding-right: 17px;">
+                            </div>
+                    
+                            <div class="overlay h-screen bg-white w-full fixed hidden overflow-y-auto -z-10">
+                                <div class="header_inner_overlay_contents  grid grid-cols-1 sm:grid-cols-6 ">
+                                    <div class="header__overlay__upper px-[120px] sm:col-span-4 py-[50px]">
+                                        
+                                        <div data-nav-popup class="hidden story-nav ">
+                                            <ul id="visit-nav" class="flex flex-col gap-8" data-header-secondary-nav="visit" aria-hidden="false">
+                                                <li class="" data-header-secondary-nav-item="tickets">
+                                                <a class="" href="/tickets/select" aria-label="MoMA timed tickets" data-gtm="nav / Plan your visit / Buy tickets / MoMA">
+                                                    <span class=" leading-[44px] text-[40px] font-[900]">Onitiri </span>
+                                                </a>
+                                                </li>
+                                                <li class="" data-header-secondary-nav-item="tickets">
+                                                <a class="" href="/tickets/select" aria-label="MoMA timed tickets" data-gtm="nav / Plan your visit / Buy tickets / MoMA">
+                                                    <span class=" leading-[44px] text-[40px] font-[900]">Coker family of Lagos</span>
+                                                </a>
+                                                </li>
+                                                <li >
+                                                <a class="close__overlay__popup" href="#" aria-label="close navigation" data-header-close-link="true" data-gtm="nav / overlay / close" style="fill: black; color: black;visibility: visible; height: 60px; display: block; width: 30px;">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="header__secondary-nav__item__link__svg--close" viewBox="0 0 24 24"> <path d="M1.5 22.5l21-21m-21 0l21 21" fill="none" vector-effect="non-scaling-stroke" style="    fill: black; stroke: black; color: black; display: block; opacity: 1; stroke-width: 5px; visibility: visible;"></path></svg>
+                                                </a>
+                                                </li>
+                    
+                                            </ul>
+                                        </div>
+                    
+                                        <div data-nav-popup class="hidden mission-nav ">
+                                            <ul id="visit-nav" class="flex flex-col gap-8" data-header-secondary-nav="visit" aria-hidden="false">
+                                                <li class="" data-header-secondary-nav-item="tickets">
+                                                <a class="" href="/tickets/select" aria-label="MoMA timed tickets" data-gtm="nav / Plan your visit / Buy tickets / MoMA">
+                                                    <span class=" leading-[44px] text-[40px] font-[900]">Sickle Cell </span>
+                                                </a>
+                                                </li>
+                                                <li class="" data-header-secondary-nav-item="tickets">
+                                                <a class="" href="/tickets/select" aria-label="MoMA timed tickets" data-gtm="nav / Plan your visit / Buy tickets / MoMA">
+                                                    <span class=" leading-[44px] text-[40px] font-[900]">The Elderly, Trees</span>
+                                                </a>
+                                                </li>
+                                                <li >
+                                                <a class="close__overlay__popup" href="#" aria-label="close navigation" data-header-close-link="true" data-gtm="nav / overlay / close" style="fill: black; color: black;visibility: visible; height: 60px; display: block; width: 30px;">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="header__secondary-nav__item__link__svg--close" viewBox="0 0 24 24"> <path d="M1.5 22.5l21-21m-21 0l21 21" fill="none" vector-effect="non-scaling-stroke" style="    fill: black; stroke: black; color: black; display: block; opacity: 1; stroke-width: 5px; visibility: visible;"></path></svg>
+                                                </a>
+                                                </li>
+                    
+                                            </ul>
+                                        </div>
+                    
+                                            <div data-nav-popup class="hidden socials-nav ">
+                                            <ul id="visit-nav" class="flex flex-col gap-8" data-header-secondary-nav="visit" aria-hidden="false">
+                                                <li class="" data-header-secondary-nav-item="instagram">
+                                                <a class="" href="/socials/instagram" aria-label="Visit Our Instagram Page" data-gtm="Visit Our Instagram Page">
+                                                    <span class=" leading-[44px] text-[40px] font-[900]">Instagram</span>
+                                                </a>
+                                                </li>
+                                                <li class="" data-header-secondary-nav-item="twitter">
+                                                <a class="" href="/socials/twitter" aria-label="Visit Our Twitter Page" data-gtm="Visit Our Twitter Page">
+                                                    <span class=" leading-[44px] text-[40px] font-[900]">Twitter</span>
+                                                </a>
+                                                </li>
+                    
+                                                <li class="" data-header-secondary-nav-item="linkedIn">
+                                                <a class="" href="/socials/linkedIn" aria-label="isit Our LinkedIn Page" data-gtm="Visit Our LinkedIn Page">
+                                                    <span class=" leading-[44px] text-[40px] font-[900]">LinkedIn</span>
+                                                </a>
+                                                </li>
+                    
+                                                <li class="" data-header-secondary-nav-item="youtube">
+                                                <a class="" href="/socials/youtube" aria-label="Visit Our YouTube Channel" data-gtm="Visit Our YouTube Channel">
+                                                    <span class=" leading-[44px] text-[40px] font-[900]">YouTube</span>
+                                                </a>
+                                                </li>
+                                                <li >
+                                                <a class="close__overlay__popup" href="#" aria-label="close navigation" data-header-close-link="true" data-gtm="nav / overlay / close" style="fill: black; color: black;visibility: visible; height: 60px; display: block; width: 30px;">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="header__secondary-nav__item__link__svg--close" viewBox="0 0 24 24"> <path d="M1.5 22.5l21-21m-21 0l21 21" fill="none" vector-effect="non-scaling-stroke" style="    fill: black; stroke: black; color: black; display: block; opacity: 1; stroke-width: 5px; visibility: visible;"></path></svg>
+                                                </a>
+                                                </li>
+                    
+                                            </ul>
+                                        </div>
+                    
+                                        <div  data-nav-popup class="hidden search-nav">
+                                            <form action="./" method="GET">
+                                                <input type="search" name="search" class="text-[#e82046] text-[40px] font-[900] placeholder:text-gray-400 outline-none leading-[52px] mb-10 tracking-[1.1px] focus:outline-none border-none w-full" placeholder="Search moma.org">
+                                            </form>
+                    
+                                            <ul class="flex flex-col gap-">
+                                                <li >
+                                                    <a class="close__overlay__popup" href="#" aria-label="close navigation" data-header-close-link="true" data-gtm="nav / overlay / close" style="fill: black; color: black;visibility: visible; height: 60px; display: block; width: 30px;">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="header__secondary-nav__item__link__svg--close" viewBox="0 0 24 24"> <path d="M1.5 22.5l21-21m-21 0l21 21" fill="none" vector-effect="non-scaling-stroke" style="    fill: black; stroke: black; color: black; display: block; opacity: 1; stroke-width: 5px; visibility: visible;"></path></svg>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="sm:col-span-2 fixed_overlay_header_section">
+                                        <ul class=" flex flex-col gap-3">
+                                            <li>
+                                                <a  href="/about" data-gtm="nav / overlay / About us" data-skip-tab-focus="false">
+                                                <span class=" leading-[44px] text-[25px] font-[900]" style="">About us</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a  href="/support" data-gtm="nav / overlay / Support" data-skip-tab-focus="false">
+                                                <span class=" leading-[44px] text-[25px] font-[900]">Support</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a  href="/research-and-learning" data-gtm="nav / overlay / Research and learning" data-skip-tab-focus="false">
+                                                <span class=" leading-[44px] text-[25px] font-[900]">Research and learning</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a  href="/magazine/" data-gtm="nav / overlay / Magazine" data-skip-tab-focus="false">
+                                                <span class=" leading-[44px] text-[25px] font-[900]">Magazine</span>
+                                                </a>
+                                            </li>
+                    
+                                            <li>    
+                                                <a href="" class="text-[25px] font-[900] text-[#e82046]">MoMa Timed Tickets</a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="text-[25px] font-[900] text-[#e82046]">Become a member</a>
+                                            </li>
+                                            </ul>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                            
+                        </div>
+                    <section id="intro" data-scroll-section="true" data-scroll-position="top"
+                        class="Intro__Container-sc-1h0qxrg-0 ckKmFw" data-scroll-section-id="section0"
+                        style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -679, 0, 1); opacity: 1; pointer-events: all;"
+                        data-scroll-section-inview="">
+                        <div class="Intro__IntroBlocOne-sc-1h0qxrg-1 eCMuaS">
+                            <div class="Intro__IntroSubHeader-sc-1h0qxrg-2 gwTsdw"><span>Hey!</span></div>
+                            <div class="Intro__IntroBody-sc-1h0qxrg-3 iQVGPe">
+                                <div><span>I’m Hugo and </span></div>
+                                <div><span>I’m a Product </span></div>
+                                <div><span>Designer for </span></div>
+                                <div><span>9 years.</span></div>
+                            </div>
+                        </div>
+                        <div data-scroll="true" data-scroll-speed="10" id="heyP"
+                            class="Intro__ImageContainer-sc-1h0qxrg-5 jsozYO is-inview"
+                            style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -360.4, 0, 1);">
+                            <div
+                                style="display: block; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;">
+                                <div style="display: block; box-sizing: border-box; padding-top: 150.033%;"></div>
+                                <img
+                                    alt="Me, me, me" src="./assets/img/selfie.jpg" srcset="./assets/img/selfie.jpg" decoding="async"
+                                    style="visibility: visible; position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;">
+                            </div>
+                        </div>
+                    </section>
+                    <section data-scroll-section="true" class="Intro__IntroBlocTwo-sc-1h0qxrg-4 bpmFaX"
+                        data-scroll-section-id="section1"
+                        style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -679, 0, 1); opacity: 1; pointer-events: all;"
+                        data-scroll-section-inview="">I’m currently Design Team Lead at Randstad IT Solutions in Montréal
+                        ⚜️, Canada.</section>
+                    <div data-scroll-section="true" data-scroll="true" data-scroll-repeat="true"
+                        data-scroll-call="menuAppear" class="pages__WorkMarquee-sc-177lhxc-1 blwsOQ"
+                        data-scroll-section-id="section2"
+                        style="opacity: 1; pointer-events: all; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -679, 0, 1);"
+                        data-scroll-section-inview="">
+                        <div id="tickerContainer" data-scroll="true" data-scroll-class="tickerPlay"
+                            data-scroll-repeat="true" class="pages__Marquee-sc-177lhxc-3 dBbuWP tickerPlay">
+                            <div class="ticker" style="position: relative; overflow: hidden; height: 80px;">
+                                <div class="ticker__element"
+                                    style="will-change: transform; position: absolute; left: 0px; top: 0px; transform: translate3d(-417.454px, 0px, 0px);">
+                                    <span>Check some of my stuff</span><span>Check some of my stuff</span></div>
+                                <div class="ticker__element"
+                                    style="will-change: transform; position: absolute; left: 0px; top: 0px; transform: translate3d(1445.25px, 0px, 0px);">
+                                    <span>Check some of my stuff</span><span>Check some of my stuff</span></div>
+                                <div class="ticker__element"
+                                    style="will-change: transform; position: absolute; left: 0px; top: 0px; transform: translate3d(1690px, 0px, 0px);">
+                                    <span>Check some of my stuff</span><span>Check some of my stuff</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <section id="work" data-scroll="true" data-scroll-section="true" data-scroll-repeat="true"
+                        data-scroll-call="borderInitial" class="CaseStudies__Container-d6h7p6-0 drTUGY"
+                        data-scroll-section-id="section3"
+                        style="opacity: 0; pointer-events: none; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);">
+                        <div data="[object Object]" class="CaseStudy__Container-l1nuj9-0 cJoiGQ is-inview"
+                            data-scroll="true">
+                            <div class="CaseStudy__InnerContainer-l1nuj9-1 hkGqCL">
+                                <div data-scroll="true" data-scroll-offset="30%" data-scroll-id="va"
+                                    class="CaseStudy__PictureContainer-l1nuj9-2 dhtMjW is-inview">
+                                    <div class="CaseStudy__Title-l1nuj9-3 jIRdaE cspt is-inview" data-scroll="true"
+                                        data-scroll-offset="30%" data-scroll-direction="horizontal" data-scroll-speed="-1"
+                                        style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);">
+                                        <div><span>Track package deliveries</span><span>Track package deliveries</span>
+                                        </div>
+                                    </div><a href="https://www.hugobazin.com/va">
+                                        <div class="CaseStudy__Picture-l1nuj9-4 kDvaxz cspp" id="va"><img aria-hidden="true"
+                                                alt="" src="https://www.hugobazin.com/"
+                                                style="position: absolute; inset: 0px; width: 100%; height: 100%; object-fit: cover; object-position: center center; filter: blur(2rem); transform: scale(1.2); background: rgb(255, 255, 255);">
+                                            <div
+                                                style="display: block; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;">
+                                                <div style="display: block; box-sizing: border-box; padding-top: 56.25%;">
+                                                </div><img alt="Canadian Trucking company"
+                                                    src="./assets/img/cover.png"
+                                                   
+                                                    srcset="./assets/img/cover.png"
+                                                    decoding="async"
+                                                    style="visibility: visible; position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; transform: scale3d(1.011, 1.011, 1);">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="CaseStudy__Content-l1nuj9-5 bwQLHD content"><span
+                                        class="CaseStudy__Desc-l1nuj9-6 hXXsEc">I accompanied the company in the automation
+                                        of its processes by designing the new processes and screens of its new ERP</span>
+                                    <div class="CaseStudy__Tags-l1nuj9-12 dNjcyF"><span>#User
+                                            Research</span><span>#Conception</span><span>#ERP</span><span>#B2E</span><span>#UI
+                                            Design</span><span>#From scratch to the end</span></div>
+                                    <div class="CaseStudy__Infos-l1nuj9-7 hsjqXd"><span
+                                            class="CaseStudy__Date-l1nuj9-8 dgBlUj">2020</span>
+                                        <div class="CaseStudy__Client-l1nuj9-9 czhzIf"><span
+                                                class="CaseStudy__Emoji-l1nuj9-10 dcEuXK">🚚</span><span
+                                                class="CaseStudy__Company-l1nuj9-11 gXXEoI">Canadian Trucking company</span>
+                                        </div>
+                                    </div><a href="https://www.hugobazin.com/va"
+                                        class="CaseStudy__CaseLink-l1nuj9-13 cgrUVF">View the case study -&gt;</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div data="[object Object]" class="CaseStudy__Container-l1nuj9-0 cJoiGQ is-inview"
+                            data-scroll="true">
+                            <div class="CaseStudy__InnerContainer-l1nuj9-1 hkGqCL">
+                                <div data-scroll="true" data-scroll-offset="30%" data-scroll-id="safti"
+                                    class="CaseStudy__PictureContainer-l1nuj9-2 dhtMjW is-inview">
+                                    <div class="CaseStudy__Title-l1nuj9-3 jIRdaE cspt is-inview" data-scroll="true"
+                                        data-scroll-offset="30%" data-scroll-direction="horizontal" data-scroll-speed="-1"
+                                        style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);">
+                                        <div><span>Tell the story of real estate brokers</span><span>Tell the story of real
+                                                estate brokers</span></div>
+                                    </div><a href="https://www.hugobazin.com/safti">
+                                        <div class="CaseStudy__Picture-l1nuj9-4 kDvaxz cspp" id="safti"><img
+                                                aria-hidden="true" alt="" src="https://www.hugobazin.com/"
+                                                style="position: absolute; inset: 0px; width: 100%; height: 100%; object-fit: cover; object-position: center center; filter: blur(2rem); transform: scale(1.2); background: rgb(255, 255, 255);">
+                                            <div
+                                                style="display: block; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;">
+                                                <div style="display: block; box-sizing: border-box; padding-top: 56.25%;">
+                                                </div><img alt="SAFTI.fr"
+                                                    src="./assets/img/cover(1).png"
+                                                    srcset="./assets/img/cover(1).png"
+                                                    decoding="async"
+                                                    style="visibility: visible; position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; transform: scale3d(1.001, 1.001, 1);">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="CaseStudy__Content-l1nuj9-5 bwQLHD content"><span
+                                        class="CaseStudy__Desc-l1nuj9-6 hXXsEc">My objective was to design the user
+                                        experience of SAFTI’s new website. I accompanied them from the identification of the
+                                        stakeholders’ needs to the design of a functional prototype.</span>
+                                    <div class="CaseStudy__Tags-l1nuj9-12 dNjcyF"><span>#User
+                                            Research</span><span>#Conception</span><span>#Prototype</span><span>#Workshops</span><span>#Lean
+                                            UX</span></div>
+                                    <div class="CaseStudy__Infos-l1nuj9-7 hsjqXd"><span
+                                            class="CaseStudy__Date-l1nuj9-8 dgBlUj">2020</span>
+                                        <div class="CaseStudy__Client-l1nuj9-9 czhzIf"><span
+                                                class="CaseStudy__Emoji-l1nuj9-10 dcEuXK">🏡</span><span
+                                                class="CaseStudy__Company-l1nuj9-11 gXXEoI">SAFTI.fr</span></div>
+                                    </div><a href="https://www.hugobazin.com/safti"
+                                        class="CaseStudy__CaseLink-l1nuj9-13 cgrUVF">View the case study -&gt;</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div data="[object Object]" class="CaseStudy__Container-l1nuj9-0 cJoiGQ is-inview"
+                            data-scroll="true">
+                            <div class="CaseStudy__InnerContainer-l1nuj9-1 hkGqCL">
+                                <div data-scroll="true" data-scroll-offset="30%" data-scroll-id="fabre"
+                                    class="CaseStudy__PictureContainer-l1nuj9-2 dhtMjW is-inview">
+                                    <div class="CaseStudy__Title-l1nuj9-3 jIRdaE cspt is-inview" data-scroll="true"
+                                        data-scroll-offset="30%" data-scroll-direction="horizontal" data-scroll-speed="-1"
+                                        style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);">
+                                        <div><span>Evangelize the teams to the UX method</span><span>Evangelize the teams to
+                                                the UX method</span></div>
+                                    </div><a href="https://www.hugobazin.com/fabre">
+                                        <div class="CaseStudy__Picture-l1nuj9-4 kDvaxz cspp" id="fabre"><img
+                                                aria-hidden="true" alt="" src="https://www.hugobazin.com/"
+                                                style="position: absolute; inset: 0px; width: 100%; height: 100%; object-fit: cover; object-position: center center; filter: blur(2rem); transform: scale(1.2); background: rgb(255, 255, 255);">
+                                            <div
+                                                style="display: block; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;">
+                                                <div style="display: block; box-sizing: border-box; padding-top: 56.25%;">
+                                                </div><img alt="Pierre Fabre Group"
+                                                    src="./assets/js/cover(2).png"
+                                                    srcset="./assets/js/cover(2).png"
+                                                    decoding="async"
+                                                    style="visibility: visible; position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; transform: scale3d(1.013, 1.013, 1);">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="CaseStudy__Content-l1nuj9-5 bwQLHD content"><span
+                                        class="CaseStudy__Desc-l1nuj9-6 hXXsEc">The company was undergoing a transformation
+                                        focused on digital and customer relations. I worked with the team leading the
+                                        transformation to demonstrate some Design Thinking and UX processes and to train the
+                                        international headquarters teams.</span>
+                                    <div class="CaseStudy__Tags-l1nuj9-12 dNjcyF">
+                                        <span>#Training</span><span>#Workshops</span><span>#Design
+                                            Thinking</span><span>#Service Blueprint</span></div>
+                                    <div class="CaseStudy__Infos-l1nuj9-7 hsjqXd"><span
+                                            class="CaseStudy__Date-l1nuj9-8 dgBlUj">2019</span>
+                                        <div class="CaseStudy__Client-l1nuj9-9 czhzIf"><span
+                                                class="CaseStudy__Emoji-l1nuj9-10 dcEuXK">🌸</span><span
+                                                class="CaseStudy__Company-l1nuj9-11 gXXEoI">Pierre Fabre Group</span></div>
+                                    </div><a href="https://www.hugobazin.com/fabre"
+                                        class="CaseStudy__CaseLink-l1nuj9-13 cgrUVF">View the case study -&gt;</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div data-scroll="true" data-scroll-section="true" data-scroll-repeat="true"
+                        data-scroll-call="borderBlack" class="pages__Border-sc-177lhxc-4 bsbqNS"
+                        data-scroll-section-id="section4"
+                        style="opacity: 0; pointer-events: none; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);">
+                    </div>
+                    <div data-scroll-section="true" class="pages__StoryMarquee-sc-177lhxc-2 bZFutV"
+                        data-scroll-section-id="section5"
+                        style="opacity: 0; pointer-events: none; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);">
+                        <div id="story" class="pages__Marquee-sc-177lhxc-3 dBbuWP">
+                            <div class="ticker" style="position: relative; overflow: hidden; height: 80px;">
+                                <div class="ticker__element"
+                                    style="will-change: transform; position: absolute; left: 0px; top: 0px; transform: translate3d(-1532.91px, 0px, 0px);">
+                                    <span>Want to know more ’bout me?</span><span>Curious?</span><span>I’m a unicorn!</span>
+                                </div>
+                                <div class="ticker__element"
+                                    style="will-change: transform; position: absolute; left: 0px; top: 0px; transform: translate3d(578.876px, 0px, 0px);">
+                                    <span>Want to know more ’bout me?</span><span>Curious?</span><span>I’m a unicorn!</span>
+                                </div>
+                                <div class="ticker__element"
+                                    style="will-change: transform; position: absolute; left: 0px; top: 0px; transform: translate3d(1690px, 0px, 0px);">
+                                    <span>Want to know more ’bout me?</span><span>Curious?</span><span>I’m a unicorn!</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <section id="about" data-scroll-section="true" class="Story__Container-acu6fb-0 ebrlec"
+                        data-scroll-section-id="section6"
+                        style="opacity: 0; pointer-events: none; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);">
+                        <div class="Story__Content-acu6fb-2 daQPpY">
+                            <div data-scroll="true" data-scroll-offset="20%" class="Story__Title-acu6fb-1 kxmbbG is-inview">
+                                My Story</div>
+                            <p id="storyBloc1" class="Story__StoryBloc-acu6fb-3 fAKUHt"><span>G’day!</span><span>I’m Hugo
+                                    and I’m the Design Team Lead of <a
+                                        href="https://www.randstad.ca/employers/it-solutions/" target="blank">Randstad IT
+                                        Solutions Canada</a>.</span><span>I’ve been designing things for the last 9 years
+                                    and I’ve had the opportunity to work for small and big clients like <a
+                                        href="https://www.desjardins.com/" target="blank">Desjardins</a> 💲, <a
+                                        href="https://www.pierre-fabre.com/" target="blank">Pierre Fabre Group</a> 🌸 or <a
+                                        href="https://www.hydroquebec.com/" target="blank">Hydro-Québec</a> ⚡.</span></p>
+                            <p id="storyBloc2" class="Story__StoryBloc-acu6fb-3 fAKUHt"><span>With the years, I learned that
+                                    the best user experiences do not just lead to great business outcomes, but are also
+                                    humane. 🙂</span></p>
+                            <p id="storyBloc2" class="Story__StoryBloc-acu6fb-3 fAKUHt"><span>I try to reach this goal each
+                                    time, making my work as accessible, pleasant and inclusive as possible, learning from my
+                                    past experiences to build better things. ✊</span></p>
+                            <p id="storyBloc3" class="Story__StoryBloc-acu6fb-3 fAKUHt"><span>Outside of my job, I spend my
+                                    energy organizing design meetings, writing things or simply traveling around to discover
+                                    Canada 🍁 and the world 🌎.</span><span>I’m also a big fan of sweets and unicorns 🦄, an
+                                    avid book reader and a gamer when I’ve enough time to do that!</span></p>
+                        </div>
+                        <div data-scroll="true" data-scroll-sticky="true" data-scroll-target="#about"
+                            data-scroll-repeat="true" class="Story__Side-acu6fb-4 fkBbgs"
+                            style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);">
+                            <div id="side1" class="Story__SideBloc-acu6fb-5 bFkuj">
+                                <div data-scroll="true" data-scroll-target="#storyBloc1" data-scroll-repeat="true" class="">
+                                    <div class="Story__SubHeader-acu6fb-6 bnycrK">Borned on</div>
+                                    <div class="Story__Location-acu6fb-7 hdFTrB">The Réunion Island <span
+                                            class="Story__Emoji-acu6fb-8 gQSYkb">🌴</span></div>
+                                </div>
+                            </div>
+                            <div id="side2" class="Story__SideBloc-acu6fb-5 bFkuj">
+                                <div data-scroll="true" data-scroll-target="#storyBloc2" data-scroll-repeat="true" class="">
+                                    <div class="Story__SubHeader-acu6fb-6 bnycrK">Raised in</div>
+                                    <div class="Story__Location-acu6fb-7 hdFTrB">Bordeaux <span
+                                            class="Story__Emoji-acu6fb-8 gQSYkb">🍷</span></div>
+                                </div>
+                            </div>
+                            <div id="side3" class="Story__SideBloc-acu6fb-5 bFkuj">
+                                <div data-scroll="true" data-scroll-target="#storyBloc3" data-scroll-repeat="true" class="">
+                                    <div class="Story__SubHeader-acu6fb-6 bnycrK">Living in</div>
+                                    <div class="Story__Location-acu6fb-7 hdFTrB">Montréal <span
+                                            class="Story__Emoji-acu6fb-8 gQSYkb">⚜️</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="experiences" data-scroll-section="true" class="Experience__Container-pm2aqi-0 jwRkry"
+                        data-scroll-section-id="section7"
+                        style="opacity: 0; pointer-events: none; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);">
+                        <div data-scroll="true" data-scroll-speed="1.5"
+                            class="Experience__BriefContainer-pm2aqi-1 cLqldl is-inview"
+                            style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);">
+                            <div data-scroll="true" data-scroll-offset="20%"
+                                class="Experience__Title-pm2aqi-2 kQBQsH is-inview">Experience</div>
+                            <div data-scroll="true" data-scroll-speed="0.5"
+                                class="Experience__Brief-pm2aqi-3 fUvZtg is-inview"
+                                style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);">For over 9
+                                years, I’ve nurtured a strong Design expertise that puts the user first. On all my projects,
+                                I try to create suited, simple and tested experiences to adapt the desires of companies to
+                                the needs of users.</div>
+                        </div>
+                        <div data="[object Object]" class="HistoryItem__Container-sc-956on7-0 kzjzGY">
+                            <div class="HistoryItem__Content-sc-956on7-1 ldnfML">
+                                <div class="HistoryItem__Job-sc-956on7-2 bPOhXC">Design Team Lead at <a
+                                        href="https://www.randstad.ca/employers/it-solutions/">Randstad IT Solutions</a>
+                                </div><span>I lead the creation and development of the company’s design
+                                    practice.</span><span>Currently working at Desjardins as Senior UX Designer for the
+                                    Canadian bank’s internal applications.</span>
+                            </div>
+                            <div class="HistoryItem__Date-sc-956on7-3 hZAPqI date is-inview" data-scroll="true"
+                                data-scroll-speed="0.5" data-scroll-offset="15vh"
+                                style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);">
+                                <div>2021</div>
+                            </div>
+                        </div>
+                        <div data="[object Object]" class="HistoryItem__Container-sc-956on7-0 kzjzGY">
+                            <div class="HistoryItem__Content-sc-956on7-1 ldnfML">
+                                <div class="HistoryItem__Job-sc-956on7-2 bPOhXC">Senior Product Designer at <a
+                                        href="https://www.siainnovations.com/">SIA Innovations</a></div><span>I worked on
+                                    the design of ERP software and chatbots based on IBM automation and
+                                    AI.</span><span>Certified on IBM’s AI Design Thinking and Garage Methodologies.</span>
+                            </div>
+                            <div class="HistoryItem__Date-sc-956on7-3 hZAPqI date is-inview" data-scroll="true"
+                                data-scroll-speed="0.5" data-scroll-offset="15vh"
+                                style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);">
+                                <div>2020</div>
+                            </div>
+                        </div>
+                        <div data="[object Object]" class="HistoryItem__Container-sc-956on7-0 kzjzGY">
+                            <div class="HistoryItem__Content-sc-956on7-1 ldnfML">
+                                <div class="HistoryItem__Job-sc-956on7-2 bPOhXC">Senior Product Designer Consultant for
+                                    Componize Software</div><span>I helped the startup to identify user expectations through
+                                    interviews and researchs</span><span>I also conceived firt low-fidelity screens to
+                                    transpose user’s needs.</span>
+                            </div>
+                            <div class="HistoryItem__Date-sc-956on7-3 hZAPqI date is-inview" data-scroll="true"
+                                data-scroll-speed="0.5" data-scroll-offset="15vh"
+                                style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);">
+                                <div>2020</div>
+                            </div>
+                        </div>
+                        <div data="[object Object]" class="HistoryItem__Container-sc-956on7-0 kzjzGY">
+                            <div class="HistoryItem__Content-sc-956on7-1 ldnfML">
+                                <div class="HistoryItem__Job-sc-956on7-2 bPOhXC">Senior UX Designer at <a
+                                        href="https://www.ux-republic.com/">UX-Republic</a></div><span>Member of the small
+                                    squad delegated to build a new branch of the company in the South of
+                                    France.</span><span>I also intervened as a UX Designer consultant for clients like the
+                                    Pierre Fabre Group or SAFTI.</span><span>Created a graphic universe</span>
+                            </div>
+                            <div class="HistoryItem__Date-sc-956on7-3 hZAPqI date is-inview" data-scroll="true"
+                                data-scroll-speed="0.5" data-scroll-offset="15vh"
+                                style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);">
+                                <div>2019</div>
+                            </div>
+                        </div>
+                        <div data="[object Object]" class="HistoryItem__Container-sc-956on7-0 kzjzGY">
+                            <div class="HistoryItem__Content-sc-956on7-1 ldnfML">
+                                <div class="HistoryItem__Job-sc-956on7-2 bPOhXC">UX/ UI Lead Designer &amp; UI Developer at
+                                    <a href="https://www.logic-immo.com/">Logic-Immo</a></div><span>I launched and helped to
+                                    maintain the design system for the company’s web application intended for client real
+                                    estate agencies. As part of a complete transformation, I also helped shape the future of
+                                    the product from ideation to implementation.</span>
+                            </div>
+                            <div class="HistoryItem__Date-sc-956on7-3 hZAPqI date is-inview" data-scroll="true"
+                                data-scroll-speed="0.5" data-scroll-offset="15vh"
+                                style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);">
+                                <div>2017</div>
+                            </div>
+                        </div>
+                        <div data="[object Object]" class="HistoryItem__Container-sc-956on7-0 kzjzGY">
+                            <div class="HistoryItem__Content-sc-956on7-1 ldnfML">
+                                <div class="HistoryItem__Job-sc-956on7-2 bPOhXC">Co-founder &amp; COO at La Petite Box</div>
+                                <span>With 2 partners, I launched a startup specialised into gift boxes to promote the
+                                    Bordeaux Region creators.</span><span>Every month, I selected products from small
+                                    creators and sent boxes all over the France.</span><span>I also planned creators’
+                                    markets bringing together around 2.000 people.</span>
+                            </div>
+                            <div class="HistoryItem__Date-sc-956on7-3 hZAPqI date is-inview" data-scroll="true"
+                                data-scroll-speed="0.5" data-scroll-offset="15vh"
+                                style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);">
+                                <div>2014</div>
+                            </div>
+                        </div>
+                        <div data="[object Object]" class="HistoryItem__Container-sc-956on7-0 kzjzGY">
+                            <div class="HistoryItem__Content-sc-956on7-1 ldnfML">
+                                <div class="HistoryItem__Job-sc-956on7-2 bPOhXC">UX/UI Designer &amp; UI Developer
+                                    Consultant</div><span>I built sharp interfaces and interactive experiences on the web
+                                    for various clients and agencies for 4 years.</span>
+                            </div>
+                            <div class="HistoryItem__Date-sc-956on7-3 hZAPqI date is-inview" data-scroll="true"
+                                data-scroll-speed="0.5" data-scroll-offset="15vh"
+                                style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);">
+                                <div>2013</div>
+                            </div>
+                        </div>
+                        <div data="[object Object]" class="HistoryItem__Container-sc-956on7-0 kzjzGY">
+                            <div class="HistoryItem__Content-sc-956on7-1 ldnfML">
+                                <div class="HistoryItem__Job-sc-956on7-2 bPOhXC">Founder &amp; Business Development Leader
+                                    at MyCiyMedia</div><span>I found with 2 partners a journalistic investigation website
+                                    specialised into data visualisation, investigations through the Bordeaux
+                                    region.</span><span>I was responsible of the web agency, sister of the media.</span>
+                            </div>
+                            <div class="HistoryItem__Date-sc-956on7-3 hZAPqI date is-inview" data-scroll="true"
+                                data-scroll-speed="0.5" data-scroll-offset="15vh"
+                                style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);">
+                                <div>2013</div>
+                            </div>
+                        </div>
+                        <div class="Experience__Links-pm2aqi-4 ckkBou"><a
+                                href="https://www.hugobazin.com/contents/Resume_HugoBazin.pdf" target="blank"
+                                class="Experience__ResumeLink-pm2aqi-5 bEuqgF">Download my resume -&gt;</a><a
+                                href="https://www.linkedin.com/in/hugobazin/" target="blank"
+                                class="Experience__ResumeLink-pm2aqi-5 bEuqgF">See my recommendations -&gt;</a></div>
+                    </section>
+                    <section data-scroll-section="true" class="Contact__Container-sc-1jphjqv-0 bxMgjd"
+                        data-scroll-section-id="section8"
+                        style="opacity: 0; pointer-events: none; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);">
+                        <div class="Contact__TitleContainer-sc-1jphjqv-1 kjsBkE">
+                            <div data-scroll="true" data-scroll-offset="40%" data-scroll-speed="1"
+                                class="Contact__Title-sc-1jphjqv-2 foNVKs is-inview"
+                                style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);">
+                                <div>Still</div>
+                                <div>Still</div>
+                            </div>
+                            <div data-scroll="true" data-scroll-offset="40%" data-scroll-speed="2.5"
+                                class="Contact__Title-sc-1jphjqv-2 foNVKs is-inview"
+                                style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);">
+                                <div>here?</div>
+                                <div>here?</div>
+                            </div>
+                        </div>
+                        <div id="hobbies" class="Contact__StalkContainer-sc-1jphjqv-3 frDkPH">
+                            <div class="Contact__StalkBloc-sc-1jphjqv-4 iqYcxl">
+                                <div data-scroll="true" data-scroll-speed="1"
+                                    class="Contact__StalkHeader-sc-1jphjqv-5 ehdCyR is-inview"
+                                    style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);">Stalk what
+                                    I</div><a data-scroll="true" data-scroll-speed="1" data-scroll-offset="40%"
+                                    href="https://www.hugobazin.com/hobbies"
+                                    style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);"
+                                    class="is-inview"><span>binge watching</span><span>&amp; read</span></a>
+                            </div><span data-scroll="true" data-scroll-speed="10"
+                                style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);"
+                                class="is-inview">😎</span><span data-scroll="true" data-scroll-speed="8"
+                                style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);"
+                                class="is-inview">🤩</span><span data-scroll="true" data-scroll-speed="1"
+                                style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);"
+                                class="is-inview">😯</span><span data-scroll="true" data-scroll-speed="10"
+                                style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);"
+                                class="is-inview">😜</span><span data-scroll="true" data-scroll-speed="3"
+                                style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);"
+                                class="is-inview">🤯</span><span data-scroll="true" data-scroll-speed="3"
+                                style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);"
+                                class="is-inview">😱</span><span data-scroll="true" data-scroll-speed="4"
+                                style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);"
+                                class="is-inview">🦄</span><span data-scroll="true" data-scroll-speed="5"
+                                style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);"
+                                class="is-inview">😻</span><span data-scroll="true" data-scroll-speed="3"
+                                style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);"
+                                class="is-inview">👀</span><span data-scroll="true" data-scroll-speed="3"
+                                style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);"
+                                class="is-inview">🎉</span><span data-scroll="true" data-scroll-speed="8"
+                                style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);"
+                                class="is-inview">👓</span><span data-scroll="true" data-scroll-speed="6"
+                                style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);"
+                                class="is-inview">🍬</span><span data-scroll="true" data-scroll-speed="6"
+                                style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);"
+                                class="is-inview">🍭</span><span data-scroll="true" data-scroll-speed="5"
+                                style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);"
+                                class="is-inview">🌞</span><span data-scroll="true" data-scroll-speed="6"
+                                style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);"
+                                class="is-inview">⚡</span><span data-scroll="true" data-scroll-speed="14"
+                                style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);"
+                                class="is-inview">🌈</span>
+                        </div>
+                        <div id="direction" class="Contact__FakeMarqueeContainer-sc-1jphjqv-6 expEgk">
+                            <div class="Contact__Marquee-sc-1jphjqv-7 cEVdWD"><span data-scroll="true"
+                                    data-scroll-direction="horizontal" data-scroll-target="#direction"
+                                    data-scroll-speed="-9"
+                                    style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);"
+                                    class="is-inview">Have enough?</span></div>
+                            <div class="Contact__Marquee-sc-1jphjqv-7 cEVdWD"><span data-scroll="true"
+                                    data-scroll-direction="horizontal" data-scroll-target="#direction" data-scroll-speed="8"
+                                    style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);"
+                                    class="is-inview">I can’t say more ’bout me</span></div>
+                            <div class="Contact__Marquee-sc-1jphjqv-7 cEVdWD"><span data-scroll="true"
+                                    data-scroll-direction="horizontal" data-scroll-target="#direction"
+                                    data-scroll-speed="-5"
+                                    style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);"
+                                    class="is-inview">But you can contact me!</span></div>
+                            <div class="Contact__Marquee-sc-1jphjqv-7 cEVdWD"><span data-scroll="true"
+                                    data-scroll-direction="horizontal" data-scroll-target="#direction"
+                                    data-scroll-speed="12"
+                                    style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);"
+                                    class="is-inview">I will be happy to chitchat a bit!</span></div>
+                            <div class="Contact__Marquee-sc-1jphjqv-7 cEVdWD"><span data-scroll="true"
+                                    data-scroll-direction="horizontal" data-scroll-target="#direction"
+                                    data-scroll-speed="-12"
+                                    style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);"
+                                    class="is-inview">As you wish!</span></div>
+                        </div>
+                        <div data-scroll="true" data-scroll-id="contact" data-scroll-repeat="true" id="contact"
+                            class="Contact__ContactContainer-sc-1jphjqv-8 juERFJ">
+                            <div class="Contact__ContactInner-sc-1jphjqv-9 bttXnZ">
+                                <div class="Contact__Interlude-sc-1jphjqv-10 eWCGxX">Always keen for a good prop so feel
+                                    free to say hey!</div><a href="mailto:hello@hugobazin.com"
+                                    class="Contact__Button-sc-1jphjqv-11 gOHPbs"><span>Send me an email <div>💌</div>
+                                        </span></a>
+                                <div class="Contact__Socials-sc-1jphjqv-12 bUgVrh"><a
+                                        href="https://www.hugobazin.com/contents/Resume_HugoBazin.pdf" target="blank"
+                                        class="Contact__Button-sc-1jphjqv-11 gOHPbs"><span>Download my resume</span></a>
+                                    <div><a href="https://www.linkedin.com/in/hugobazin/" target="blank">Li</a><a
+                                            href="https://www.instagram.com/hugobazin/" target="blank">In</a><a
+                                            href="https://medium.com/@hugobazin" target="blank">Md</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                  
+                </div>
+            </section>
+    
+        </main>
+    
+        
+    </div>
+
+     <script id="__NEXT_DATA__" type="application/json">
+        {
+            "props": {
+                "pageProps": {}
+            },
+            "page": "/",
+            "query": {},
+            "buildId": "kWyBwCgdjTukvteG77Wyf",
+            "runtimeConfig": {},
+            "nextExport": true,
+            "autoExport": true,
+            "isFallback": false
+        }
+    </script>
 
     <script type="text/javascript" src="./assets/js/main.js"></script>
+    <script nomodule="" src="./assets/js/polyfills-ff58146f96da6d6b6775.js.download"></script>
+    <script src="./assets/js/main-5b68261d40b089e23d7a.js.download" async=""></script>
+    <script src="./assets/js/webpack-de26111b7aadfd273675.js.download" async=""></script>
+    <script src="./assets/js/framework.321e467a69e4f193431e.js.download" async=""></script>
+    <script src="./assets/js/commons.86a4e8417b81a27f51cb.js.download" async=""></script>
+    <script
+        src="./assets/js/dd4705d29f2781f4c5876fc9cea5d13018c37460.debacb9578092936517d.js.download"
+        async=""></script>
+    <script src="./assets/js/_app-2ff8e5ed403c436f6683.js.download" async=""></script>
+    <script
+        src="./assets/js/311e4e60e27b1bbada09e777db85b903e7cde89b.7fa50ee5b3f7cfb85318.js.download"
+        async=""></script>
+    <script
+        src="./assets/js/0b546012402a5e4b9a7398327cede7c8a80cdafc.5e47a6c0fc35c7d904db.js.download"
+        async=""></script>
+    <script src="./assets/js/index-b38270301411796ea0ee.js.download" async=""></script>
+    <script src="./assets/js/_buildManifest.js.download" async=""></script>
+    <script src="./assets/js/_ssgManifest.js.download" async="" gapi_processed="true"></script>
+
+    <style>
+        .tb_button {
+            padding: 1px;
+            cursor: pointer;
+            border-right: 1px solid #8b8b8b;
+            border-left: 1px solid #FFF;
+            border-bottom: 1px solid #fff;
+        }
+
+        .tb_button.hover {
+            borer: 2px outset #def;
+            background-color: #f8f8f8 !important;
+        }
+
+        .ws_toolbar {
+            z-index: 100000
+        }
+
+        .ws_toolbar .ws_tb_btn {
+            cursor: pointer;
+            border: 1px solid #555;
+            padding: 3px
+        }
+
+        .tb_highlight {
+            background-color: yellow
+        }
+
+        .tb_hide {
+            visibility: hidden
+        }
+
+        .ws_toolbar img {
+            padding: 2px;
+            margin: 0px
+        }
+    </style>
 </body>
 </html>
