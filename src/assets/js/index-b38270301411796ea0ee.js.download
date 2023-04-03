@@ -1,1 +1,1449 @@
-_N_E=(window.webpackJsonp_N_E=window.webpackJsonp_N_E||[]).push([[13],{Aj3m:function(e,t,a){"use strict";var i=a("cpVT"),n=a("nKUr"),o=a("vOnD");function r(e,t){var a=Object.keys(e);if(Object.getOwnPropertySymbols){var i=Object.getOwnPropertySymbols(e);t&&(i=i.filter((function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable}))),a.push.apply(a,i)}return a}function s(e){for(var t=1;t<arguments.length;t++){var a=null!=arguments[t]?arguments[t]:{};t%2?r(Object(a),!0).forEach((function(t){Object(i.a)(e,t,a[t])})):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(a)):r(Object(a)).forEach((function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(a,t))}))}return e}var c=o.a.div.withConfig({displayName:"LoadingScreen__Container",componentId:"sc-13bc4fu-0"})(["background:var(--color-primary);color:var(--color-invert);height:100vh;width:100vw;display:flex;overflow:hidden;cursor:wait;"]),d=o.a.div.withConfig({displayName:"LoadingScreen__Content",componentId:"sc-13bc4fu-1"})(["margin-top:auto;"]),l=o.a.div.withConfig({displayName:"LoadingScreen__SubHeader",componentId:"sc-13bc4fu-2"})(["display:inline-flex;flex-direction:column;margin:0 auto 0 3vw;@media screen and (min-width:960px){margin-left:20vw;}& > div{overflow:hidden;div{transform:translateY(3vw);opacity:0;animation:loadingAppear 300ms 1 forwards;@keyframes loadingAppear{0%{transform:translateY(3vw);opacity:0;}1%{transform:translateY(3vw);}50%{opacity:1;}100%{transform:translateY(0);opacity:1;}}}&:nth-child(1){div{animation-delay:250ms}}&:nth-child(2){div{animation-delay:500ms}}&:nth-child(3){div{animation-delay:750ms}}}"]),p=o.a.div.withConfig({displayName:"LoadingScreen__Loading",componentId:"sc-13bc4fu-3"})(["position:absolute;top:4vh;left:3vw;font-size:var(--font-size-highlight);@media screen and (min-width:960px){left:auto;right:20vw;}& > div{overflow:hidden;div{transform:translateY(3vw);opacity:0;animation:loadingAppear 500ms 1 forwards;}&:nth-child(1) div{animation-delay:250ms;}&:nth-child(2) div{animation-delay:1000ms;}&:nth-child(4) div{animation-delay:2000ms;}}"]),h=o.a.div.withConfig({displayName:"LoadingScreen__Name",componentId:"sc-13bc4fu-4"})(["line-height:1.2;white-space:nowrap;font-size:20vw;font-size:clamp(64px,20vw,20vw);opacity:0;margin-bottom:10vh;transform:translateY(1.5vw);animation:welcome 300ms 300ms 1 forwards;@media screen and (min-width:960px){margin-bottom:0;}@keyframes welcome{0%{opacity:0;transform:translateY(1.5vw);}100%{opacity:1;transform:translateY(0);}}"]);t.a=function(e){var t=Math.random()<.5?"Hey! \ud83d\udc4b":"Welcome!",a=Math.random()<.5?"Can\u2019t wait to talk to you!":Math.random()>.9?"A unicorn has been sighted \ud83e\udd84":"Enjoy! \ud83d\ude0e";return Object(n.jsx)(c,s(s({},e),{},{children:Object(n.jsxs)(d,{children:[Object(n.jsxs)(l,{children:[Object(n.jsx)("div",{children:Object(n.jsx)("div",{children:"French"})}),Object(n.jsx)("div",{children:Object(n.jsx)("div",{children:"Qu\xe9b\xe9cois"})}),Object(n.jsx)("div",{children:Object(n.jsx)("div",{children:"Product Designer"})})]}),Object(n.jsxs)(p,{children:[Object(n.jsx)("div",{children:Object(n.jsx)("div",{children:t})}),Object(n.jsx)("div",{children:Object(n.jsx)("div",{children:"Nice to meet you!"})}),Object(n.jsx)("div",{children:Object(n.jsx)("div",{})}),Object(n.jsx)("div",{children:Object(n.jsx)("div",{children:a})})]}),Object(n.jsx)(h,{children:"Hugo Bazin"})]})}))}},RNiq:function(e,t,a){"use strict";a.r(t);var i=a("z7pX"),n=a("nKUr"),o=a("q1tI"),r=a("nOHt"),s=a("vOnD"),c=a("aXvE"),d=a("odwg"),l=a("Aiso"),p=a.n(l);var h=s.a.section.withConfig({displayName:"Intro__Container",componentId:"sc-1h0qxrg-0"})(["grid-area:2 / body / 2 / body;font-size:clamp(48px,7.5vw,10vmin);line-height:1.1;display:flex;min-height:100vh;#heyP>div{transform:translateY(20vh);transition:600ms 1s;}@media screen and (min-width:960px){width:60%;}img{width:20vmin;}&[data-scroll-section-inview]{#heyP>div{transform:translateY(0)}}"]),m=s.a.div.withConfig({displayName:"Intro__IntroBlocOne",componentId:"sc-1h0qxrg-1"})(["margin-top:auto;margin-bottom:8vh;@media screen and (min-width:768px){margin-bottom:4vh;}"]),f=s.a.div.withConfig({displayName:"Intro__IntroSubHeader",componentId:"sc-1h0qxrg-2"})(["display:initial;overflow:hidden;span{display:block;transform:translateY(3vw);opacity:0;animation:loadingAppearIntro 500ms 1 forwards;&::after{content:'\ud83d\udc4b';display:inline-block;margin-left:1vw;}&:hover::after{animation:hey 1s 1;@keyframes hey{0%{transform:rotate(0deg)}10%{transform:rotate(-6deg)}20%{transform:rotate(6deg)}30%{transform:rotate(-8deg)}40%{transform:rotate(8deg)}50%{transform:rotate(-6deg)}60%{transform:rotate(0deg)}100%{transform:rotate(0deg)}}}}"]),b=s.a.div.withConfig({displayName:"Intro__IntroBody",componentId:"sc-1h0qxrg-3"})(["div{overflow:hidden;span{display:block;transform:translateY(3vw);opacity:0;animation:loadingAppearIntro 500ms 1 forwards;@keyframes loadingAppearIntro{0%{transform:translateY(3vw);opacity:0;}1%{transform:translateY(3vw);}100%{transform:translateY(0);opacity:1;}}}&:nth-child(1){span{animation-delay:250ms}}&:nth-child(2){span{animation-delay:500ms}}&:nth-child(3){span{animation-delay:750ms}}&:nth-child(4){span{animation-delay:1000ms}}}"]),g=s.a.section.withConfig({displayName:"Intro__IntroBlocTwo",componentId:"sc-1h0qxrg-4"})(["grid-area:3 / body / 3 / body;font-size:clamp(48px,7.5vw,10vmin);line-height:1.1;margin-bottom:160px;z-index:9999;@media screen and (min-width:960px){margin-top:0;width:60%;}"]),j=s.a.div.withConfig({displayName:"Intro__ImageContainer",componentId:"sc-1h0qxrg-5"})(["display:none;@media screen and (min-width:960px){z-index:-1;position:absolute;display:block;left:50vw;top:60vh;width:50%;max-width:30vw;}&> div> div{padding-top:0 !important;}img{z-index:1;position:relative !important;width:100% !important;height:100% !important;transition:30ms;transform-style:preserve-3d;will-change:transform;object-fit:cover;}"]),v=function(){return Object(n.jsxs)(n.Fragment,{children:[Object(n.jsxs)(h,{id:"intro","data-scroll-section":!0,"data-scroll-position":"top",children:[Object(n.jsxs)(m,{children:[Object(n.jsx)(f,{children:Object(n.jsx)("span",{children:"Hey!"})}),Object(n.jsxs)(b,{children:[Object(n.jsx)("div",{children:Object(n.jsx)("span",{children:"I\u2019m Hugo and "})}),Object(n.jsx)("div",{children:Object(n.jsx)("span",{children:"I\u2019m a Product "})}),Object(n.jsx)("div",{children:Object(n.jsx)("span",{children:"Designer for "})}),Object(n.jsx)("div",{children:Object(n.jsx)("span",{children:"9 years."})})]})]}),Object(n.jsx)(j,{"data-scroll":!0,"data-scroll-speed":"10",id:"heyP",children:Object(n.jsx)(p.a,{src:"/contents/home/selfie.jpg",alt:"Me, me, me",width:"1515",height:"2273",layout:"responsive",objectFit:!0})})]}),Object(n.jsx)(g,{"data-scroll-section":!0,children:"I\u2019m currently Design Team Lead at Randstad IT Solutions in Montr\xe9al \u269c\ufe0f, Canada."})]})},y=a("cpVT"),x=a("YFqc"),u=a.n(x);function w(e,t){var a=Object.keys(e);if(Object.getOwnPropertySymbols){var i=Object.getOwnPropertySymbols(e);t&&(i=i.filter((function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable}))),a.push.apply(a,i)}return a}function O(e){for(var t=1;t<arguments.length;t++){var a=null!=arguments[t]?arguments[t]:{};t%2?w(Object(a),!0).forEach((function(t){Object(y.a)(e,t,a[t])})):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(a)):w(Object(a)).forEach((function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(a,t))}))}return e}var _=s.a.div.withConfig({displayName:"CaseStudy__Container",componentId:"l1nuj9-0"})(["position:relative;display:flex;box-sizing:border-box;&:not(:last-child){margin-bottom:var(--spacing-section-large);}&.is-inview{.content{opacity:1;transform:translate(0) skew(0deg,0deg);}}&.not-ready{filter:grayscale(1);opacity:0.5;cursor:not-allowed !important;a{pointer-events:none;}}"]),I=s.a.div.withConfig({displayName:"CaseStudy__InnerContainer",componentId:"l1nuj9-1"})(["position:relative;margin:auto 0;display:flex;flex-direction:column;@media screen and (min-width:1280px){flex-direction:row;}"]),C=s.a.div.withConfig({displayName:"CaseStudy__PictureContainer",componentId:"l1nuj9-2"})(["position:relative;display:flex;flex-direction:column;@media screen and (min-width:1280px){width:60%;}&.is-inview{.cspt > div{transform:skew(0deg,0deg);opacity:1;}.cspp{transform:translate(0) skew(0deg,0deg);opacity:1;}}"]),k=s.a.div.withConfig({displayName:"CaseStudy__Title",componentId:"l1nuj9-3"})(["z-index:1;position:relative;bottom:8px;& > div{position:relative;text-transform:uppercase;font-size:var(--font-size-title);z-index:2;font-weight:bolder;line-height:1;opacity:0;transform-style:preserve-3d;will-change:transform;transition-duration:800ms;perspective:1100px;perspective-origin:50% 100%;transform:translateY(20vh) translateX(-30%) skew(0deg,8deg);& span:first-child{color:var(--color-accent);}& span:not(:first-child){position:absolute;left:-2px;top:2px;z-index:-1;color:var(--color-invert);-webkit-text-stroke:1px var(--color-primary);user-select:none;width:100%;}}@media screen and (min-width:1024px){width:84%;bottom:-2vmin;left:-8px;& > div{left:-40px;& span:not(:first-child){left:-4px;top:4px;}}}"]),z=s.a.div.withConfig({displayName:"CaseStudy__Picture",componentId:"l1nuj9-4"})(["z-index:-1;position:relative;border:2.25vmin solid var(--color-primary);box-sizing:border-box;overflow:hidden;transform-style:preserve-3d;will-change:transform;opacity:0;transition-duration:800ms;perspective:1100px;perspective-origin:50% 100%;transform:translateY(20vh) translateX(-30%) skew(0deg,8deg);&.is-inview{transform:translate(0) skew(0deg,0deg);opacity:1;}"]),N=s.a.div.withConfig({displayName:"CaseStudy__Content",componentId:"l1nuj9-5"})(["display:flex;flex-direction:column;transition-delay:300ms;opacity:0;transform-style:preserve-3d;will-change:transform;transition-duration:600ms;transform:translateY(5vh) translateX(-30%) skew(0deg,8deg);margin-top:16px;@media screen and (min-width:1280px){margin:auto 0 0 80px;flex:1 1 40%;transform:translateY(5vh);}"]),S=s.a.span.withConfig({displayName:"CaseStudy__Desc",componentId:"l1nuj9-6"})([""]),q=s.a.div.withConfig({displayName:"CaseStudy__Infos",componentId:"l1nuj9-7"})(["display:flex;flex-direction:column;margin-top:8vmin;"]),P=s.a.span.withConfig({displayName:"CaseStudy__Date",componentId:"l1nuj9-8"})(["font-weight:bold;"]),D=s.a.div.withConfig({displayName:"CaseStudy__Client",componentId:"l1nuj9-9"})(["display:flex;"]),E=s.a.span.withConfig({displayName:"CaseStudy__Emoji",componentId:"l1nuj9-10"})(["margin-right:8px;"]),L=s.a.span.withConfig({displayName:"CaseStudy__Company",componentId:"l1nuj9-11"})(["color:var(--color-subtitle);text-transform:uppercase;font-weight:bold;"]),B=s.a.div.withConfig({displayName:"CaseStudy__Tags",componentId:"l1nuj9-12"})(["margin-top:24px;& > span{color:var(--color-accent);margin-right:16px;display:inline-block;}"]),T=s.a.a.withConfig({displayName:"CaseStudy__CaseLink",componentId:"l1nuj9-13"})(["margin-top:40px;font-weight:bolder;"]),Y=function(e){return Object(n.jsx)(_,O(O({},e),{},{className:e.data.classContainer,"data-scroll":!0,children:Object(n.jsxs)(I,{children:[Object(n.jsxs)(C,{"data-scroll":!0,"data-scroll-offset":"30%","data-scroll-id":e.data.link,children:[Object(n.jsx)(k,{className:"cspt","data-scroll":!0,"data-scroll-offset":"30%","data-scroll-direction":"horizontal","data-scroll-speed":"-1",children:Object(n.jsxs)("div",{children:[Object(n.jsx)("span",{children:e.data.story}),Object(n.jsx)("span",{children:e.data.story})]})}),Object(n.jsx)(u.a,{href:"/"+e.data.link,passHref:!0,children:Object(n.jsx)("a",{children:Object(n.jsxs)(z,{className:"cspp",id:e.data.link,children:[Object(n.jsx)("img",{"aria-hidden":"true",alt:"",src:"",style:{position:"absolute",top:0,left:0,right:0,bottom:0,width:"100%",height:"100%",objectFit:"cover",objectPosition:"center",filter:"blur(2rem)",transform:"scale(1.2)",background:"#fff"}}),Object(n.jsx)(p.a,{src:e.data.cover,alt:e.data.company,layout:"responsive",objectFit:!0,width:"1920",height:"1080",priority:!0})]})})})]}),Object(n.jsxs)(N,{className:"content",children:[Object(n.jsx)(S,{children:e.data.body}),Object(n.jsx)(B,{children:Object(i.a)(Array(e.data.tags.length)).map((function(t,a){return Object(n.jsx)("span",{children:"#"+e.data.tags[a]},a)}))}),Object(n.jsxs)(q,{children:[Object(n.jsx)(P,{children:e.data.date}),Object(n.jsxs)(D,{children:[Object(n.jsx)(E,{children:e.data.emoji}),Object(n.jsx)(L,{children:e.data.company})]})]}),Object(n.jsx)(u.a,{href:"/"+e.data.link,passHref:!0,children:Object(n.jsx)(T,{children:"View the case study ->"})})]})]})}))},A=[{cover:"/contents/va/cover.png",story:"Track package deliveries",date:"2020",company:"Canadian Trucking company",emoji:"\ud83d\ude9a",body:"I accompanied the company in the automation of its processes by designing the new processes and screens of its new ERP",tags:["User Research","Conception","ERP","B2E","UI Design","From scratch to the end"],link:"va"},{cover:"/contents/safti/cover.png",story:"Tell the story of real estate brokers",date:"2020",company:"SAFTI.fr",emoji:"\ud83c\udfe1",body:"My objective was to design the user experience of SAFTI\u2019s new website. I accompanied them from the identification of the stakeholders\u2019 needs to the design of a functional prototype.",tags:["User Research","Conception","Prototype","Workshops","Lean UX"],link:"safti"},{cover:"/contents/fabre/cover.png",story:"Evangelize the teams to the UX method",date:"2019",company:"Pierre Fabre Group",emoji:"\ud83c\udf38",body:"The company was undergoing a transformation focused on digital and customer relations. I worked with the team leading the transformation to demonstrate some Design Thinking and UX processes and to train the international headquarters teams.",tags:["Training","Workshops","Design Thinking","Service Blueprint"],link:"fabre"}];var H=s.a.section.withConfig({displayName:"CaseStudies__Container",componentId:"d6h7p6-0"})(["grid-area:5 / body / 5 / body;padding-top:var(--spacing-section);position:relative;"]),F=function(){return Object(n.jsx)(H,{id:"work","data-scroll":!0,"data-scroll-section":!0,"data-scroll-repeat":!0,"data-scroll-call":"borderInitial",children:Object(i.a)(Array(A.length)).map((function(e,t){return Object(n.jsx)(Y,{data:A[t]},t)}))})};var M=s.a.section.withConfig({displayName:"Story__Container",componentId:"acu6fb-0"})(["grid-area:7 / body / 7 / body;height:100%;position:relative;padding-top:var(--spacing-section);box-sizing:border-box;overflow:hidden;"]),R=s.a.div.withConfig({displayName:"Story__Title",componentId:"acu6fb-1"})(["position:relative;text-transform:uppercase;font-size:var(--font-size-title);z-index:2;font-weight:bolder;line-height:1;margin-bottom:40px;color:transparent;-webkit-text-stroke:1px var(--color-invert);transition:600ms;transform:translateY(3vw);opacity:0;&.is-inview{transform:translateY(0);opacity:1;}"]),U=s.a.div.withConfig({displayName:"Story__Content",componentId:"acu6fb-2"})(["display:flex;float:left;flex-direction:column;height:fit-content;font-size:var(--font-size-highlight);@media screen and (min-width:1025px) and (min-device-aspect-ratio:16/10){max-width:60%;min-width:400px;}"]),X=s.a.p.withConfig({displayName:"Story__StoryBloc",componentId:"acu6fb-3"})(["margin:0;&:not(:last-child){margin-bottom:8vmin;}span{display:block;}"]),W=s.a.div.withConfig({displayName:"Story__Side",componentId:"acu6fb-4"})(["display:none;@media screen and (min-width:1025px) and (min-device-aspect-ratio:16/10){display:flex;flex-direction:column;height:10vh;top:35vh;position:relative;}"]),G=s.a.div.withConfig({displayName:"Story__SideBloc",componentId:"acu6fb-5"})(["display:table;width:325px;position:fixed;right:0;& > div{display:block;text-align:center;opacity:0;transition:opacity 300ms,background-color 1500ms;&.is-inview{opacity:1;background:var(--color-primary);}}&#side1{z-index:3}&#side2{z-index:2}&#side3{z-index:1}"]),J=s.a.div.withConfig({displayName:"Story__SubHeader",componentId:"acu6fb-6"})(["font-size:calc(var(--font-size-highlight)*0.6);letter-spacing:1.5px;color:var(--color-accent);font-family:var(--font-accent);"]),Q=s.a.div.withConfig({displayName:"Story__Location",componentId:"acu6fb-7"})(["font-size:calc(var(--font-size-highlight)*0.75);font-weight:bold;white-space:nowrap;text-transform:uppercase;"]),V=s.a.span.withConfig({displayName:"Story__Emoji",componentId:"acu6fb-8"})(["font-weight:normal;"]),K=function(){return Object(n.jsxs)(M,{id:"about","data-scroll-section":!0,children:[Object(n.jsxs)(U,{children:[Object(n.jsx)(R,{"data-scroll":!0,"data-scroll-offset":"20%",children:"My Story"}),Object(n.jsxs)(X,{id:"storyBloc1",children:[Object(n.jsx)("span",{children:"G\u2019day!"}),Object(n.jsxs)("span",{children:["I\u2019m Hugo and I\u2019m the Design Team Lead of ",Object(n.jsx)("a",{href:"https://www.randstad.ca/employers/it-solutions/",target:"blank",children:"Randstad IT Solutions Canada"}),"."]}),Object(n.jsxs)("span",{children:["I\u2019ve been designing things for the last 9 years and I\u2019ve had the opportunity to work for small and big clients like ",Object(n.jsx)("a",{href:"https://www.desjardins.com/",target:"blank",children:"Desjardins"})," \ud83d\udcb2, ",Object(n.jsx)("a",{href:"https://www.pierre-fabre.com/",target:"blank",children:"Pierre Fabre Group"})," \ud83c\udf38 or ",Object(n.jsx)("a",{href:"https://www.hydroquebec.com/",target:"blank",children:"Hydro-Qu\xe9bec"})," \u26a1."]})]}),Object(n.jsx)(X,{id:"storyBloc2",children:Object(n.jsx)("span",{children:"With the years, I learned that the best user experiences do not just lead to great business outcomes, but are also humane. \ud83d\ude42"})}),Object(n.jsx)(X,{id:"storyBloc2",children:Object(n.jsx)("span",{children:"I try to reach this goal each time, making my work as accessible, pleasant and inclusive as possible, learning from my past experiences to build better things. \u270a"})}),Object(n.jsxs)(X,{id:"storyBloc3",children:[Object(n.jsx)("span",{children:"Outside of my job, I spend my energy organizing design meetings, writing things or simply traveling around to discover Canada \ud83c\udf41 and the world \ud83c\udf0e."}),Object(n.jsx)("span",{children:"I\u2019m also a big fan of sweets and unicorns \ud83e\udd84, an avid book reader and a gamer when I\u2019ve enough time to do that!"})]})]}),Object(n.jsxs)(W,{"data-scroll":!0,"data-scroll-sticky":!0,"data-scroll-target":"#about","data-scroll-repeat":!0,children:[Object(n.jsx)(G,{id:"side1",children:Object(n.jsxs)("div",{"data-scroll":!0,"data-scroll-target":"#storyBloc1","data-scroll-repeat":!0,children:[Object(n.jsx)(J,{children:"Borned on"}),Object(n.jsxs)(Q,{children:["The R\xe9union Island ",Object(n.jsx)(V,{children:"\ud83c\udf34"})]})]})}),Object(n.jsx)(G,{id:"side2",children:Object(n.jsxs)("div",{"data-scroll":!0,"data-scroll-target":"#storyBloc2","data-scroll-repeat":!0,children:[Object(n.jsx)(J,{children:"Raised in"}),Object(n.jsxs)(Q,{children:["Bordeaux ",Object(n.jsx)(V,{children:"\ud83c\udf77"})]})]})}),Object(n.jsx)(G,{id:"side3",children:Object(n.jsxs)("div",{"data-scroll":!0,"data-scroll-target":"#storyBloc3","data-scroll-repeat":!0,children:[Object(n.jsx)(J,{children:"Living in"}),Object(n.jsxs)(Q,{children:["Montr\xe9al ",Object(n.jsx)(V,{children:"\u269c\ufe0f"})]})]})})]})]})};function Z(e,t){var a=Object.keys(e);if(Object.getOwnPropertySymbols){var i=Object.getOwnPropertySymbols(e);t&&(i=i.filter((function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable}))),a.push.apply(a,i)}return a}function $(e){for(var t=1;t<arguments.length;t++){var a=null!=arguments[t]?arguments[t]:{};t%2?Z(Object(a),!0).forEach((function(t){Object(y.a)(e,t,a[t])})):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(a)):Z(Object(a)).forEach((function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(a,t))}))}return e}var ee=s.a.div.withConfig({displayName:"HistoryItem__Container",componentId:"sc-956on7-0"})(["   display:flex;flex-direction:column;border-top:1px solid var(--color-invert-light);border-bottom:1px solid var(--color-invert-light);padding:8vmin 0;@media screen and (min-width:1280px){flex-direction:row;}"]),te=s.a.div.withConfig({displayName:"HistoryItem__Content",componentId:"sc-956on7-1"})(["flex:1 1 0;color:var(--color-invert-light);span{display:block;}order:2;@media screen and (min-width:1280px){order:initial;margin:auto auto auto 0;max-width:40%;}@media screen and (min-width:1440px){}"]),ae=s.a.div.withConfig({displayName:"HistoryItem__Job",componentId:"sc-956on7-2"})(["   color:var(--color-invert);font-size:calc(var(--font-size-body)*1.05);text-transform:uppercase;margin-bottom:24px;a{color:var(--color-invert);}"]),ie=s.a.div.withConfig({displayName:"HistoryItem__Date",componentId:"sc-956on7-3"})(["   position:relative;color:var(--color-invert);font-weight:300;font-size:clamp(18px,var(--font-size-var) + var(--font-size-const)*10,24vw);line-height:1;margin-bottom:2vh;order:1;overflow:hidden;& > div{transition:900ms;transform:translateY(10vw);opacity:0;}&::after{content:'';background:linear-gradient(0deg,var(--color-primary),rgba(24,24,23,0));width:100%;height:50%;display:block;position:absolute;bottom:-1vh;}&.is-inview > div{transform:translateY(0);opacity:1;}@media screen and (min-width:1280px){order:initial;margin:auto 0 auto 8vw;}"]),ne=function(e){return Object(n.jsxs)(ee,$($({},e),{},{children:[Object(n.jsxs)(te,{children:[Object(n.jsxs)(ae,{children:[e.data.job,void 0!==e.data.company&&Object(n.jsx)(u.a,{href:e.data.companyLink,children:e.data.company})]}),Object(i.a)(Array(e.data.body.length)).map((function(t,a){return Object(n.jsx)("span",{children:e.data.body[a]},a)}))]}),Object(n.jsx)(ie,{className:"date","data-scroll":!0,"data-scroll-speed":"0.5","data-scroll-offset":"15vh",children:Object(n.jsx)("div",{children:e.data.date})})]}))},oe=[{date:"2021",job:"Design Team Lead at ",company:"Randstad IT Solutions",companyLink:"https://www.randstad.ca/employers/it-solutions/",body:["I lead the creation and development of the company\u2019s design practice.","Currently working at Desjardins as Senior UX Designer for the Canadian bank\u2019s internal applications."]},{date:"2020",job:"Senior Product Designer at ",company:"SIA Innovations",companyLink:"https://www.siainnovations.com/",body:["I worked on the design of ERP software and chatbots based on IBM automation and AI.","Certified on IBM\u2019s AI Design Thinking and Garage Methodologies."]},{date:"2020",job:"Senior Product Designer Consultant for Componize Software",body:["I helped the startup to identify user expectations through interviews and researchs","I also conceived firt low-fidelity screens to transpose user\u2019s needs."]},{date:"2019",job:"Senior UX Designer at ",company:"UX-Republic",companyLink:"https://www.ux-republic.com/",body:["Member of the small squad delegated to build a new branch of the company in the South of France.","I also intervened as a UX Designer consultant for clients like the Pierre Fabre Group or SAFTI.","Created a graphic universe"]},{date:"2017",job:"UX/ UI Lead Designer & UI Developer at ",company:"Logic-Immo",companyLink:"https://www.logic-immo.com/",body:["I launched and helped to maintain the design system for the company\u2019s web application intended for client real estate agencies. As part of a complete transformation, I also helped shape the future of the product from ideation to implementation."]},{date:"2014",job:"Co-founder & COO at La Petite Box",body:["With 2 partners, I launched a startup specialised into gift boxes to promote the Bordeaux Region creators.","Every month, I selected products from small creators and sent boxes all over the France.","I also planned creators\u2019 markets bringing together around 2.000 people."]},{date:"2013",job:"UX/UI Designer & UI Developer Consultant",body:["I built sharp interfaces and interactive experiences on the web for various clients and agencies for 4 years."]},{date:"2013",job:"Founder & Business Development Leader at MyCiyMedia",body:["I found with 2 partners a journalistic investigation website specialised into data visualisation, investigations through the Bordeaux region.","I was responsible of the web agency, sister of the media."]}];var re=s.a.section.withConfig({displayName:"Experience__Container",componentId:"pm2aqi-0"})(["grid-area:8 / body / 8 / body;padding-top:var(--spacing-section-large);position:relative;"]),se=s.a.div.withConfig({displayName:"Experience__BriefContainer",componentId:"pm2aqi-1"})(["margin-bottom:8vmin;&.is-inview > div:first-child > div{transform:translateY(0);opacity:1;}"]),ce=s.a.div.withConfig({displayName:"Experience__Title",componentId:"pm2aqi-2"})(["position:relative;text-transform:uppercase;font-size:var(--font-size-title);margin-bottom:40px;z-index:2;font-weight:bolder;line-height:1;-webkit-text-stroke:1px var(--color-invert);color:transparent;transition:600ms;transform:translateY(3vw);opacity:0;&.is-inview{transform:translateY(0);opacity:1;}"]),de=s.a.div.withConfig({displayName:"Experience__Brief",componentId:"pm2aqi-3"})(["color:var(--color-invert);font-size:var(--font-size-highlight);@media screen and (min-width:1025px){font-size:inherit;}@media screen and (min-width:1440px){width:50%;min-width:480px;}"]),le=s.a.div.withConfig({displayName:"Experience__Links",componentId:"pm2aqi-4"})([""]),pe=s.a.a.withConfig({displayName:"Experience__ResumeLink",componentId:"pm2aqi-5"})(["color:var(--color-invert);margin-top:2vh;display:block;"]),he=function(){return Object(n.jsxs)(re,{id:"experiences","data-scroll-section":!0,children:[Object(n.jsxs)(se,{"data-scroll":!0,"data-scroll-speed":"1.5",children:[Object(n.jsx)(ce,{"data-scroll":!0,"data-scroll-offset":"20%",children:"Experience"}),Object(n.jsx)(de,{"data-scroll":!0,"data-scroll-speed":"0.5",children:"For over 9 years, I\u2019ve nurtured a strong Design expertise that puts the user first. On all my projects, I try to create suited, simple and tested experiences to adapt the desires of companies to the needs of users."})]}),Object(i.a)(Array(oe.length)).map((function(e,t){return Object(n.jsx)(ne,{data:oe[t]},t)})),Object(n.jsxs)(le,{children:[Object(n.jsx)(pe,{href:"/contents/Resume_HugoBazin.pdf",target:"blank",children:"Download my resume ->"}),Object(n.jsx)(pe,{href:"https://www.linkedin.com/in/hugobazin/",target:"blank",children:"See my recommendations ->"})]})]})};var me=s.a.section.withConfig({displayName:"Contact__Container",componentId:"sc-1jphjqv-0"})(["grid-area:9 / body / 9 / body;margin-top:var(--spacing-section);position:relative;display:flex;flex-direction:column;"]),fe=s.a.div.withConfig({displayName:"Contact__TitleContainer",componentId:"sc-1jphjqv-1"})(["display:flex;flex-direction:column;min-height:100vmin;& > div:first-child{margin:auto 0 0;}& > div:not(:first-child){margin:0 0 auto;}@media screen and (min-width:1025px){min-height:100vh;}"]),be=s.a.div.withConfig({displayName:"Contact__Title",componentId:"sc-1jphjqv-2"})(["position:relative;text-transform:uppercase;font-size:clamp(25vmin,20vw,40vh);z-index:2;font-weight:bolder;line-height:clamp(25vmin,20vw,40vh);align-self:center;& > div{transition:600ms;transform:translateY(3vw);opacity:0;&:first-child{color:var(--color-accent);}&:not(:first-child){position:absolute;left:-4px;top:4px;z-index:-1;color:var(--color-primary);-webkit-text-stroke:1px var(--color-invert);user-select:none;transition-delay:0.05s;}}&.is-inview > div{transform:translateY(0);opacity:1;}"]),ge=s.a.div.withConfig({displayName:"Contact__StalkContainer",componentId:"sc-1jphjqv-3"})(["display:flex;flex-wrap:wrap;padding-top:var(--spacing-section);min-height:100vmin;position:relative;& > span{z-index:0;position:absolute;user-select:none;&:nth-of-type(1){font-size:5vw;left:-16vw;bottom:40%;}&:nth-of-type(2){font-size:4vw;right:0vw;top:8vh;}&:nth-of-type(3){font-size:2.5vw;left:18vw;top:20vh;opacity:0.2;}&:nth-of-type(4){font-size:5.5vw;right:-12vw;top:50vh;}&:nth-of-type(5){font-size:3vw;right:25vw;opacity:0.6;bottom:6vh;}&:nth-of-type(6){font-size:2vw;top:30%;left:14%;opacity:0.3;}&:nth-of-type(7){font-size:3vw;opacity:0.1;left:24%;bottom:30%;}&:nth-of-type(8){font-size:2vw;opacity:0.1;left:40%;bottom:50%;}&:nth-of-type(9){font-size:1.75vw;right:44%;top:40%;opacity:0.1;}&:nth-of-type(10){font-size:3.5vw;left:-10%;bottom:20%;}&:nth-of-type(11){font-size:3.5vw;right:4%;bottom:12%;opacity:0.5;}&:nth-of-type(12){font-size:4vw;left:-10%;top:20%;}&:nth-of-type(13){font-size:4vw;right:8%;top:30%;opacity:0.7}&:nth-of-type(14){opacity:0.5;font-size:4vw;right:17vw;top:6vw;}&:nth-of-type(15){font-size:4vw;top:40%;left:-2vw;opacity:0.8}&:nth-of-type(16){font-size:3vw;right:-4vw;bottom:50%;opacity:0.9;}}"]),je=s.a.div.withConfig({displayName:"Contact__StalkBloc",componentId:"sc-1jphjqv-4"})(["z-index:1;position:relative;text-align:center;margin:auto;display:flex;flex-direction:column;a{font-size:clamp(48px,var(--font-size-title),96px);display:inline-block;text-decoration:none;text-transform:uppercase;transition:opacity 600ms;opacity:0;margin:0 auto 40px;span{display:block;-webkit-text-stroke:1px var(--color-invert);font-weight:900;letter-spacing:1px;color:var(--color-invert-light);transition:300ms;@media screen and (min-width:960px){&::after{margin-left:16px;-webkit-text-stroke:initial;color:initial;}&:nth-child(1)::after{content:'\ud83c\udf7f';font-weight:normal;}&:nth-child(2)::after{content:'\ud83d\udcd5';font-weight:normal;}}}&:hover{span{color:transparent;}}&.is-inview{opacity:1;}}"]),ve=s.a.div.withConfig({displayName:"Contact__StalkHeader",componentId:"sc-1jphjqv-5"})(["font-family:var(--font-accent);color:var(--color-accent);font-size:var(--font-size-highlight);@media screen and (min-width:960px){padding-right:36px;}"]),ye=s.a.div.withConfig({displayName:"Contact__FakeMarqueeContainer",componentId:"sc-1jphjqv-6"})(["min-height:100vh;margin-top:16vh;position:relative;& div:nth-child(1){transform:rotate(12deg);}& div:nth-child(2){transform:rotate(-12deg);left:-10%;}& div:nth-child(3){transform:rotate(4deg);top:25%;left:-30%;}& div:nth-child(4){transform:rotate(-4deg);top:45%;z-index:1;}& div:nth-child(5){transform:rotate(12deg);top:50%;}@media screen and (max-width:1024px){display:none;}*::selection{background-color:var(--color-invert) !important;color:var(--color-accent) !important;}"]),xe=s.a.div.withConfig({displayName:"Contact__Marquee",componentId:"sc-1jphjqv-7"})(["position:absolute;white-space:nowrap;font-weight:700;text-transform:uppercase;line-height:1;& span{display:block;background:var(--color-accent);color:var(--color-primary);padding:3vw 4vw;line-height:1;text-align:center;font-size:6vw;opacity:0;transition:opacity 600ms;&.is-inview{opacity:1;}}"]),ue=s.a.div.withConfig({displayName:"Contact__ContactContainer",componentId:"sc-1jphjqv-8"})(["padding-top:var(--spacing-section);position:relative;"]),we=s.a.div.withConfig({displayName:"Contact__ContactInner",componentId:"sc-1jphjqv-9"})(["margin:auto 0;display:flex;flex-direction:column;position:relative;"]),Oe=s.a.div.withConfig({displayName:"Contact__Interlude",componentId:"sc-1jphjqv-10"})(["font-size:var(--font-size-title);color:var(--color-accent);font-weight:300;margin-bottom:80px;&::before{font-size:0.5em;content:'(\u30ce\xb0\u25bd\xb0)\u30ce';display:block;width:100%;}"]),_e=s.a.a.withConfig({displayName:"Contact__Button",componentId:"sc-1jphjqv-11"})(["@media screen and (max-width:425px){margin-right:0;}margin-right:auto;max-width:calc(100% - 20px);font-size:var(--font-size-highlight);font-weight:bold;color:var(--color-invert);position:relative;text-decoration:none;span{background:var(--color-primary);z-index:3;position:relative;border:2px solid var(--color-accent);transition:100ms ease-in;display:flex;padding:16px 24px;&>div{font-weight:normal;margin-left:12px;}}&::before{background:var(--color-primary);top:10px;position:absolute;content:'';left:10px;width:100%;height:100%;z-index:1;}&::after{content:'';position:absolute;z-index:0;border:2px solid var(--color-invert);top:16px;left:16px;width:100%;height:100%;transition:100ms ease-in;}&:hover{span{transform:translate3d(10px,10px,0px);}&::after{background:var(--color-accent-dark);border-color:var(--color-accent);}}"]),Ie=s.a.div.withConfig({displayName:"Contact__Socials",componentId:"sc-1jphjqv-12"})(["margin-top:40px;display:flex;flex-direction:column;&>a{margin-bottom:80px;@media screen and (min-width:960px){display:none;visibility:hidden;}}&>div{display:flex;justify-content:space-around;@media screen and (min-width:960px){margin:40px auto 0 0;}a{padding:0 8px;margin-right:24px;}}"]),Ce=function(){return Object(n.jsxs)(me,{"data-scroll-section":!0,children:[Object(n.jsxs)(fe,{children:[Object(n.jsxs)(be,{"data-scroll":!0,"data-scroll-offset":"40%","data-scroll-speed":"1",children:[Object(n.jsx)("div",{children:"Still"}),Object(n.jsx)("div",{children:"Still"})]}),Object(n.jsxs)(be,{"data-scroll":!0,"data-scroll-offset":"40%","data-scroll-speed":"2.5",children:[Object(n.jsx)("div",{children:"here?"}),Object(n.jsx)("div",{children:"here?"})]})]}),Object(n.jsxs)(ge,{id:"hobbies",children:[Object(n.jsxs)(je,{children:[Object(n.jsx)(ve,{"data-scroll":!0,"data-scroll-speed":"1",children:"Stalk what I"}),Object(n.jsx)(u.a,{href:"/hobbies",passHref:!0,children:Object(n.jsxs)("a",{"data-scroll":!0,"data-scroll-speed":"1","data-scroll-offset":"40%",children:[Object(n.jsx)("span",{children:"binge watching"}),Object(n.jsx)("span",{children:"& read"})]})})]}),Object(n.jsx)("span",{"data-scroll":!0,"data-scroll-speed":"10",children:"\ud83d\ude0e"}),Object(n.jsx)("span",{"data-scroll":!0,"data-scroll-speed":"8",children:"\ud83e\udd29"}),Object(n.jsx)("span",{"data-scroll":!0,"data-scroll-speed":"1",children:"\ud83d\ude2f"}),Object(n.jsx)("span",{"data-scroll":!0,"data-scroll-speed":"10",children:"\ud83d\ude1c"}),Object(n.jsx)("span",{"data-scroll":!0,"data-scroll-speed":"3",children:"\ud83e\udd2f"}),Object(n.jsx)("span",{"data-scroll":!0,"data-scroll-speed":"3",children:"\ud83d\ude31"}),Object(n.jsx)("span",{"data-scroll":!0,"data-scroll-speed":"4",children:"\ud83e\udd84"}),Object(n.jsx)("span",{"data-scroll":!0,"data-scroll-speed":"5",children:"\ud83d\ude3b"}),Object(n.jsx)("span",{"data-scroll":!0,"data-scroll-speed":"3",children:"\ud83d\udc40"}),Object(n.jsx)("span",{"data-scroll":!0,"data-scroll-speed":"3",children:"\ud83c\udf89"}),Object(n.jsx)("span",{"data-scroll":!0,"data-scroll-speed":"8",children:"\ud83d\udc53"}),Object(n.jsx)("span",{"data-scroll":!0,"data-scroll-speed":"6",children:"\ud83c\udf6c"}),Object(n.jsx)("span",{"data-scroll":!0,"data-scroll-speed":"6",children:"\ud83c\udf6d"}),Object(n.jsx)("span",{"data-scroll":!0,"data-scroll-speed":"5",children:"\ud83c\udf1e"}),Object(n.jsx)("span",{"data-scroll":!0,"data-scroll-speed":"6",children:"\u26a1"}),Object(n.jsx)("span",{"data-scroll":!0,"data-scroll-speed":"14",children:"\ud83c\udf08"})]}),Object(n.jsxs)(ye,{id:"direction",children:[Object(n.jsx)(xe,{children:Object(n.jsx)("span",{"data-scroll":!0,"data-scroll-direction":"horizontal","data-scroll-target":"#direction","data-scroll-speed":"-9",children:"Have enough?"})}),Object(n.jsx)(xe,{children:Object(n.jsx)("span",{"data-scroll":!0,"data-scroll-direction":"horizontal","data-scroll-target":"#direction","data-scroll-speed":"8",children:"I can\u2019t say more \u2019bout me"})}),Object(n.jsx)(xe,{children:Object(n.jsx)("span",{"data-scroll":!0,"data-scroll-direction":"horizontal","data-scroll-target":"#direction","data-scroll-speed":"-5",children:"But you can contact me!"})}),Object(n.jsx)(xe,{children:Object(n.jsx)("span",{"data-scroll":!0,"data-scroll-direction":"horizontal","data-scroll-target":"#direction","data-scroll-speed":"12",children:"I will be happy to chitchat a bit!"})}),Object(n.jsx)(xe,{children:Object(n.jsx)("span",{"data-scroll":!0,"data-scroll-direction":"horizontal","data-scroll-target":"#direction","data-scroll-speed":"-12",children:"As you wish!"})})]}),Object(n.jsx)(ue,{"data-scroll":!0,"data-scroll-id":"contact","data-scroll-repeat":!0,id:"contact",children:Object(n.jsxs)(we,{children:[Object(n.jsx)(Oe,{children:"Always keen for a good prop so feel free to say hey!"}),Object(n.jsx)(_e,{href:"mailto:hello@hugobazin.com",children:Object(n.jsxs)("span",{children:["Send me an email ",Object(n.jsx)("div",{children:"\ud83d\udc8c"})]})}),Object(n.jsxs)(Ie,{children:[Object(n.jsx)(_e,{href:"/contents/Resume_HugoBazin.pdf",target:"blank",children:Object(n.jsx)("span",{children:"Download my resume"})}),Object(n.jsxs)("div",{children:[Object(n.jsx)("a",{href:"https://www.linkedin.com/in/hugobazin/",target:"blank",children:"Li"}),Object(n.jsx)("a",{href:"https://www.instagram.com/hugobazin/",target:"blank",children:"In"}),Object(n.jsx)("a",{href:"https://medium.com/@hugobazin",target:"blank",children:"Md"})]})]})]})})]})},ke=a("vvXn"),ze=a("EQ3O"),Ne=a("Aj3m"),Se={marquee1:["Check some of my stuff","Check some of my stuff"],marquee2:["Want to know more \u2019bout me?","Curious?","I\u2019m a unicorn!"],menu:["work","story","experiences","contact"]};var qe=s.a.div.withConfig({displayName:"pages__Container",componentId:"sc-177lhxc-0"})(["position:relative;z-index:0;display:grid;grid-template-columns:[start] 3vw [body] auto 3vw [end];overflow:hidden;@media screen and (min-width:960px){grid-template-columns:[start] 14vmax [body] auto 14vmax [end];}footer{grid-area:10 / start / 10 / end;margin-top:240px;}"]),Pe=s.a.div.withConfig({displayName:"pages__WorkMarquee",componentId:"sc-177lhxc-1"})(["grid-area:4 / start / 4 / end;height:calc(var(--height-ticker) + 140px);overflow:hidden;@media screen and (max-width:960px){height:calc(var(--height-ticker) + 200px);}"]),De=s.a.div.withConfig({displayName:"pages__StoryMarquee",componentId:"sc-177lhxc-2"})(["grid-area:6 / start / 6 / end;height:calc(var(--height-ticker) + 140px);overflow:hidden;padding-top:16vh;@media screen and (max-width:960px){height:calc(var(--height-ticker) + 200px);}"]),Ee=s.a.div.withConfig({displayName:"pages__Marquee",componentId:"sc-177lhxc-3"})(["color:var(--color-invert);font-size:var(--font-size-marquee);transform:rotate(-9deg) translateX(-2.5vw);background:var(--color-primary);width:var(--width-ticker);position:relative;margin-top:calc(var(--height-ticker) / 2.5);line-height:1;padding:40px 0;left:-2.5vw;.ticker__element{margin:auto 0;display:flex;}span{margin-right:6vw;display:block;white-space:pre;}&#story{border-top:8px solid var(--color-invert);border-bottom:8px solid var(--color-invert);}*::selection{background-color:var(--color-accent-light);color:var(--color-accent-lighter);text-shadow:none;}"]),Le=s.a.div.withConfig({displayName:"pages__Border",componentId:"sc-177lhxc-4"})(["grid-area:6 / 1 / 6 / 1;height:0;"]);t.default=function(e){if(Object(r.useRouter)().isFallback)return Object(n.jsx)(Ne.a,{});var t=Object(o.useContext)(d.a).scroll;return Object(o.useEffect)((function(){document.documentElement.classList.remove("hideLogo"),document.body.classList.remove("has-dark-bg")})),t&&t.on("call",(function(e){var t=document.querySelector("#work");"borderBlack"===e&&(document.body.classList.add("has-dark-bg"),document.body.classList.contains("has-dark-bg")?t.classList.contains("is-inview")&&document.body.classList.contains("has-dark-bg")&&document.body.classList.remove("has-dark-bg"):document.body.classList.add("has-dark-bg"))})),t&&t.on("scroll",(function(e){document.documentElement.setAttribute("data-direction",e.direction);var t=document.querySelector('[data-scroll-section-id="section1"][data-scroll-section-inview]');t||document.documentElement.classList.add("hideHeader"),t&&document.documentElement.classList.remove("hideHeader");["va","safti","fabre"].forEach((function(t){if("object"===typeof e.currentElements[t]){var a=e.currentElements[t].progress,i=Math.min(.3*a+1,1.3).toFixed(3);document.querySelector("#"+t).getElementsByTagName("img")[1].style.transform="scale3d("+i+","+i+", 1)"}}))})),Object(n.jsxs)(qe,{children:[Object(n.jsx)(ze.a,{scroll:t,content:Se.menu}),Object(n.jsx)(v,{}),Object(n.jsx)(Pe,{"data-scroll-section":!0,"data-scroll":!0,"data-scroll-repeat":!0,"data-scroll-call":"menuAppear",children:Object(n.jsx)(Ee,{id:"tickerContainer","data-scroll":!0,"data-scroll-class":"tickerPlay","data-scroll-repeat":"true",children:Object(n.jsx)(c.a,{speed:13,height:80,children:function(e){e.index;return Object(n.jsx)(n.Fragment,{children:Object(i.a)(Array(Se.marquee1.length)).map((function(e,t){return Object(n.jsx)("span",{children:Se.marquee1[t]},t)}))})}})})}),Object(n.jsx)(F,{}),Object(n.jsx)(Le,{"data-scroll":!0,"data-scroll-section":!0,"data-scroll-repeat":!0,"data-scroll-call":"borderBlack"}),Object(n.jsx)(De,{"data-scroll-section":!0,children:Object(n.jsx)(Ee,{id:"story",children:Object(n.jsx)(c.a,{speed:13,height:80,children:function(e){e.index;return Object(n.jsx)(n.Fragment,{children:Object(i.a)(Array(Se.marquee2.length)).map((function(e,t){return Object(n.jsx)("span",{children:Se.marquee2[t]},t)}))})}})})}),Object(n.jsx)(K,{}),Object(n.jsx)(he,{}),Object(n.jsx)(Ce,{}),Object(n.jsx)(ke.a,{scroll:t})]})}},vlRD:function(e,t,a){(window.__NEXT_P=window.__NEXT_P||[]).push(["/",function(){return a("RNiq")}])}},[["vlRD",0,2,1,3,4,5]]]);
+_N_E = (window.webpackJsonp_N_E = window.webpackJsonp_N_E || []).push([
+  [13],
+  {
+    Aj3m: function (e, t, a) {
+      "use strict";
+      var i = a("cpVT"),
+        n = a("nKUr"),
+        o = a("vOnD");
+      function r(e, t) {
+        var a = Object.keys(e);
+        if (Object.getOwnPropertySymbols) {
+          var i = Object.getOwnPropertySymbols(e);
+          t &&
+            (i = i.filter(function (t) {
+              return Object.getOwnPropertyDescriptor(e, t).enumerable;
+            })),
+            a.push.apply(a, i);
+        }
+        return a;
+      }
+      function s(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var a = null != arguments[t] ? arguments[t] : {};
+          t % 2
+            ? r(Object(a), !0).forEach(function (t) {
+                Object(i.a)(e, t, a[t]);
+              })
+            : Object.getOwnPropertyDescriptors
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a))
+            : r(Object(a)).forEach(function (t) {
+                Object.defineProperty(
+                  e,
+                  t,
+                  Object.getOwnPropertyDescriptor(a, t)
+                );
+              });
+        }
+        return e;
+      }
+      var c = o.a.div.withConfig({
+          displayName: "LoadingScreen__Container",
+          componentId: "sc-13bc4fu-0",
+        })([
+          "background:var(--color-primary);color:var(--color-invert);height:100vh;width:100vw;display:flex;overflow:hidden;cursor:wait;",
+        ]),
+        d = o.a.div.withConfig({
+          displayName: "LoadingScreen__Content",
+          componentId: "sc-13bc4fu-1",
+        })(["margin-top:auto;"]),
+        l = o.a.div.withConfig({
+          displayName: "LoadingScreen__SubHeader",
+          componentId: "sc-13bc4fu-2",
+        })([
+          "display:inline-flex;flex-direction:column;margin:0 auto 0 3vw;@media screen and (min-width:960px){margin-left:20vw;}& > div{overflow:hidden;div{transform:translateY(3vw);opacity:0;animation:loadingAppear 300ms 1 forwards;@keyframes loadingAppear{0%{transform:translateY(3vw);opacity:0;}1%{transform:translateY(3vw);}50%{opacity:1;}100%{transform:translateY(0);opacity:1;}}}&:nth-child(1){div{animation-delay:250ms}}&:nth-child(2){div{animation-delay:500ms}}&:nth-child(3){div{animation-delay:750ms}}}",
+        ]),
+        p = o.a.div.withConfig({
+          displayName: "LoadingScreen__Loading",
+          componentId: "sc-13bc4fu-3",
+        })([
+          "position:absolute;top:4vh;left:3vw;font-size:var(--font-size-highlight);@media screen and (min-width:960px){left:auto;right:20vw;}& > div{overflow:hidden;div{transform:translateY(3vw);opacity:0;animation:loadingAppear 500ms 1 forwards;}&:nth-child(1) div{animation-delay:250ms;}&:nth-child(2) div{animation-delay:1000ms;}&:nth-child(4) div{animation-delay:2000ms;}}",
+        ]),
+        h = o.a.div.withConfig({
+          displayName: "LoadingScreen__Name",
+          componentId: "sc-13bc4fu-4",
+        })([
+          "line-height:1.2;white-space:nowrap;font-size:20vw;font-size:clamp(64px,20vw,20vw);opacity:0;margin-bottom:10vh;transform:translateY(1.5vw);animation:welcome 300ms 300ms 1 forwards;@media screen and (min-width:960px){margin-bottom:0;}@keyframes welcome{0%{opacity:0;transform:translateY(1.5vw);}100%{opacity:1;transform:translateY(0);}}",
+        ]);
+      t.a = function (e) {
+        var t = Math.random() < 0.5 ? "Hey! \ud83d\udc4b" : "Welcome!",
+          a =
+            Math.random() < 0.5
+              ? "Can\u2019t wait to talk to you!"
+              : Math.random() > 0.9
+              ? "A unicorn has been sighted \ud83e\udd84"
+              : "Enjoy! \ud83d\ude0e";
+        return Object(n.jsx)(
+          c,
+          s(
+            s({}, e),
+            {},
+            {
+              children: Object(n.jsxs)(d, {
+                children: [
+                  Object(n.jsxs)(l, {
+                    children: [
+                      Object(n.jsx)("div", {
+                        children: Object(n.jsx)("div", { children: "French" }),
+                      }),
+                      Object(n.jsx)("div", {
+                        children: Object(n.jsx)("div", {
+                          children: "Qu\xe9b\xe9cois",
+                        }),
+                      }),
+                      Object(n.jsx)("div", {
+                        children: Object(n.jsx)("div", {
+                          children: "Product Designer",
+                        }),
+                      }),
+                    ],
+                  }),
+                  Object(n.jsxs)(p, {
+                    children: [
+                      Object(n.jsx)("div", {
+                        children: Object(n.jsx)("div", { children: t }),
+                      }),
+                      Object(n.jsx)("div", {
+                        children: Object(n.jsx)("div", {
+                          children: "Nice to meet you!",
+                        }),
+                      }),
+                      Object(n.jsx)("div", {
+                        children: Object(n.jsx)("div", {}),
+                      }),
+                      Object(n.jsx)("div", {
+                        children: Object(n.jsx)("div", { children: a }),
+                      }),
+                    ],
+                  }),
+                  Object(n.jsx)(h, { children: "Hugo Bazin" }),
+                ],
+              }),
+            }
+          )
+        );
+      };
+    },
+    RNiq: function (e, t, a) {
+      "use strict";
+      a.r(t);
+      var i = a("z7pX"),
+        n = a("nKUr"),
+        o = a("q1tI"),
+        r = a("nOHt"),
+        s = a("vOnD"),
+        c = a("aXvE"),
+        d = a("odwg"),
+        l = a("Aiso"),
+        p = a.n(l);
+      var h = s.a.section.withConfig({
+          displayName: "Intro__Container",
+          componentId: "sc-1h0qxrg-0",
+        })([
+          "grid-area:2 / body / 2 / body;font-size:clamp(48px,7.5vw,10vmin);line-height:1.1;display:flex;min-height:100vh;#heyP>div{transform:translateY(20vh);transition:600ms 1s;}@media screen and (min-width:960px){width:60%;}img{width:20vmin;}&[data-scroll-section-inview]{#heyP>div{transform:translateY(0)}}",
+        ]),
+        m = s.a.div.withConfig({
+          displayName: "Intro__IntroBlocOne",
+          componentId: "sc-1h0qxrg-1",
+        })([
+          "margin-top:auto;margin-bottom:8vh;@media screen and (min-width:768px){margin-bottom:4vh;}",
+        ]),
+        f = s.a.div.withConfig({
+          displayName: "Intro__IntroSubHeader",
+          componentId: "sc-1h0qxrg-2",
+        })([
+          "display:initial;overflow:hidden;span{display:block;transform:translateY(3vw);opacity:0;animation:loadingAppearIntro 500ms 1 forwards;&::after{content:'\ud83d\udc4b';display:inline-block;margin-left:1vw;}&:hover::after{animation:hey 1s 1;@keyframes hey{0%{transform:rotate(0deg)}10%{transform:rotate(-6deg)}20%{transform:rotate(6deg)}30%{transform:rotate(-8deg)}40%{transform:rotate(8deg)}50%{transform:rotate(-6deg)}60%{transform:rotate(0deg)}100%{transform:rotate(0deg)}}}}",
+        ]),
+        b = s.a.div.withConfig({
+          displayName: "Intro__IntroBody",
+          componentId: "sc-1h0qxrg-3",
+        })([
+          "div{overflow:hidden;span{display:block;transform:translateY(3vw);opacity:0;animation:loadingAppearIntro 500ms 1 forwards;@keyframes loadingAppearIntro{0%{transform:translateY(3vw);opacity:0;}1%{transform:translateY(3vw);}100%{transform:translateY(0);opacity:1;}}}&:nth-child(1){span{animation-delay:250ms}}&:nth-child(2){span{animation-delay:500ms}}&:nth-child(3){span{animation-delay:750ms}}&:nth-child(4){span{animation-delay:1000ms}}}",
+        ]),
+        g = s.a.section.withConfig({
+          displayName: "Intro__IntroBlocTwo",
+          componentId: "sc-1h0qxrg-4",
+        })([
+          "grid-area:3 / body / 3 / body;font-size:clamp(48px,7.5vw,10vmin);line-height:1.1;margin-bottom:160px;z-index:9999;@media screen and (min-width:960px){margin-top:0;width:60%;}",
+        ]),
+        j = s.a.div.withConfig({
+          displayName: "Intro__ImageContainer",
+          componentId: "sc-1h0qxrg-5",
+        })([
+          "display:none;@media screen and (min-width:960px){z-index:-1;position:absolute;display:block;left:50vw;top:60vh;width:50%;max-width:30vw;}&> div> div{padding-top:0 !important;}img{z-index:1;position:relative !important;width:100% !important;height:100% !important;transition:30ms;transform-style:preserve-3d;will-change:transform;object-fit:cover;}",
+        ]),
+        v = function () {
+          return Object(n.jsxs)(n.Fragment, {
+            children: [
+              Object(n.jsxs)(h, {
+                id: "intro",
+                "data-scroll-section": !0,
+                "data-scroll-position": "top",
+                children: [
+                  Object(n.jsxs)(m, {
+                    children: [
+                      Object(n.jsx)(f, {
+                        children: Object(n.jsx)("span", { children: "Hey!" }),
+                      }),
+                      Object(n.jsxs)(b, {
+                        children: [
+                          Object(n.jsx)("div", {
+                            children: Object(n.jsx)("span", {
+                              children: "I\u2019m Hugo and ",
+                            }),
+                          }),
+                          Object(n.jsx)("div", {
+                            children: Object(n.jsx)("span", {
+                              children: "I\u2019m a Product ",
+                            }),
+                          }),
+                          Object(n.jsx)("div", {
+                            children: Object(n.jsx)("span", {
+                              children: "Designer for ",
+                            }),
+                          }),
+                          Object(n.jsx)("div", {
+                            children: Object(n.jsx)("span", {
+                              children: "9 years.",
+                            }),
+                          }),
+                        ],
+                      }),
+                    ],
+                  }),
+                  Object(n.jsx)(j, {
+                    "data-scroll": !0,
+                    "data-scroll-speed": "10",
+                    id: "heyP",
+                    children: Object(n.jsx)(p.a, {
+                      src: "/contents/home/selfie.jpg",
+                      alt: "Me, me, me",
+                      width: "1515",
+                      height: "2273",
+                      layout: "responsive",
+                      objectFit: !0,
+                    }),
+                  }),
+                ],
+              }),
+              Object(n.jsx)(g, {
+                "data-scroll-section": !0,
+                children:
+                  "I\u2019m currently Design Team Lead at Randstad IT Solutions in Montr\xe9al \u269c\ufe0f, Canada.",
+              }),
+            ],
+          });
+        },
+        y = a("cpVT"),
+        x = a("YFqc"),
+        u = a.n(x);
+      function w(e, t) {
+        var a = Object.keys(e);
+        if (Object.getOwnPropertySymbols) {
+          var i = Object.getOwnPropertySymbols(e);
+          t &&
+            (i = i.filter(function (t) {
+              return Object.getOwnPropertyDescriptor(e, t).enumerable;
+            })),
+            a.push.apply(a, i);
+        }
+        return a;
+      }
+      function O(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var a = null != arguments[t] ? arguments[t] : {};
+          t % 2
+            ? w(Object(a), !0).forEach(function (t) {
+                Object(y.a)(e, t, a[t]);
+              })
+            : Object.getOwnPropertyDescriptors
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a))
+            : w(Object(a)).forEach(function (t) {
+                Object.defineProperty(
+                  e,
+                  t,
+                  Object.getOwnPropertyDescriptor(a, t)
+                );
+              });
+        }
+        return e;
+      }
+      var _ = s.a.div.withConfig({
+          displayName: "CaseStudy__Container",
+          componentId: "l1nuj9-0",
+        })([
+          "position:relative;display:flex;box-sizing:border-box;&:not(:last-child){margin-bottom:var(--spacing-section-large);}&.is-inview{.content{opacity:1;transform:translate(0) skew(0deg,0deg);}}&.not-ready{filter:grayscale(1);opacity:0.5;cursor:not-allowed !important;a{pointer-events:none;}}",
+        ]),
+        I = s.a.div.withConfig({
+          displayName: "CaseStudy__InnerContainer",
+          componentId: "l1nuj9-1",
+        })([
+          "position:relative;margin:auto 0;display:flex;flex-direction:column;@media screen and (min-width:1280px){flex-direction:row;}",
+        ]),
+        C = s.a.div.withConfig({
+          displayName: "CaseStudy__PictureContainer",
+          componentId: "l1nuj9-2",
+        })([
+          "position:relative;display:flex;flex-direction:column;@media screen and (min-width:1280px){width:60%;}&.is-inview{.cspt > div{transform:skew(0deg,0deg);opacity:1;}.cspp{transform:translate(0) skew(0deg,0deg);opacity:1;}}",
+        ]),
+        k = s.a.div.withConfig({
+          displayName: "CaseStudy__Title",
+          componentId: "l1nuj9-3",
+        })([
+          "z-index:1;position:relative;bottom:8px;& > div{position:relative;text-transform:uppercase;font-size:var(--font-size-title);z-index:2;font-weight:bolder;line-height:1;opacity:0;transform-style:preserve-3d;will-change:transform;transition-duration:800ms;perspective:1100px;perspective-origin:50% 100%;transform:translateY(20vh) translateX(-30%) skew(0deg,8deg);& span:first-child{color:var(--color-accent);}& span:not(:first-child){position:absolute;left:-2px;top:2px;z-index:-1;color:var(--color-invert);-webkit-text-stroke:1px var(--color-primary);user-select:none;width:100%;}}@media screen and (min-width:1024px){width:84%;bottom:-2vmin;left:-8px;& > div{left:-40px;& span:not(:first-child){left:-4px;top:4px;}}}",
+        ]),
+        z = s.a.div.withConfig({
+          displayName: "CaseStudy__Picture",
+          componentId: "l1nuj9-4",
+        })([
+          "z-index:-1;position:relative;border:2.25vmin solid var(--color-primary);box-sizing:border-box;overflow:hidden;transform-style:preserve-3d;will-change:transform;opacity:0;transition-duration:800ms;perspective:1100px;perspective-origin:50% 100%;transform:translateY(20vh) translateX(-30%) skew(0deg,8deg);&.is-inview{transform:translate(0) skew(0deg,0deg);opacity:1;}",
+        ]),
+        N = s.a.div.withConfig({
+          displayName: "CaseStudy__Content",
+          componentId: "l1nuj9-5",
+        })([
+          "display:flex;flex-direction:column;transition-delay:300ms;opacity:0;transform-style:preserve-3d;will-change:transform;transition-duration:600ms;transform:translateY(5vh) translateX(-30%) skew(0deg,8deg);margin-top:16px;@media screen and (min-width:1280px){margin:auto 0 0 80px;flex:1 1 40%;transform:translateY(5vh);}",
+        ]),
+        S = s.a.span.withConfig({
+          displayName: "CaseStudy__Desc",
+          componentId: "l1nuj9-6",
+        })([""]),
+        q = s.a.div.withConfig({
+          displayName: "CaseStudy__Infos",
+          componentId: "l1nuj9-7",
+        })(["display:flex;flex-direction:column;margin-top:8vmin;"]),
+        P = s.a.span.withConfig({
+          displayName: "CaseStudy__Date",
+          componentId: "l1nuj9-8",
+        })(["font-weight:bold;"]),
+        D = s.a.div.withConfig({
+          displayName: "CaseStudy__Client",
+          componentId: "l1nuj9-9",
+        })(["display:flex;"]),
+        E = s.a.span.withConfig({
+          displayName: "CaseStudy__Emoji",
+          componentId: "l1nuj9-10",
+        })(["margin-right:8px;"]),
+        L = s.a.span.withConfig({
+          displayName: "CaseStudy__Company",
+          componentId: "l1nuj9-11",
+        })([
+          "color:var(--color-subtitle);text-transform:uppercase;font-weight:bold;",
+        ]),
+        B = s.a.div.withConfig({
+          displayName: "CaseStudy__Tags",
+          componentId: "l1nuj9-12",
+        })([
+          "margin-top:24px;& > span{color:var(--color-accent);margin-right:16px;display:inline-block;}",
+        ]),
+        T = s.a.a.withConfig({
+          displayName: "CaseStudy__CaseLink",
+          componentId: "l1nuj9-13",
+        })(["margin-top:40px;font-weight:bolder;"]),
+        Y = function (e) {
+          return Object(n.jsx)(
+            _,
+            O(
+              O({}, e),
+              {},
+              {
+                className: e.data.classContainer,
+                "data-scroll": !0,
+                children: Object(n.jsxs)(I, {
+                  children: [
+                    Object(n.jsxs)(C, {
+                      "data-scroll": !0,
+                      "data-scroll-offset": "30%",
+                      "data-scroll-id": e.data.link,
+                      children: [
+                        Object(n.jsx)(k, {
+                          className: "cspt",
+                          "data-scroll": !0,
+                          "data-scroll-offset": "30%",
+                          "data-scroll-direction": "horizontal",
+                          "data-scroll-speed": "-1",
+                          children: Object(n.jsxs)("div", {
+                            children: [
+                              Object(n.jsx)("span", { children: e.data.story }),
+                              Object(n.jsx)("span", { children: e.data.story }),
+                            ],
+                          }),
+                        }),
+                        Object(n.jsx)(u.a, {
+                          href: "/" + e.data.link,
+                          passHref: !0,
+                          children: Object(n.jsx)("a", {
+                            children: Object(n.jsxs)(z, {
+                              className: "cspp",
+                              id: e.data.link,
+                              children: [
+                                Object(n.jsx)("img", {
+                                  "aria-hidden": "true",
+                                  alt: "",
+                                  src: "",
+                                  style: {
+                                    position: "absolute",
+                                    top: 0,
+                                    left: 0,
+                                    right: 0,
+                                    bottom: 0,
+                                    width: "100%",
+                                    height: "100%",
+                                    objectFit: "cover",
+                                    objectPosition: "center",
+                                    filter: "blur(2rem)",
+                                    transform: "scale(1.2)",
+                                    background: "#fff",
+                                  },
+                                }),
+                                Object(n.jsx)(p.a, {
+                                  src: e.data.cover,
+                                  alt: e.data.company,
+                                  layout: "responsive",
+                                  objectFit: !0,
+                                  width: "1920",
+                                  height: "1080",
+                                  priority: !0,
+                                }),
+                              ],
+                            }),
+                          }),
+                        }),
+                      ],
+                    }),
+                    Object(n.jsxs)(N, {
+                      className: "content",
+                      children: [
+                        Object(n.jsx)(S, { children: e.data.body }),
+                        Object(n.jsx)(B, {
+                          children: Object(i.a)(Array(e.data.tags.length)).map(
+                            function (t, a) {
+                              return Object(n.jsx)(
+                                "span",
+                                { children: "#" + e.data.tags[a] },
+                                a
+                              );
+                            }
+                          ),
+                        }),
+                        Object(n.jsxs)(q, {
+                          children: [
+                            Object(n.jsx)(P, { children: e.data.date }),
+                            Object(n.jsxs)(D, {
+                              children: [
+                                Object(n.jsx)(E, { children: e.data.emoji }),
+                                Object(n.jsx)(L, { children: e.data.company }),
+                              ],
+                            }),
+                          ],
+                        }),
+                        Object(n.jsx)(u.a, {
+                          href: "/" + e.data.link,
+                          passHref: !0,
+                          children: Object(n.jsx)(T, {
+                            children: "View the case study ->",
+                          }),
+                        }),
+                      ],
+                    }),
+                  ],
+                }),
+              }
+            )
+          );
+        },
+        A = [
+          {
+            cover: "/contents/va/cover.png",
+            story: "Track package deliveries",
+            date: "2020",
+            company: "Canadian Trucking company",
+            emoji: "\ud83d\ude9a",
+            body: "I accompanied the company in the automation of its processes by designing the new processes and screens of its new ERP",
+            tags: [
+              "User Research",
+              "Conception",
+              "ERP",
+              "B2E",
+              "UI Design",
+              "From scratch to the end",
+            ],
+            link: "va",
+          },
+          {
+            cover: "/contents/safti/cover.png",
+            story: "Tell the story of real estate brokers",
+            date: "2020",
+            company: "SAFTI.fr",
+            emoji: "\ud83c\udfe1",
+            body: "My objective was to design the user experience of SAFTI\u2019s new website. I accompanied them from the identification of the stakeholders\u2019 needs to the design of a functional prototype.",
+            tags: [
+              "User Research",
+              "Conception",
+              "Prototype",
+              "Workshops",
+              "Lean UX",
+            ],
+            link: "safti",
+          },
+          {
+            cover: "/contents/fabre/cover.png",
+            story: "Evangelize the teams to the UX method",
+            date: "2019",
+            company: "Pierre Fabre Group",
+            emoji: "\ud83c\udf38",
+            body: "The company was undergoing a transformation focused on digital and customer relations. I worked with the team leading the transformation to demonstrate some Design Thinking and UX processes and to train the international headquarters teams.",
+            tags: [
+              "Training",
+              "Workshops",
+              "Design Thinking",
+              "Service Blueprint",
+            ],
+            link: "fabre",
+          },
+        ];
+      var H = s.a.section.withConfig({
+          displayName: "CaseStudies__Container",
+          componentId: "d6h7p6-0",
+        })([
+          "grid-area:5 / body / 5 / body;padding-top:var(--spacing-section);position:relative;",
+        ]),
+        F = function () {
+          return Object(n.jsx)(H, {
+            id: "work",
+            "data-scroll": !0,
+            "data-scroll-section": !0,
+            "data-scroll-repeat": !0,
+            "data-scroll-call": "borderInitial",
+            children: Object(i.a)(Array(A.length)).map(function (e, t) {
+              return Object(n.jsx)(Y, { data: A[t] }, t);
+            }),
+          });
+        };
+      var M = s.a.section.withConfig({
+          displayName: "Story__Container",
+          componentId: "acu6fb-0",
+        })([
+          "grid-area:7 / body / 7 / body;height:100%;position:relative;padding-top:var(--spacing-section);box-sizing:border-box;overflow:hidden;",
+        ]),
+        R = s.a.div.withConfig({
+          displayName: "Story__Title",
+          componentId: "acu6fb-1",
+        })([
+          "position:relative;text-transform:uppercase;font-size:var(--font-size-title);z-index:2;font-weight:bolder;line-height:1;margin-bottom:40px;color:transparent;-webkit-text-stroke:1px var(--color-invert);transition:600ms;transform:translateY(3vw);opacity:0;&.is-inview{transform:translateY(0);opacity:1;}",
+        ]),
+        U = s.a.div.withConfig({
+          displayName: "Story__Content",
+          componentId: "acu6fb-2",
+        })([
+          "display:flex;float:left;flex-direction:column;height:fit-content;font-size:var(--font-size-highlight);@media screen and (min-width:1025px) and (min-device-aspect-ratio:16/10){max-width:60%;min-width:400px;}",
+        ]),
+        X = s.a.p.withConfig({
+          displayName: "Story__StoryBloc",
+          componentId: "acu6fb-3",
+        })([
+          "margin:0;&:not(:last-child){margin-bottom:8vmin;}span{display:block;}",
+        ]),
+        W = s.a.div.withConfig({
+          displayName: "Story__Side",
+          componentId: "acu6fb-4",
+        })([
+          "display:none;@media screen and (min-width:1025px) and (min-device-aspect-ratio:16/10){display:flex;flex-direction:column;height:10vh;top:35vh;position:relative;}",
+        ]),
+        G = s.a.div.withConfig({
+          displayName: "Story__SideBloc",
+          componentId: "acu6fb-5",
+        })([
+          "display:table;width:325px;position:fixed;right:0;& > div{display:block;text-align:center;opacity:0;transition:opacity 300ms,background-color 1500ms;&.is-inview{opacity:1;background:var(--color-primary);}}&#side1{z-index:3}&#side2{z-index:2}&#side3{z-index:1}",
+        ]),
+        J = s.a.div.withConfig({
+          displayName: "Story__SubHeader",
+          componentId: "acu6fb-6",
+        })([
+          "font-size:calc(var(--font-size-highlight)*0.6);letter-spacing:1.5px;color:var(--color-accent);font-family:var(--font-accent);",
+        ]),
+        Q = s.a.div.withConfig({
+          displayName: "Story__Location",
+          componentId: "acu6fb-7",
+        })([
+          "font-size:calc(var(--font-size-highlight)*0.75);font-weight:bold;white-space:nowrap;text-transform:uppercase;",
+        ]),
+        V = s.a.span.withConfig({
+          displayName: "Story__Emoji",
+          componentId: "acu6fb-8",
+        })(["font-weight:normal;"]),
+        K = function () {
+          return Object(n.jsxs)(M, {
+            id: "about",
+            "data-scroll-section": !0,
+            children: [
+              Object(n.jsxs)(U, {
+                children: [
+                  Object(n.jsx)(R, {
+                    "data-scroll": !0,
+                    "data-scroll-offset": "20%",
+                    children: "My Story",
+                  }),
+                  Object(n.jsxs)(X, {
+                    id: "storyBloc1",
+                    children: [
+                      Object(n.jsx)("span", { children: "G\u2019day!" }),
+                      Object(n.jsxs)("span", {
+                        children: [
+                          "I\u2019m Hugo and I\u2019m the Design Team Lead of ",
+                          Object(n.jsx)("a", {
+                            href: "https://www.randstad.ca/employers/it-solutions/",
+                            target: "blank",
+                            children: "Randstad IT Solutions Canada",
+                          }),
+                          ".",
+                        ],
+                      }),
+                      Object(n.jsxs)("span", {
+                        children: [
+                          "I\u2019ve been designing things for the last 9 years and I\u2019ve had the opportunity to work for small and big clients like ",
+                          Object(n.jsx)("a", {
+                            href: "https://www.desjardins.com/",
+                            target: "blank",
+                            children: "Desjardins",
+                          }),
+                          " \ud83d\udcb2, ",
+                          Object(n.jsx)("a", {
+                            href: "https://www.pierre-fabre.com/",
+                            target: "blank",
+                            children: "Pierre Fabre Group",
+                          }),
+                          " \ud83c\udf38 or ",
+                          Object(n.jsx)("a", {
+                            href: "https://www.hydroquebec.com/",
+                            target: "blank",
+                            children: "Hydro-Qu\xe9bec",
+                          }),
+                          " \u26a1.",
+                        ],
+                      }),
+                    ],
+                  }),
+                  Object(n.jsx)(X, {
+                    id: "storyBloc2",
+                    children: Object(n.jsx)("span", {
+                      children:
+                        "With the years, I learned that the best user experiences do not just lead to great business outcomes, but are also humane. \ud83d\ude42",
+                    }),
+                  }),
+                  Object(n.jsx)(X, {
+                    id: "storyBloc2",
+                    children: Object(n.jsx)("span", {
+                      children:
+                        "I try to reach this goal each time, making my work as accessible, pleasant and inclusive as possible, learning from my past experiences to build better things. \u270a",
+                    }),
+                  }),
+                  Object(n.jsxs)(X, {
+                    id: "storyBloc3",
+                    children: [
+                      Object(n.jsx)("span", {
+                        children:
+                          "Outside of my job, I spend my energy organizing design meetings, writing things or simply traveling around to discover Canada \ud83c\udf41 and the world \ud83c\udf0e.",
+                      }),
+                      Object(n.jsx)("span", {
+                        children:
+                          "I\u2019m also a big fan of sweets and unicorns \ud83e\udd84, an avid book reader and a gamer when I\u2019ve enough time to do that!",
+                      }),
+                    ],
+                  }),
+                ],
+              }),
+              Object(n.jsxs)(W, {
+                "data-scroll": !0,
+                "data-scroll-sticky": !0,
+                "data-scroll-target": "#about",
+                "data-scroll-repeat": !0,
+                children: [
+                  Object(n.jsx)(G, {
+                    id: "side1",
+                    children: Object(n.jsxs)("div", {
+                      "data-scroll": !0,
+                      "data-scroll-target": "#storyBloc1",
+                      "data-scroll-repeat": !0,
+                      children: [
+                        Object(n.jsx)(J, { children: "Borned on" }),
+                        Object(n.jsxs)(Q, {
+                          children: [
+                            "The R\xe9union Island ",
+                            Object(n.jsx)(V, { children: "\ud83c\udf34" }),
+                          ],
+                        }),
+                      ],
+                    }),
+                  }),
+                  Object(n.jsx)(G, {
+                    id: "side2",
+                    children: Object(n.jsxs)("div", {
+                      "data-scroll": !0,
+                      "data-scroll-target": "#storyBloc2",
+                      "data-scroll-repeat": !0,
+                      children: [
+                        Object(n.jsx)(J, { children: "Raised in" }),
+                        Object(n.jsxs)(Q, {
+                          children: [
+                            "Bordeaux ",
+                            Object(n.jsx)(V, { children: "\ud83c\udf77" }),
+                          ],
+                        }),
+                      ],
+                    }),
+                  }),
+                  Object(n.jsx)(G, {
+                    id: "side3",
+                    children: Object(n.jsxs)("div", {
+                      "data-scroll": !0,
+                      "data-scroll-target": "#storyBloc3",
+                      "data-scroll-repeat": !0,
+                      children: [
+                        Object(n.jsx)(J, { children: "Living in" }),
+                        Object(n.jsxs)(Q, {
+                          children: [
+                            "Montr\xe9al ",
+                            Object(n.jsx)(V, { children: "\u269c\ufe0f" }),
+                          ],
+                        }),
+                      ],
+                    }),
+                  }),
+                ],
+              }),
+            ],
+          });
+        };
+      function Z(e, t) {
+        var a = Object.keys(e);
+        if (Object.getOwnPropertySymbols) {
+          var i = Object.getOwnPropertySymbols(e);
+          t &&
+            (i = i.filter(function (t) {
+              return Object.getOwnPropertyDescriptor(e, t).enumerable;
+            })),
+            a.push.apply(a, i);
+        }
+        return a;
+      }
+      function $(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var a = null != arguments[t] ? arguments[t] : {};
+          t % 2
+            ? Z(Object(a), !0).forEach(function (t) {
+                Object(y.a)(e, t, a[t]);
+              })
+            : Object.getOwnPropertyDescriptors
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a))
+            : Z(Object(a)).forEach(function (t) {
+                Object.defineProperty(
+                  e,
+                  t,
+                  Object.getOwnPropertyDescriptor(a, t)
+                );
+              });
+        }
+        return e;
+      }
+      var ee = s.a.div.withConfig({
+          displayName: "HistoryItem__Container",
+          componentId: "sc-956on7-0",
+        })([
+          "   display:flex;flex-direction:column;border-top:1px solid var(--color-invert-light);border-bottom:1px solid var(--color-invert-light);padding:8vmin 0;@media screen and (min-width:1280px){flex-direction:row;}",
+        ]),
+        te = s.a.div.withConfig({
+          displayName: "HistoryItem__Content",
+          componentId: "sc-956on7-1",
+        })([
+          "flex:1 1 0;color:var(--color-invert-light);span{display:block;}order:2;@media screen and (min-width:1280px){order:initial;margin:auto auto auto 0;max-width:40%;}@media screen and (min-width:1440px){}",
+        ]),
+        ae = s.a.div.withConfig({
+          displayName: "HistoryItem__Job",
+          componentId: "sc-956on7-2",
+        })([
+          "   color:var(--color-invert);font-size:calc(var(--font-size-body)*1.05);text-transform:uppercase;margin-bottom:24px;a{color:var(--color-invert);}",
+        ]),
+        ie = s.a.div.withConfig({
+          displayName: "HistoryItem__Date",
+          componentId: "sc-956on7-3",
+        })([
+          "   position:relative;color:var(--color-invert);font-weight:300;font-size:clamp(18px,var(--font-size-var) + var(--font-size-const)*10,24vw);line-height:1;margin-bottom:2vh;order:1;overflow:hidden;& > div{transition:900ms;transform:translateY(10vw);opacity:0;}&::after{content:'';background:linear-gradient(0deg,var(--color-primary),rgba(24,24,23,0));width:100%;height:50%;display:block;position:absolute;bottom:-1vh;}&.is-inview > div{transform:translateY(0);opacity:1;}@media screen and (min-width:1280px){order:initial;margin:auto 0 auto 8vw;}",
+        ]),
+        ne = function (e) {
+          return Object(n.jsxs)(
+            ee,
+            $(
+              $({}, e),
+              {},
+              {
+                children: [
+                  Object(n.jsxs)(te, {
+                    children: [
+                      Object(n.jsxs)(ae, {
+                        children: [
+                          e.data.job,
+                          void 0 !== e.data.company &&
+                            Object(n.jsx)(u.a, {
+                              href: e.data.companyLink,
+                              children: e.data.company,
+                            }),
+                        ],
+                      }),
+                      Object(i.a)(Array(e.data.body.length)).map(function (
+                        t,
+                        a
+                      ) {
+                        return Object(n.jsx)(
+                          "span",
+                          { children: e.data.body[a] },
+                          a
+                        );
+                      }),
+                    ],
+                  }),
+                  Object(n.jsx)(ie, {
+                    className: "date",
+                    "data-scroll": !0,
+                    "data-scroll-speed": "0.5",
+                    "data-scroll-offset": "15vh",
+                    children: Object(n.jsx)("div", { children: e.data.date }),
+                  }),
+                ],
+              }
+            )
+          );
+        },
+        oe = [
+          {
+            date: "2021",
+            job: "Design Team Lead at ",
+            company: "Randstad IT Solutions",
+            companyLink: "https://www.randstad.ca/employers/it-solutions/",
+            body: [
+              "I lead the creation and development of the company\u2019s design practice.",
+              "Currently working at Desjardins as Senior UX Designer for the Canadian bank\u2019s internal applications.",
+            ],
+          },
+          {
+            date: "2020",
+            job: "Senior Product Designer at ",
+            company: "SIA Innovations",
+            companyLink: "https://www.siainnovations.com/",
+            body: [
+              "I worked on the design of ERP software and chatbots based on IBM automation and AI.",
+              "Certified on IBM\u2019s AI Design Thinking and Garage Methodologies.",
+            ],
+          },
+          {
+            date: "2020",
+            job: "Senior Product Designer Consultant for Componize Software",
+            body: [
+              "I helped the startup to identify user expectations through interviews and researchs",
+              "I also conceived firt low-fidelity screens to transpose user\u2019s needs.",
+            ],
+          },
+          {
+            date: "2019",
+            job: "Senior UX Designer at ",
+            company: "UX-Republic",
+            companyLink: "https://www.ux-republic.com/",
+            body: [
+              "Member of the small squad delegated to build a new branch of the company in the South of France.",
+              "I also intervened as a UX Designer consultant for clients like the Pierre Fabre Group or SAFTI.",
+              "Created a graphic universe",
+            ],
+          },
+          {
+            date: "2017",
+            job: "UX/ UI Lead Designer & UI Developer at ",
+            company: "Logic-Immo",
+            companyLink: "https://www.logic-immo.com/",
+            body: [
+              "I launched and helped to maintain the design system for the company\u2019s web application intended for client real estate agencies. As part of a complete transformation, I also helped shape the future of the product from ideation to implementation.",
+            ],
+          },
+          {
+            date: "2014",
+            job: "Co-founder & COO at La Petite Box",
+            body: [
+              "With 2 partners, I launched a startup specialised into gift boxes to promote the Bordeaux Region creators.",
+              "Every month, I selected products from small creators and sent boxes all over the France.",
+              "I also planned creators\u2019 markets bringing together around 2.000 people.",
+            ],
+          },
+          {
+            date: "2013",
+            job: "UX/UI Designer & UI Developer Consultant",
+            body: [
+              "I built sharp interfaces and interactive experiences on the web for various clients and agencies for 4 years.",
+            ],
+          },
+          {
+            date: "2013",
+            job: "Founder & Business Development Leader at MyCiyMedia",
+            body: [
+              "I found with 2 partners a journalistic investigation website specialised into data visualisation, investigations through the Bordeaux region.",
+              "I was responsible of the web agency, sister of the media.",
+            ],
+          },
+        ];
+      var re = s.a.section.withConfig({
+          displayName: "Experience__Container",
+          componentId: "pm2aqi-0",
+        })([
+          "grid-area:8 / body / 8 / body;padding-top:var(--spacing-section-large);position:relative;",
+        ]),
+        se = s.a.div.withConfig({
+          displayName: "Experience__BriefContainer",
+          componentId: "pm2aqi-1",
+        })([
+          "margin-bottom:8vmin;&.is-inview > div:first-child > div{transform:translateY(0);opacity:1;}",
+        ]),
+        ce = s.a.div.withConfig({
+          displayName: "Experience__Title",
+          componentId: "pm2aqi-2",
+        })([
+          "position:relative;text-transform:uppercase;font-size:var(--font-size-title);margin-bottom:40px;z-index:2;font-weight:bolder;line-height:1;-webkit-text-stroke:1px var(--color-invert);color:transparent;transition:600ms;transform:translateY(3vw);opacity:0;&.is-inview{transform:translateY(0);opacity:1;}",
+        ]),
+        de = s.a.div.withConfig({
+          displayName: "Experience__Brief",
+          componentId: "pm2aqi-3",
+        })([
+          "color:var(--color-invert);font-size:var(--font-size-highlight);@media screen and (min-width:1025px){font-size:inherit;}@media screen and (min-width:1440px){width:50%;min-width:480px;}",
+        ]),
+        le = s.a.div.withConfig({
+          displayName: "Experience__Links",
+          componentId: "pm2aqi-4",
+        })([""]),
+        pe = s.a.a.withConfig({
+          displayName: "Experience__ResumeLink",
+          componentId: "pm2aqi-5",
+        })(["color:var(--color-invert);margin-top:2vh;display:block;"]),
+        he = function () {
+          return Object(n.jsxs)(re, {
+            id: "experiences",
+            "data-scroll-section": !0,
+            children: [
+              Object(n.jsxs)(se, {
+                "data-scroll": !0,
+                "data-scroll-speed": "1.5",
+                children: [
+                  Object(n.jsx)(ce, {
+                    "data-scroll": !0,
+                    "data-scroll-offset": "20%",
+                    children: "Experience",
+                  }),
+                  Object(n.jsx)(de, {
+                    "data-scroll": !0,
+                    "data-scroll-speed": "0.5",
+                    children:
+                      "For over 9 years, I\u2019ve nurtured a strong Design expertise that puts the user first. On all my projects, I try to create suited, simple and tested experiences to adapt the desires of companies to the needs of users.",
+                  }),
+                ],
+              }),
+              Object(i.a)(Array(oe.length)).map(function (e, t) {
+                return Object(n.jsx)(ne, { data: oe[t] }, t);
+              }),
+              Object(n.jsxs)(le, {
+                children: [
+                  Object(n.jsx)(pe, {
+                    href: "/contents/Resume_HugoBazin.pdf",
+                    target: "blank",
+                    children: "Download my resume ->",
+                  }),
+                  Object(n.jsx)(pe, {
+                    href: "https://www.linkedin.com/in/hugobazin/",
+                    target: "blank",
+                    children: "See my recommendations ->",
+                  }),
+                ],
+              }),
+            ],
+          });
+        };
+      var me = s.a.section.withConfig({
+          displayName: "Contact__Container",
+          componentId: "sc-1jphjqv-0",
+        })([
+          "grid-area:9 / body / 9 / body;margin-top:var(--spacing-section);position:relative;display:flex;flex-direction:column;",
+        ]),
+        fe = s.a.div.withConfig({
+          displayName: "Contact__TitleContainer",
+          componentId: "sc-1jphjqv-1",
+        })([
+          "display:flex;flex-direction:column;min-height:100vmin;& > div:first-child{margin:auto 0 0;}& > div:not(:first-child){margin:0 0 auto;}@media screen and (min-width:1025px){min-height:100vh;}",
+        ]),
+        be = s.a.div.withConfig({
+          displayName: "Contact__Title",
+          componentId: "sc-1jphjqv-2",
+        })([
+          "position:relative;text-transform:uppercase;font-size:clamp(25vmin,20vw,40vh);z-index:2;font-weight:bolder;line-height:clamp(25vmin,20vw,40vh);align-self:center;& > div{transition:600ms;transform:translateY(3vw);opacity:0;&:first-child{color:var(--color-accent);}&:not(:first-child){position:absolute;left:-4px;top:4px;z-index:-1;color:var(--color-primary);-webkit-text-stroke:1px var(--color-invert);user-select:none;transition-delay:0.05s;}}&.is-inview > div{transform:translateY(0);opacity:1;}",
+        ]),
+        ge = s.a.div.withConfig({
+          displayName: "Contact__StalkContainer",
+          componentId: "sc-1jphjqv-3",
+        })([
+          "display:flex;flex-wrap:wrap;padding-top:var(--spacing-section);min-height:100vmin;position:relative;& > span{z-index:0;position:absolute;user-select:none;&:nth-of-type(1){font-size:5vw;left:-16vw;bottom:40%;}&:nth-of-type(2){font-size:4vw;right:0vw;top:8vh;}&:nth-of-type(3){font-size:2.5vw;left:18vw;top:20vh;opacity:0.2;}&:nth-of-type(4){font-size:5.5vw;right:-12vw;top:50vh;}&:nth-of-type(5){font-size:3vw;right:25vw;opacity:0.6;bottom:6vh;}&:nth-of-type(6){font-size:2vw;top:30%;left:14%;opacity:0.3;}&:nth-of-type(7){font-size:3vw;opacity:0.1;left:24%;bottom:30%;}&:nth-of-type(8){font-size:2vw;opacity:0.1;left:40%;bottom:50%;}&:nth-of-type(9){font-size:1.75vw;right:44%;top:40%;opacity:0.1;}&:nth-of-type(10){font-size:3.5vw;left:-10%;bottom:20%;}&:nth-of-type(11){font-size:3.5vw;right:4%;bottom:12%;opacity:0.5;}&:nth-of-type(12){font-size:4vw;left:-10%;top:20%;}&:nth-of-type(13){font-size:4vw;right:8%;top:30%;opacity:0.7}&:nth-of-type(14){opacity:0.5;font-size:4vw;right:17vw;top:6vw;}&:nth-of-type(15){font-size:4vw;top:40%;left:-2vw;opacity:0.8}&:nth-of-type(16){font-size:3vw;right:-4vw;bottom:50%;opacity:0.9;}}",
+        ]),
+        je = s.a.div.withConfig({
+          displayName: "Contact__StalkBloc",
+          componentId: "sc-1jphjqv-4",
+        })([
+          "z-index:1;position:relative;text-align:center;margin:auto;display:flex;flex-direction:column;a{font-size:clamp(48px,var(--font-size-title),96px);display:inline-block;text-decoration:none;text-transform:uppercase;transition:opacity 600ms;opacity:0;margin:0 auto 40px;span{display:block;-webkit-text-stroke:1px var(--color-invert);font-weight:900;letter-spacing:1px;color:var(--color-invert-light);transition:300ms;@media screen and (min-width:960px){&::after{margin-left:16px;-webkit-text-stroke:initial;color:initial;}&:nth-child(1)::after{content:'\ud83c\udf7f';font-weight:normal;}&:nth-child(2)::after{content:'\ud83d\udcd5';font-weight:normal;}}}&:hover{span{color:transparent;}}&.is-inview{opacity:1;}}",
+        ]),
+        ve = s.a.div.withConfig({
+          displayName: "Contact__StalkHeader",
+          componentId: "sc-1jphjqv-5",
+        })([
+          "font-family:var(--font-accent);color:var(--color-accent);font-size:var(--font-size-highlight);@media screen and (min-width:960px){padding-right:36px;}",
+        ]),
+        ye = s.a.div.withConfig({
+          displayName: "Contact__FakeMarqueeContainer",
+          componentId: "sc-1jphjqv-6",
+        })([
+          "min-height:100vh;margin-top:16vh;position:relative;& div:nth-child(1){transform:rotate(12deg);}& div:nth-child(2){transform:rotate(-12deg);left:-10%;}& div:nth-child(3){transform:rotate(4deg);top:25%;left:-30%;}& div:nth-child(4){transform:rotate(-4deg);top:45%;z-index:1;}& div:nth-child(5){transform:rotate(12deg);top:50%;}@media screen and (max-width:1024px){display:none;}*::selection{background-color:var(--color-invert) !important;color:var(--color-accent) !important;}",
+        ]),
+        xe = s.a.div.withConfig({
+          displayName: "Contact__Marquee",
+          componentId: "sc-1jphjqv-7",
+        })([
+          "position:absolute;white-space:nowrap;font-weight:700;text-transform:uppercase;line-height:1;& span{display:block;background:var(--color-accent);color:var(--color-primary);padding:3vw 4vw;line-height:1;text-align:center;font-size:6vw;opacity:0;transition:opacity 600ms;&.is-inview{opacity:1;}}",
+        ]),
+        ue = s.a.div.withConfig({
+          displayName: "Contact__ContactContainer",
+          componentId: "sc-1jphjqv-8",
+        })(["padding-top:var(--spacing-section);position:relative;"]),
+        we = s.a.div.withConfig({
+          displayName: "Contact__ContactInner",
+          componentId: "sc-1jphjqv-9",
+        })([
+          "margin:auto 0;display:flex;flex-direction:column;position:relative;",
+        ]),
+        Oe = s.a.div.withConfig({
+          displayName: "Contact__Interlude",
+          componentId: "sc-1jphjqv-10",
+        })([
+          "font-size:var(--font-size-title);color:var(--color-accent);font-weight:300;margin-bottom:80px;&::before{font-size:0.5em;content:'(\u30ce\xb0\u25bd\xb0)\u30ce';display:block;width:100%;}",
+        ]),
+        _e = s.a.a.withConfig({
+          displayName: "Contact__Button",
+          componentId: "sc-1jphjqv-11",
+        })([
+          "@media screen and (max-width:425px){margin-right:0;}margin-right:auto;max-width:calc(100% - 20px);font-size:var(--font-size-highlight);font-weight:bold;color:var(--color-invert);position:relative;text-decoration:none;span{background:var(--color-primary);z-index:3;position:relative;border:2px solid var(--color-accent);transition:100ms ease-in;display:flex;padding:16px 24px;&>div{font-weight:normal;margin-left:12px;}}&::before{background:var(--color-primary);top:10px;position:absolute;content:'';left:10px;width:100%;height:100%;z-index:1;}&::after{content:'';position:absolute;z-index:0;border:2px solid var(--color-invert);top:16px;left:16px;width:100%;height:100%;transition:100ms ease-in;}&:hover{span{transform:translate3d(10px,10px,0px);}&::after{background:var(--color-accent-dark);border-color:var(--color-accent);}}",
+        ]),
+        Ie = s.a.div.withConfig({
+          displayName: "Contact__Socials",
+          componentId: "sc-1jphjqv-12",
+        })([
+          "margin-top:40px;display:flex;flex-direction:column;&>a{margin-bottom:80px;@media screen and (min-width:960px){display:none;visibility:hidden;}}&>div{display:flex;justify-content:space-around;@media screen and (min-width:960px){margin:40px auto 0 0;}a{padding:0 8px;margin-right:24px;}}",
+        ]),
+        Ce = function () {
+          return Object(n.jsxs)(me, {
+            "data-scroll-section": !0,
+            children: [
+              Object(n.jsxs)(fe, {
+                children: [
+                  Object(n.jsxs)(be, {
+                    "data-scroll": !0,
+                    "data-scroll-offset": "40%",
+                    "data-scroll-speed": "1",
+                    children: [
+                      Object(n.jsx)("div", { children: "Still" }),
+                      Object(n.jsx)("div", { children: "Still" }),
+                    ],
+                  }),
+                  Object(n.jsxs)(be, {
+                    "data-scroll": !0,
+                    "data-scroll-offset": "40%",
+                    "data-scroll-speed": "2.5",
+                    children: [
+                      Object(n.jsx)("div", { children: "here?" }),
+                      Object(n.jsx)("div", { children: "here?" }),
+                    ],
+                  }),
+                ],
+              }),
+              Object(n.jsxs)(ge, {
+                id: "hobbies",
+                children: [
+                  Object(n.jsxs)(je, {
+                    children: [
+                      Object(n.jsx)(ve, {
+                        "data-scroll": !0,
+                        "data-scroll-speed": "1",
+                        children: "Stalk what I",
+                      }),
+                      Object(n.jsx)(u.a, {
+                        href: "/hobbies",
+                        passHref: !0,
+                        children: Object(n.jsxs)("a", {
+                          "data-scroll": !0,
+                          "data-scroll-speed": "1",
+                          "data-scroll-offset": "40%",
+                          children: [
+                            Object(n.jsx)("span", {
+                              children: "binge watching",
+                            }),
+                            Object(n.jsx)("span", { children: "& read" }),
+                          ],
+                        }),
+                      }),
+                    ],
+                  }),
+                  Object(n.jsx)("span", {
+                    "data-scroll": !0,
+                    "data-scroll-speed": "10",
+                    children: "\ud83d\ude0e",
+                  }),
+                  Object(n.jsx)("span", {
+                    "data-scroll": !0,
+                    "data-scroll-speed": "8",
+                    children: "\ud83e\udd29",
+                  }),
+                  Object(n.jsx)("span", {
+                    "data-scroll": !0,
+                    "data-scroll-speed": "1",
+                    children: "\ud83d\ude2f",
+                  }),
+                  Object(n.jsx)("span", {
+                    "data-scroll": !0,
+                    "data-scroll-speed": "10",
+                    children: "\ud83d\ude1c",
+                  }),
+                  Object(n.jsx)("span", {
+                    "data-scroll": !0,
+                    "data-scroll-speed": "3",
+                    children: "\ud83e\udd2f",
+                  }),
+                  Object(n.jsx)("span", {
+                    "data-scroll": !0,
+                    "data-scroll-speed": "3",
+                    children: "\ud83d\ude31",
+                  }),
+                  Object(n.jsx)("span", {
+                    "data-scroll": !0,
+                    "data-scroll-speed": "4",
+                    children: "\ud83e\udd84",
+                  }),
+                  Object(n.jsx)("span", {
+                    "data-scroll": !0,
+                    "data-scroll-speed": "5",
+                    children: "\ud83d\ude3b",
+                  }),
+                  Object(n.jsx)("span", {
+                    "data-scroll": !0,
+                    "data-scroll-speed": "3",
+                    children: "\ud83d\udc40",
+                  }),
+                  Object(n.jsx)("span", {
+                    "data-scroll": !0,
+                    "data-scroll-speed": "3",
+                    children: "\ud83c\udf89",
+                  }),
+                  Object(n.jsx)("span", {
+                    "data-scroll": !0,
+                    "data-scroll-speed": "8",
+                    children: "\ud83d\udc53",
+                  }),
+                  Object(n.jsx)("span", {
+                    "data-scroll": !0,
+                    "data-scroll-speed": "6",
+                    children: "\ud83c\udf6c",
+                  }),
+                  Object(n.jsx)("span", {
+                    "data-scroll": !0,
+                    "data-scroll-speed": "6",
+                    children: "\ud83c\udf6d",
+                  }),
+                  Object(n.jsx)("span", {
+                    "data-scroll": !0,
+                    "data-scroll-speed": "5",
+                    children: "\ud83c\udf1e",
+                  }),
+                  Object(n.jsx)("span", {
+                    "data-scroll": !0,
+                    "data-scroll-speed": "6",
+                    children: "\u26a1",
+                  }),
+                  Object(n.jsx)("span", {
+                    "data-scroll": !0,
+                    "data-scroll-speed": "14",
+                    children: "\ud83c\udf08",
+                  }),
+                ],
+              }),
+              Object(n.jsxs)(ye, {
+                id: "direction",
+                children: [
+                  Object(n.jsx)(xe, {
+                    children: Object(n.jsx)("span", {
+                      "data-scroll": !0,
+                      "data-scroll-direction": "horizontal",
+                      "data-scroll-target": "#direction",
+                      "data-scroll-speed": "-9",
+                      children: "Have enough?",
+                    }),
+                  }),
+                  Object(n.jsx)(xe, {
+                    children: Object(n.jsx)("span", {
+                      "data-scroll": !0,
+                      "data-scroll-direction": "horizontal",
+                      "data-scroll-target": "#direction",
+                      "data-scroll-speed": "8",
+                      children: "I can\u2019t say more \u2019bout me",
+                    }),
+                  }),
+                  Object(n.jsx)(xe, {
+                    children: Object(n.jsx)("span", {
+                      "data-scroll": !0,
+                      "data-scroll-direction": "horizontal",
+                      "data-scroll-target": "#direction",
+                      "data-scroll-speed": "-5",
+                      children: "But you can contact me!",
+                    }),
+                  }),
+                  Object(n.jsx)(xe, {
+                    children: Object(n.jsx)("span", {
+                      "data-scroll": !0,
+                      "data-scroll-direction": "horizontal",
+                      "data-scroll-target": "#direction",
+                      "data-scroll-speed": "12",
+                      children: "I will be happy to chitchat a bit!",
+                    }),
+                  }),
+                  Object(n.jsx)(xe, {
+                    children: Object(n.jsx)("span", {
+                      "data-scroll": !0,
+                      "data-scroll-direction": "horizontal",
+                      "data-scroll-target": "#direction",
+                      "data-scroll-speed": "-12",
+                      children: "As you wish!",
+                    }),
+                  }),
+                ],
+              }),
+              Object(n.jsx)(ue, {
+                "data-scroll": !0,
+                "data-scroll-id": "contact",
+                "data-scroll-repeat": !0,
+                id: "contact",
+                children: Object(n.jsxs)(we, {
+                  children: [
+                    Object(n.jsx)(Oe, {
+                      children:
+                        "Always keen for a good prop so feel free to say hey!",
+                    }),
+                    Object(n.jsx)(_e, {
+                      href: "mailto:hello@hugobazin.com",
+                      children: Object(n.jsxs)("span", {
+                        children: [
+                          "Send me an email ",
+                          Object(n.jsx)("div", { children: "\ud83d\udc8c" }),
+                        ],
+                      }),
+                    }),
+                    Object(n.jsxs)(Ie, {
+                      children: [
+                        Object(n.jsx)(_e, {
+                          href: "/contents/Resume_HugoBazin.pdf",
+                          target: "blank",
+                          children: Object(n.jsx)("span", {
+                            children: "Download my resume",
+                          }),
+                        }),
+                        Object(n.jsxs)("div", {
+                          children: [
+                            Object(n.jsx)("a", {
+                              href: "https://www.linkedin.com/in/hugobazin/",
+                              target: "blank",
+                              children: "Li",
+                            }),
+                            Object(n.jsx)("a", {
+                              href: "https://www.instagram.com/hugobazin/",
+                              target: "blank",
+                              children: "In",
+                            }),
+                            Object(n.jsx)("a", {
+                              href: "https://medium.com/@hugobazin",
+                              target: "blank",
+                              children: "Md",
+                            }),
+                          ],
+                        }),
+                      ],
+                    }),
+                  ],
+                }),
+              }),
+            ],
+          });
+        },
+        ke = a("vvXn"),
+        ze = a("EQ3O"),
+        Ne = a("Aj3m"),
+        Se = {
+          marquee1: ["Check some of my stuff", "Check some of my stuff"],
+          marquee2: [
+            "Want to know more \u2019bout me?",
+            "Curious?",
+            "I\u2019m a unicorn!",
+          ],
+
+          // Load Wordpress MENU API here
+          menu: ["Story", "Journey", "Mission", "Socials", "Lets Connect"],
+        };
+      var qe = s.a.div.withConfig({
+          displayName: "pages__Container",
+          componentId: "sc-177lhxc-0",
+        })([
+          "position:relative;z-index:0;display:grid;grid-template-columns:[start] 3vw [body] auto 3vw [end];overflow:hidden;@media screen and (min-width:960px){grid-template-columns:[start] 14vmax [body] auto 14vmax [end];}footer{grid-area:10 / start / 10 / end;margin-top:240px;}",
+        ]),
+        Pe = s.a.div.withConfig({
+          displayName: "pages__WorkMarquee",
+          componentId: "sc-177lhxc-1",
+        })([
+          "grid-area:4 / start / 4 / end;height:calc(var(--height-ticker) + 140px);overflow:hidden;@media screen and (max-width:960px){height:calc(var(--height-ticker) + 200px);}",
+        ]),
+        De = s.a.div.withConfig({
+          displayName: "pages__StoryMarquee",
+          componentId: "sc-177lhxc-2",
+        })([
+          "grid-area:6 / start / 6 / end;height:calc(var(--height-ticker) + 140px);overflow:hidden;padding-top:16vh;@media screen and (max-width:960px){height:calc(var(--height-ticker) + 200px);}",
+        ]),
+        Ee = s.a.div.withConfig({
+          displayName: "pages__Marquee",
+          componentId: "sc-177lhxc-3",
+        })([
+          "color:var(--color-invert);font-size:var(--font-size-marquee);transform:rotate(-9deg) translateX(-2.5vw);background:var(--color-primary);width:var(--width-ticker);position:relative;margin-top:calc(var(--height-ticker) / 2.5);line-height:1;padding:40px 0;left:-2.5vw;.ticker__element{margin:auto 0;display:flex;}span{margin-right:6vw;display:block;white-space:pre;}&#story{border-top:8px solid var(--color-invert);border-bottom:8px solid var(--color-invert);}*::selection{background-color:var(--color-accent-light);color:var(--color-accent-lighter);text-shadow:none;}",
+        ]),
+        Le = s.a.div.withConfig({
+          displayName: "pages__Border",
+          componentId: "sc-177lhxc-4",
+        })(["grid-area:6 / 1 / 6 / 1;height:0;"]);
+      t.default = function (e) {
+        if (Object(r.useRouter)().isFallback) return Object(n.jsx)(Ne.a, {});
+        var t = Object(o.useContext)(d.a).scroll;
+        return (
+          Object(o.useEffect)(function () {
+            document.documentElement.classList.remove("hideLogo"),
+              document.body.classList.remove("has-dark-bg");
+          }),
+          t &&
+            t.on("call", function (e) {
+              var t = document.querySelector("#work");
+              "borderBlack" === e &&
+                (document.body.classList.add("has-dark-bg"),
+                document.body.classList.contains("has-dark-bg")
+                  ? t.classList.contains("is-inview") &&
+                    document.body.classList.contains("has-dark-bg") &&
+                    document.body.classList.remove("has-dark-bg")
+                  : document.body.classList.add("has-dark-bg"));
+            }),
+          t &&
+            t.on("scroll", function (e) {
+              document.documentElement.setAttribute(
+                "data-direction",
+                e.direction
+              );
+              var t = document.querySelector(
+                '[data-scroll-section-id="section1"][data-scroll-section-inview]'
+              );
+              t || document.documentElement.classList.add("hideHeader"),
+                t && document.documentElement.classList.remove("hideHeader");
+              ["va", "safti", "fabre"].forEach(function (t) {
+                if ("object" === typeof e.currentElements[t]) {
+                  var a = e.currentElements[t].progress,
+                    i = Math.min(0.3 * a + 1, 1.3).toFixed(3);
+                  document
+                    .querySelector("#" + t)
+                    .getElementsByTagName("img")[1].style.transform =
+                    "scale3d(" + i + "," + i + ", 1)";
+                }
+              });
+            }),
+          Object(n.jsxs)(qe, {
+            children: [
+              Object(n.jsx)(ze.a, { scroll: t, content: Se.menu }),
+              Object(n.jsx)(v, {}),
+              Object(n.jsx)(Pe, {
+                "data-scroll-section": !0,
+                "data-scroll": !0,
+                "data-scroll-repeat": !0,
+                "data-scroll-call": "menuAppear",
+                children: Object(n.jsx)(Ee, {
+                  id: "tickerContainer",
+                  "data-scroll": !0,
+                  "data-scroll-class": "tickerPlay",
+                  "data-scroll-repeat": "true",
+                  children: Object(n.jsx)(c.a, {
+                    speed: 13,
+                    height: 80,
+                    children: function (e) {
+                      e.index;
+                      return Object(n.jsx)(n.Fragment, {
+                        children: Object(i.a)(Array(Se.marquee1.length)).map(
+                          function (e, t) {
+                            return Object(n.jsx)(
+                              "span",
+                              { children: Se.marquee1[t] },
+                              t
+                            );
+                          }
+                        ),
+                      });
+                    },
+                  }),
+                }),
+              }),
+              Object(n.jsx)(F, {}),
+              Object(n.jsx)(Le, {
+                "data-scroll": !0,
+                "data-scroll-section": !0,
+                "data-scroll-repeat": !0,
+                "data-scroll-call": "borderBlack",
+              }),
+              Object(n.jsx)(De, {
+                "data-scroll-section": !0,
+                children: Object(n.jsx)(Ee, {
+                  id: "story",
+                  children: Object(n.jsx)(c.a, {
+                    speed: 13,
+                    height: 80,
+                    children: function (e) {
+                      e.index;
+                      return Object(n.jsx)(n.Fragment, {
+                        children: Object(i.a)(Array(Se.marquee2.length)).map(
+                          function (e, t) {
+                            return Object(n.jsx)(
+                              "span",
+                              { children: Se.marquee2[t] },
+                              t
+                            );
+                          }
+                        ),
+                      });
+                    },
+                  }),
+                }),
+              }),
+              Object(n.jsx)(K, {}),
+              Object(n.jsx)(he, {}),
+              Object(n.jsx)(Ce, {}),
+              Object(n.jsx)(ke.a, { scroll: t }),
+            ],
+          })
+        );
+      };
+    },
+    vlRD: function (e, t, a) {
+      (window.__NEXT_P = window.__NEXT_P || []).push([
+        "/",
+        function () {
+          return a("RNiq");
+        },
+      ]);
+    },
+  },
+  [["vlRD", 0, 2, 1, 3, 4, 5]],
+]);

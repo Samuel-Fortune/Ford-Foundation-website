@@ -59582,6 +59582,10 @@ video {
   margin-top: auto;
 }
 
+.mb-8{
+  margin-bottom: 2rem;
+}
+
 .block{
   display: block;
 }
@@ -59916,6 +59920,10 @@ video {
   width: max-content;
 }
 
+.w-\[469\.199px\]{
+  width: 469.199px;
+}
+
 .min-w-0{
   min-width: 0px;
 }
@@ -59954,6 +59962,10 @@ video {
 
 .max-w-lg{
   max-width: 32rem;
+}
+
+.max-w-\[1190px\]{
+  max-width: 1190px;
 }
 
 .flex-1{
@@ -60527,6 +60539,66 @@ video {
   background-image: none;
 }
 
+.bg-\[url\(\'\.\.\/img\/101634366-486159803r\.jpeg\'\)\]{
+  background-image: url('../img/101634366-486159803r.jpeg');
+}
+
+.bg-\[url\(\'\.\.\/img\/2811695661552366994_n\.jpeg\'\)\]{
+  background-image: url('../img/2811695661552366994_n.jpeg');
+}
+
+.bg-\[url\(\'\.\.\/img\/526A6529-scaled\.jpeg\'\)\]{
+  background-image: url('../img/526A6529-scaled.jpeg');
+}
+
+.bg-\[url\(\'\.\.\/img\/ANITY_FAIR_DIDDY_50TH\.jpg-scaled\.webp\'\)\]{
+  background-image: url('../img/ANITY_FAIR_DIDDY_50TH.jpg-scaled.webp');
+}
+
+.bg-\[url\(\'\.\.\/img\/CSWS-Screen-Size\.png\'\)\]{
+  background-image: url('../img/CSWS-Screen-Size.png');
+}
+
+.bg-\[url\(\'\.\.\/img\/DSC06055-scaled\.jpeg\'\)\]{
+  background-image: url('../img/DSC06055-scaled.jpeg');
+}
+
+.bg-\[url\(\'\.\.\/img\/F7B2818-scaled\.jpeg\'\)\]{
+  background-image: url('../img/F7B2818-scaled.jpeg');
+}
+
+.bg-\[url\(\'\.\.\/img\/I-AM-KING-AD-1\.jpeg\'\)\]{
+  background-image: url('../img/I-AM-KING-AD-1.jpeg');
+}
+
+.bg-\[url\(\'\.\.\/img\/L1020333-scaled\.jpeg\'\)\]{
+  background-image: url('../img/L1020333-scaled.jpeg');
+}
+
+.bg-\[url\(\'\.\.\/img\/PD_star\.jpeg\'\)\]{
+  background-image: url('../img/PD_star.jpeg');
+}
+
+.bg-\[url\(\'\.\.\/img\/RMC2017\.jpeg\'\)\]{
+  background-image: url('../img/RMC2017.jpeg');
+}
+
+.bg-\[url\(\'\.\.\/img\/RVM-4287-hires2-scaled\.webp\'\)\]{
+  background-image: url('../img/RVM-4287-hires2-scaled.webp');
+}
+
+.bg-\[url\(\'\.\.\/img\/ab67616d0000b27303ea2b83453badc205b81c59\.jpeg\'\)\]{
+  background-image: url('../img/ab67616d0000b27303ea2b83453badc205b81c59.jpeg');
+}
+
+.bg-\[url\(\'\.\.\/img\/newSJonlyatMacysroof1\.jpeg\'\)\]{
+  background-image: url('../img/newSJonlyatMacysroof1.jpeg');
+}
+
+.bg-\[url\(\'\.\.\/img\/rtr1va2w-2\.jpg\.webp\'\)\]{
+  background-image: url('../img/rtr1va2w-2.jpg.webp');
+}
+
 .bg-cover{
   background-size: cover;
 }
@@ -60973,6 +61045,22 @@ video {
   padding-top: 50px;
 }
 
+.pl-\[1\.5rem\]{
+  padding-left: 1.5rem;
+}
+
+.pl-\[24px\]{
+  padding-left: 24px;
+}
+
+.pr-\[1\.5rem\]{
+  padding-right: 1.5rem;
+}
+
+.pr-\[24px\]{
+  padding-right: 24px;
+}
+
 .text-left{
   text-align: left;
 }
@@ -61179,6 +61267,14 @@ video {
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-\[20\.3px\]{
+  font-size: 20.3px;
+}
+
+.text-\[22px\]{
+  font-size: 22px;
 }
 
 .font-\[500\]{
@@ -63388,6 +63484,10 @@ footer {
     height: 584px;
   }
 
+  .md\:h-\[336px\]{
+    height: 336px;
+  }
+
   .md\:min-h-\[100vh\]{
     min-height: 100vh;
   }
@@ -63499,6 +63599,18 @@ footer {
   .md\:w-max{
     width: -moz-max-content;
     width: max-content;
+  }
+
+  .md\:w-\[456px\]{
+    width: 456px;
+  }
+
+  .md\:w-\[540px\]{
+    width: 540px;
+  }
+
+  .md\:w-\[606\.898px\]{
+    width: 606.898px;
   }
 
   .md\:min-w-full{
@@ -63785,6 +63897,10 @@ footer {
 
   .md\:pt-\[60px\]{
     padding-top: 60px;
+  }
+
+  .md\:pl-\[50px\]{
+    padding-left: 50px;
   }
 
   .md\:text-left{
