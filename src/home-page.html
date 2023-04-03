@@ -9,6 +9,10 @@
 
     <!-- Jquery CDN -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css">
 </head>
 <body>
 
@@ -237,8 +241,8 @@
     <section class="w-full h-full relative">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-0">
             <div class="flex flex-col w-full">
-                <div class="overflow-y-hidden md:overflow-y-scroll flex flex-col gap-32">
-                    <div class="flex flex-col h-full pt-0 pr-[8%] pb-[1.5em] pl-[8%] sm:h-[359.75px] md:h-[584px] md:pt-0 md:pr-0 md:pb-0 md:pl-[16%] md:relative justify-center w-full items-end">
+                <div id="simple-bar" class="flex flex-col gap-7 py-5 pt-16 md:h-[700px]">
+                    <div class="flex flex-col h-full pt-0 pr-[8%] pb-[1.5em] pl-[8%] md:pt-0 md:pr-0 md:pb-0 md:pl-[16%] md:relative justify-center w-full items-end">
                         <div class="w-full md:max-w-[672px] md:pr-[50px] md:pb-[100px] lg:pr-[120px] lg:max-w-[672px] lg:pb-[100px]">
                             <h2 class="mt-[1em] mb-[0.4em] text-[2.48em] leading-[3.5rem] sm:text[2.88em] md:text-[2.5em] md:mt-0 lg:text-[2.5em] text-[#000] font-black">Justice begins where <br>
                                 <span class="text-[#009fd4]">inequality</span>
@@ -249,7 +253,7 @@
                         </div>
 
                     </div>
-                    <div class="flex flex-col h-full pt-0 pr-[8%] pb-[1.5em] pl-[8%] sm:h-[359.75px] md:h-[584px] md:pt-0 md:pr-0 md:pb-0 md:pl-[16%] md:relative justify-center w-full items-end">
+                    <div class="flex flex-col h-full pt-0 pr-[8%] pb-[1.5em] pl-[8%] md:pt-0 md:pr-0 md:pb-0 md:pl-[16%] md:relative justify-center w-full items-end">
                         <div class="w-full md:max-w-[672px] md:pr-[50px] md:pb-[100px] lg:pr-[120px] lg:max-w-[672px] lg:pb-[100px]">
                             <h2 class="mt-[1em] mb-[0.4em] text-[2.88em] leading-[3.5rem] sm:text[2.88em] md:text-[2.5em] md:mt-0 lg:text-[2.5em] text-[#000] font-black">We invest in <br> transformative <span class="text-[#bc194a]">ideas</span>, <br> <span class="text-[#9f6d03] ">individuals</span> and <br> <span class="text-[#15706c]">institutions</span></h2>
                             <p class="mt-0 mb-[1em] leading-10 sm:leading-10 md:leading-10 lg:leading-10 text-[#555] font-semibold text-xl sm:font-semibold sm:text-xl md:font-semibold md:mb-[1.25em] md:text-[1.3rem] lg:text-[1.375rem]">We’re reimagining philanthropy to catalyze leaders and organizations driving social justice and building movements across the globe.</p>
@@ -258,8 +262,8 @@
                     </div>
                 </div>
             </div>
-            <div class="w-full h-full md:h-[496px] md:w-[712.5px] md:sticky md:top-[80px] md:overflow-hidden">
-                <video class="h-full w-full md:min-h-[100vh] md:min-w-full md:align-baseline inline-block" autoplay="" muted="" loop="" playsinline="" aria-label="Placeholder title text" poster="/media/5529/homepage-video-still-080529.jpg" src="https://www.fordfoundation.org/media/5653/fast720p30-preset-no-audio-vp9-cq39-veryslow.webm">
+            <div class="w-full h-full md:sticky md:overflow-hidden">
+                <video style="width: 100%; height: 90%; min-height: 90%; max-height: 90%; margin: auto; top: calc(25% - 120px); position: sticky;" class="object-cover m-auto object-center w-full h-full md:align-baseline inline-block" autoplay="" muted="" loop="" playsinline="" aria-label="Placeholder title text" poster="/media/5529/homepage-video-still-080529.jpg" src="https://www.fordfoundation.org/media/5653/fast720p30-preset-no-audio-vp9-cq39-veryslow.webm">
 			    </video>
             </div>
         </div>

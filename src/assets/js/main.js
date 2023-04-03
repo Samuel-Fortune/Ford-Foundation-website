@@ -275,3 +275,10 @@ if ( window.innerWidth >= 720 ) {
 
         }
     });
+
+
+// Simple bar setup 
+$("#simple-bar").each(function (__element, __index) {
+    new SimpleBar(__index, { autoHide: true });
+});
+
