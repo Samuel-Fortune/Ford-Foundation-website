@@ -58406,7 +58406,7 @@ p a {
 
 @media screen and (max-width: 420px) {
   .container-fluid {
-    padding: 15px 5px 0px 5px !important;
+    padding: 15px 10px 0px 10px !important;
   }
 
   .header__nav__upper  {
@@ -63637,10 +63637,6 @@ footer {
 
   .md\:overflow-x-hidden{
     overflow-x: hidden;
-  }
-
-  .md\:overflow-y-scroll{
-    overflow-y: scroll;
   }
 
   .md\:text-clip{
