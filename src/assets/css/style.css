@@ -59836,10 +59836,6 @@ video {
   width: 110px;
 }
 
-.w-\[118px\]{
-  width: 118px;
-}
-
 .w-\[132px\]{
   width: 132px;
 }
@@ -59870,30 +59866,6 @@ video {
 
 .w-\[290px\]{
   width: 290px;
-}
-
-.w-\[432px\]{
-  width: 432px;
-}
-
-.w-\[434px\]{
-  width: 434px;
-}
-
-.w-\[435px\]{
-  width: 435px;
-}
-
-.w-\[452px\]{
-  width: 452px;
-}
-
-.w-\[469\.199px\]{
-  width: 469.199px;
-}
-
-.w-\[469px\]{
-  width: 469px;
 }
 
 .w-\[50px\]{
@@ -63231,6 +63203,11 @@ footer {
     text-align: start;
   }
 
+  .sm\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .sm\:text-5xl{
     font-size: 3rem;
     line-height: 1;
@@ -63240,19 +63217,9 @@ footer {
     font-size: 1.4375rem;
   }
 
-  .sm\:text-base{
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-
   .sm\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .sm\:text-3xl{
-    font-size: 1.875rem;
-    line-height: 2.25rem;
   }
 
   .sm\:font-semibold{
